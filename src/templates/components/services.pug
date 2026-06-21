@@ -1,0 +1,300 @@
+section.services#services.block.section
+    .container.section__container
+        .section__header.section__header--fill
+            .section__header-top
+                h2.section__title.text-uppercase.mb-0(data-aos="fade-right") Usługi
+                .section__navigation.swiper-navigation(data-aos="fade-left")
+                    .services-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                        svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                            path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                    .services-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                        svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                            path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .section__header-bottom
+                p.h6.section__subtitle.text-light.mb-0.text-primary ✦ Usuwamy plamy, zapachy i kurz z każdej powierzchni — mebli tapicerowanych, dywanów, materacy, a nawet szyb
+        .section__body
+            .swiper.services-swiper
+                .swiper-wrapper
+                    article.swiper-slide
+                        .service.card.card-primary-outline
+                            .service__header
+                                .service__img
+                                    picture
+                                        source(srcset="img/service-furniture.webp" type="image/webp")
+                                        img(src="img/service-furniture.jpg" alt="Pranie tapicerki meblowej" loading="lazy" height="200")
+                            .service__body
+                                h3.h6.service__title Pranie tapicerki meblowej
+                                .service__description Skutecznie usuwamy plamy i nieprzyjemne zapachy ze wszystkich rodzajów mebli tapicerowanych: sof, foteli, krzeseł.
+                            .service__footer
+                                a.service__more(onclick="popupFurniture.showModal()") Więcej szczegółów
+                        dialog.popup.popup-center#popupFurniture
+                            .card.card-white.card-rounded.h-auto.overflow-hidden
+                                form(method="dialog")
+                                    .popup__close
+                                        button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupFurniture.close()")
+                                            svg.d-block(width="16" height="16")
+                                                use(href="#close")
+                                    h4.h6.text-center.text-uppercase.popup__title ✦ Profesjonalne pranie&nbsp;
+                                        span.text-accent  tapicerki meblowej
+                                        | w&nbsp;domu klienta
+                                    p Oferujemy skuteczne pranie tapicerki meblowej, które usuwa plamy, zapachy oraz głęboko osadzony brud z sof, narożników i foteli. Nasze czyszczenie tapicerki wykonywane jest metodą ekstrakcyjną, dzięki czemu tkaniny są dokładnie wypłukane i szybciej schną.
+                                    p Regularne pranie tapicerki meblowej poprawia wygląd mebli, usuwa alergeny i przedłuża ich żywotność.
+                                    .row.row-cols-3
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupFurniture.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#comment")
+                                                | Opinie
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupFurniture.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#cash")
+                                                | Cennik
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupFurniture.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#gallery")
+                                                | Zdjęcia
+                                    br
+                                    h4.h6.text-uppercase Czyścimy:
+                                    .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Narożniki L i U
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Kanapy, wersalki
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Sofy rozkładane
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Fotele (także uszaki)
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Krzesła tapicerowane
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Poduchy meblowe
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small Fotele biurowe
+                                    .popup__controls(onclick="popupFurniture.close()")
+                                        a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                            svg.icon.icon-right.shake(width="16" height="16")
+                                                use(href="#whatsapp")
+                                            | Przywróć świeżość kanapie
+                    article.swiper-slide
+                        .service.card.card-primary-outline
+                            .service__header
+                                .service__img
+                                    picture.service__img
+                                        source(srcset="img/service-mattress.webp" type="image/webp")
+                                        img(src="img/service-mattress.jpg" alt="Pranie materacy" loading="lazy" height="200")
+                            .service__body
+                                h3.h6.service__title Pranie materacy
+                                .service__description Bezpiecznie i skutecznie usuwamy zabrudzenia i plamy, pot oraz nieprzyjemne zapachy z materacy jedno- i dwuosobowych.
+                            .service__footer
+                                a.service__more(onclick="popupMattress.showModal()") Więcej szczegółów
+                        dialog.popup.popup-center#popupMattress
+                            .card.card-white.card-rounded.h-auto.overflow-hidden
+                                form(method="dialog")
+                                    .popup__close
+                                        button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupMattress.close()")
+                                            svg.d-block(width="16" height="16")
+                                                use(href="#close")
+                                    h4.h6.text-uppercase.popup__title.text-center ✦ Profesjonalne czyszczenie i&nbsp;
+                                        span.text-accent pranie materacy
+                                    p Oferujemy skuteczne czyszczenie materacy, które usuwa pot, plamy biologiczne, kurz, roztocza i nieprzyjemne zapachy. Nasze pranie materacy poprawia higienę snu i jest szczególnie polecane alergikom oraz rodzinom z dziećmi.
+                                    p Dzięki głębokiemu płukaniu włókien czyszczenie materaca usuwa zanieczyszczenia, których nie widać gołym okiem.
+                                    .row.row-cols-3
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupMattress.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#comment")
+                                                | Opinie
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupMattress.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#cash")
+                                                | Cennik
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupMattress.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#gallery")
+                                                | Zdjęcia
+                                    br
+                                    h4.h6.text-uppercase Czyścimy:
+                                    .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small materace jednoosobowe
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small materace dwuosobowe
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small pranie z jednej lub z obu stron
+                                    .popup__controls(onclick="popupMattress.close()")
+                                        a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                            svg.icon.icon-right.shake(width="16" height="16")
+                                                use(href="#whatsapp")
+                                            | Przywróć świeżość materacowi
+                    article.swiper-slide
+                        .service.card.card-primary-outline
+                            .service__header
+                                .service__img
+                                    picture.service__img
+                                        source(srcset="img/service-carpet.webp" type="image/webp")
+                                        img(src="img/service-carpet.jpg" alt="Pranie dywanów" loading="lazy" height="200")
+                            .service__body
+                                h3.h6.service__title Pranie dywanów
+                                .service__description Dogłębnie usuwamy brud, plamy oraz sierść zwierząt domowych z dywanów i wykładzin.
+                            .service__footer
+                                a.service__more(onclick="popupCarpet.showModal()") Więcej szczegółów
+                        dialog.popup.popup-center#popupCarpet
+                            .card.card-white.card-rounded.h-auto.overflow-hidden
+                                form(method="dialog")
+                                    .popup__close
+                                        button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupCarpet.close()")
+                                            svg.d-block(width="16" height="16")
+                                                use(href="#close")
+                                    h4.h6.text-uppercase.text-center.popup__title ✦ Profesjonalne&nbsp;
+                                        span.text-accent pranie dywanów i czyszczenie wykładzin
+                                    p Nasze pranie dywanów usuwa plamy, sierść zwierząt, kurz i alergeny z głębi włókien. Oferujemy także czyszczenie wykładzin w domach, biurach i lokalach usługowych.
+                                    p Regularne pranie dywanów przywraca świeżość kolorów i poprawia higienę pomieszczeń.
+                                    .row.row-cols-3
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupCarpet.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#comment")
+                                                | Opinie
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupCarpet.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#cash")
+                                                | Cennik
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupCarpet.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#gallery")
+                                                | Zdjęcia
+                                    br
+                                    h4.h6.text-uppercase Czyścimy:
+                                    .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small dywany syntetyczne i naturalne
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small wykładziny domowe
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small wykładziny biurowe
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small duże powierzchnie (wycena indywidualna)
+                                    .popup__controls(onclick="popupCarpet.close()")
+                                        a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                            svg.icon.icon-right.shake(width="16" height="16")
+                                                use(href="#whatsapp")
+                                            | Przywróć świeżość dywanowi
+                    article.swiper-slide
+                        .service.card.card-primary-outline
+                            .service__header
+                                .service__img
+                                    picture.service__img
+                                        source(srcset="img/service-salon.webp" type="image/webp")
+                                        img(src="img/service-salon.jpg" alt="Pranie tapicerki samochodowej" loading="lazy" height="200")
+                            .service__body
+                                h3.h6.service__title Pranie tapicerki samochodowej
+                                .service__description Usuniemy zabrudzenia, plamy i nieprzyjemne zapachy z foteli, boczków drzwi, podsufitki i innych elementów wnętrza auta.
+                            .service__footer
+                                a.service__more(onclick="popupSalon.showModal()") Więcej szczegółów
+                        dialog.popup.popup-center#popupSalon
+                            .card.card-white.card-rounded.h-auto.overflow-hidden
+                                form(method="dialog")
+                                    .popup__close
+                                        button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupSalon.close()")
+                                            svg.d-block(width="16" height="16")
+                                                use(href="#close")
+                                    h4.h6.text-uppercase.text-center.popup__title ✦ Profesjonalne&nbsp;
+                                        span.text-accent pranie tapicerki samochodowej
+                                    p Oferujemy dokładne pranie tapicerki samochodowej, które usuwa plamy, kurz, pot i zapachy z wnętrza auta. Nasze czyszczenie tapicerki samochodowej poprawia komfort jazdy i higienę wnętrza pojazdu.
+                                    .row.row-cols-3
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupSalon.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#comment")
+                                                | Opinie
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupSalon.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#cash")
+                                                | Cennik
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupSalon.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#gallery")
+                                                | Zdjęcia
+                                    br
+                                    h4.h6.text-uppercase Czyścimy:
+                                    .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small fotele przednie i tylne
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small kanapy
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small podsufitka
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small boczki drzwi
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small podłogi i dywaniki
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small bagażnik
+                                    .popup__controls(onclick="popupSalon.close()")
+                                        a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                            svg.icon.icon-right.shake(width="16" height="16")
+                                                use(href="#whatsapp")
+                                            | Odśwież wnętrze samochodu
+                    article.swiper-slide
+                        .service.card.card-primary-outline
+                            .service__header
+                                .service__img
+                                    picture.service__img
+                                        source(srcset="img/service-window.webp" type="image/webp")
+                                        img(src="img/service-window.jpg" alt="Mycie okien" loading="lazy" height="200")
+                            .service__body
+                                h3.h6.service__title Mycie okien
+                                .service__description Profesjonalne mycie okien z kurzu, smug, zacieków i osadów po deszczu.
+                            .service__footer
+                                a.service__more(onclick="popupWindow.showModal()") Więcej szczegółów
+                        dialog.popup.popup-center#popupWindow
+                            .card.card-white.card-rounded.h-auto.overflow-hidden
+                                form(method="dialog")
+                                    .popup__close
+                                        button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupWindow.close()")
+                                            svg.d-block(width="16" height="16")
+                                                use(href="#close")
+                                    h4.h6.text-uppercase.text-center.popup__title ✦ Profesjonalne&nbsp;
+                                        span.text-accent mycie okien
+                                        | u klienta
+                                    p Oferujemy dokładne mycie okien, które usuwa kurz, smog, zacieki i osady po deszczu. Nasze czyszczenie okien zapewnia idealną przejrzystość szyb bez smug.
+                                    .row.row-cols-3
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupWindow.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#comment")
+                                                | Opinie
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupWindow.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#cash")
+                                                | Cennik
+                                        .col
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupWindow.close()")
+                                                svg.icon.icon-right(width="16" height="16")
+                                                    use(href="#gallery")
+                                                | Zdjęcia
+                                    br
+                                    h4.h6.text-uppercase Czyścimy:
+                                    .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small mycie szyb z obu stron
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small ramy okienne
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small parapety
+                                        .col
+                                            .card.card-secondary-outline.card-rounded.card-small suwanie zacieków
+                                    .popup__controls(onclick="popupWindow.close()")
+                                        a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                            svg.icon.icon-right.shake(width="16" height="16")
+                                                use(href="#whatsapp")
+                                            | Przywróć blask oknom

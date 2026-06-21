@@ -1,0 +1,40 @@
+.popup {
+    position: fixed;
+    background: transparent;
+    border: none;
+    max-width: 600px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    &-center {
+        margin: auto;
+    }
+    &-top-right {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &-narrow {
+        max-width: 290px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+
+    &__title {
+        max-width: calc(100% - 70px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__controls {
+        margin-top: 1rem;
+    }
+
+
+
+
+}

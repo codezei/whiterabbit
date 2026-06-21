@@ -1,0 +1,236 @@
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    transition: all 400ms;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid var(--border-color, transparent);
+
+    &-rounded {
+        border-radius: 0.5rem;
+    }
+
+    &-circle {
+        border-radius: 50%;
+    }
+
+    &-pillow {
+        border-radius: 50rem;
+    }
+
+    &:active {
+        box-shadow: 0 0 10px var(--border-color);
+    }
+
+    &.active,
+    .active &,
+    .swiper-slide-thumb-active & {
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    &:focus {
+        outline: 2px var(--border-color);
+    }
+
+
+    &-primary {
+        --border-color: var(--color-1-base);
+        background: var(--color-1-base);
+        color: var(--color-1-tint-2);
+
+        &:hover {
+            --border-color: var(--color-1-shade-1);
+            background: var(--color-1-shade-1);
+            color: var(--color-1-tint-2);
+        }
+
+        &:active {
+            --border-color: var(--color-1-base);
+            background: var(--color-1-base);
+            color: var(--color-1-tint-2);
+        }
+        &.active,
+        .active &,
+        .swiper-slide-thumb-active & {
+            --border-color: var(--color-1-shade-1);
+            background: var(--color-1-shade-1);
+            color: var(--color-1-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-1-base);
+            --border-color: var(--color-1-tint-2);
+            background: var(--color-1-tint-2);
+            color: var(--color-1-base);
+
+            &:hover {
+                --border-color: var(--color-1-base);
+                background: var(--color-1-base);
+                color: var(--color-1-tint-2);
+            }
+
+            &:active {
+                --border-color: var(--color-1-base);
+                background: var(--color-1-base);
+                color: var(--color-1-tint-2);
+            }
+            &.active,
+            .active &,
+            .swiper-slide-thumb-active & {
+                --border-color: var(--color-1-base);
+                background: var(--color-1-base);
+                color: var(--color-1-tint-2);
+            }
+        }
+
+    }
+
+    &-secondary {
+        --border-color: var(--color-2-base);
+        background: var(--color-2-base);
+        color: var(--color-2-tint-2);
+
+        &:hover {
+            --border-color: var(--color-2-shade-1);
+            background: var(--color-2-shade-1);
+            color: var(--color-2-tint-2);
+
+        }
+
+        &:active {
+            --border-color: var(--color-2-base);
+            background: var(--color-2-base);
+            color: var(--color-2-tint-2);
+        }
+        &.active,
+        .active &,
+        .swiper-slide-thumb-active & {
+            --border-color: var(--color-2-shade-1);
+            background: var(--color-2-shade-1);
+            color: var(--color-2-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-2-base);
+            --border-color: var(--color-2-tint-2);
+            background: var(--color-2-tint-2);
+            color: var(--color-2-base);
+
+            &:hover {
+                --border-color: var(--color-2-base);
+                background: var(--color-2-base);
+                color: var(--color-2-tint-2);
+            }
+
+            &:active {
+                --border-color: var(--color-2-base);
+                background: var(--color-2-base);
+                color: var(--color-2-tint-2);
+            }
+            &.active,
+            .active &,
+            .swiper-slide-thumb-active & {
+                --border-color: var(--color-2-base);
+                    background: var(--color-2-base);
+                    color: var(--color-2-tint-2);
+
+                                    --border-color: var(--color-2-base);
+                                    --border-color: var(--color-2-tint-1);
+                                        background: var(--color-2-tint-1);
+                                        color: var(--color-2-shade-1);
+            }
+        }
+    }
+    &-third {
+        --border-color: var(--color-3-base);
+        background: var(--color-3-base);
+        color: var(--color-3-tint-2);
+
+        &:hover {
+            --border-color: var(--color-3-shade-1);
+            background: var(--color-3-shade-1);
+            color: var(--color-3-tint-2);
+
+        }
+
+        &:active {
+            --border-color: var(--color-3-base);
+            background: var(--color-3-base);
+            color: var(--color-3-tint-2);
+        }
+        &.active,
+        .active &,
+        .swiper-slide-thumb-active & {
+            --border-color: var(--color-3-shade-1);
+            background: var(--color-3-shade-1);
+            color: var(--color-3-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-3-base);
+            background: var(--color-3-tint-2);
+            color: var(--color-3-base);
+
+            &:hover {
+                --border-color: var(--color-3-base);
+                background: var(--color-3-base);
+                color: var(--color-3-tint-2);
+            }
+
+            &:active {
+                --border-color: var(--color-3-base);
+                background: var(--color-3-base);
+                color: var(--color-3-tint-2);
+            }
+            &.active,
+            .active &,
+            .swiper-slide-thumb-active & {
+                --border-color: var(--color-3-base);
+                    background: var(--color-3-base);
+                    color: var(--color-3-tint-2);
+            }
+        }
+    }
+
+    &-transparent {
+        background: transparent;
+        color: inherit;
+        border: none;
+    }
+
+    &-large {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    &-normal {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    &-small {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    &-extra-small {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    &-pulse {
+        animation: pulse 2s ease-in infinite;
+    }
+
+}

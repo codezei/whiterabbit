@@ -1,0 +1,73 @@
+section.promo#promo.section
+    .container
+        .section__header.section__header--fill
+            header.header
+                .section__shape.section__shape-top.section__inner(data-aos="slide-down" data-aos-delay="200")
+                    .header__inner
+                        .header__logo
+                            include logo
+                        .header__menu#main-menu
+                            nav.menu
+                                .menu__item
+                                    a.menu__link(href="#about") O nas
+                                .menu__item
+                                    a.menu__link(href="#services") Usługi
+                                .menu__item
+                                    a.menu__link(href="#price") Cennik
+                                .menu__item
+                                    a.menu__link(href="#reviews") Opinie
+                                .menu__item
+                                    a.menu__link(href="#works") Prace
+                                .menu__item
+                                    a.menu__link(href="#contacts") Kontakt
+                            .header__menu-socials.text-center
+                                //- span.text-accent.text-nowrap
+                                //-     svg.icon.icon-right.shake(width="16" height="16")
+                                //-         use(href="#geo")
+                                //-     | Wroclaw i okolice
+                                //- br
+                                .card.card-primary-outline.card-rounded
+                                    span.text-bold Pon. - Sob.
+                                    span &nbsp;7:00 - 22:00
+                            .header__menu-btn.text-center
+                                a.btn.btn-primary-outline.btn-small.btn-pillow.w-100(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                    svg.icon.icon-right.shake(width="16" height="16")
+                                        use(href="#tel")
+                                    | Zadzwoń
+                        .header__button
+                            //- a.btn.btn-primary-outline.btn-small.btn-pillow(href="tel:+99999999999")
+                            //-     svg.icon.icon-right.shake(width="16" height="16")
+                            //-         use(href="#tel")
+                            //-     | Zadzwoń
+                        .header__burger
+                            button.js-burger.btn.btn-transparent(type="button" aria-expanded="false" aria-controls="main-menu")
+                                span.sr-only Otwórz menu mobilne
+                                span.cross
+                                    span
+                                    span
+                                    span
+        .section__body.block
+            .promo__content
+                .promo__pre-title.pre-title.text-primary ✦ Profesjonalne czyszczenie tapicerki
+                h1.promo__title Pranie tapicerki meblowej i tapicerki samochodowej, materacy, dywanów, i mycie okien
+                    br
+                    span.text-accent.text-nowrap
+                        svg.icon.icon-right.shake(width="16" height="16")
+                            use(href="#geo")
+                        | Wroclaw i okolice
+                .promo__subtitle.extractor
+                    .extractor__cleaner(data-aos="fade-left" data-aos-delay="100")
+                    h2.h5.text-light.extractor__text.mb-0(data-aos="fade-left" data-aos-delay="200") Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
+                .promo__list
+                    ul.list-check.list-row
+                        li.card.card-secondary-outline.card-rounded Profesjonalny sprzęt
+                        li.card.card-secondary-outline.card-rounded Bezpieczna chemia
+                        li.card.card-secondary-outline.card-rounded Dojazd do klienta
+                .promo__rating
+                    span.rating(style="--star-rating: 5;")
+                    b.text-bold 5.0
+                    a.text-muted(href="#reviews") (56 reviews)
+        .section__footer
+            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
+                .section__btn
+                    include cta-button

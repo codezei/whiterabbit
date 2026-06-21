@@ -1,0 +1,147 @@
+.card {
+    padding: var(--padding, 1rem);
+    position: relative;
+    height: 100%;
+    border: 1px solid var(--border-color, transparent);
+
+    &-rounded {
+        border-radius: 1rem;
+    }
+
+    &-pillow {
+        border-radius: 50rem;
+    }
+
+    &-leaf {
+        --leaf-radius: 4rem;
+        --padding: 1.5rem;
+        border-radius: var(--leaf-radius) 0;
+
+        @media screen and (min-width: 1200px) {
+            --leaf-radius: 5rem;
+            --padding: 2rem;
+        }
+    }
+
+    &-large {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    &-normal {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    &-small {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    &-extra-small {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__icon {
+        svg {
+            vertical-align: middle;
+        }
+    }
+
+    &__body {
+        margin-top: 1rem;
+        // border-left: 4px solid var(--color-2-base);
+        // padding-left: 1.5rem;
+    }
+
+    &-primary {
+        --border-color: var(--color-1-base);
+        background: var(--color-1-base);
+        color: var(--color-1-tint-2);
+
+        &.active {
+            --border-color: var(--color-1-shade-1);
+            background: var(--color-1-shade-1);
+            color: var(--color-1-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-1-base);
+            --border-color: #BCB0F210;
+            background: var(--color-1-tint-2);
+            color: var(--color-1-base);
+            // box-shadow: 5px 5px 15px #BCB0F230;
+
+            &.active {
+                --border-color: var(--color-1-base);
+                background: var(--color-1-base);
+                color: var(--color-1-tint-2);
+            }
+        }
+
+    }
+
+    &-secondary {
+        --border-color: var(--color-2-base);
+        background: var(--color-2-base);
+        color: var(--color-2-tint-2);
+
+        &.active {
+            --border-color: var(--color-2-shade-1);
+            background: var(--color-2-shade-1);
+            color: var(--color-2-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-2-base);
+            --border-color: var(--color-2-tint-2);
+            background: var(--color-2-tint-2);
+            color: var(--color-2-base);
+
+            &.active {
+                --border-color: var(--color-2-base);
+                background: var(--color-2-base);
+                color: var(--color-2-tint-2);
+            }
+        }
+
+    }
+
+    &-third {
+        --border-color: var(--color-3-base);
+        background: var(--color-3-base);
+        color: var(--color-3-tint-2);
+
+        &.active {
+            --border-color: var(--color-3-shade-1);
+            background: var(--color-3-shade-1);
+            color: var(--color-3-tint-2);
+        }
+
+        &-outline {
+            --border-color: var(--color-3-base);
+            background: var(--color-3-tint-2);
+            color: var(--color-3-shade-1);
+
+            &.active {
+                --border-color: var(--color-3-base);
+                background: var(--color-3-tint-1);
+                color: var(--color-3-shade-1);
+            }
+        }
+
+    }
+
+    &-white {
+        background: var(--neutral-color);
+        color: var(--color-1-shade-1);
+    }
+
+}

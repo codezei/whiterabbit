@@ -1,0 +1,44 @@
+section.how#how.section.section-gradient
+    .container
+        .section__header
+            .section__shape.section__shape-top.section__inner(data-aos="fade-right" data-aos-delay="200")
+                h2.section__title.text-uppercase Jak działamy?
+                h3.h6.section__subtitle.text-light.mb-0.text-primary ✦ Zobacz, jak wygląda cały proces realizacji usługi
+        .section__body.block(data-aos="fade-left" data-aos-delay="200")
+            .row.row-cols-lg-2
+                .col
+                    .card.card-primary-outline.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#contact")
+                            h4.h6.card__title.mb-0.text-uppercase Skontaktuj się z nami
+                        .card__body Omówimy szczegóły Twojego zamówienia, ustalając datę, godzinę i adres realizacji usługi
+                .col
+                    .card.card-primary-outline.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#process")
+                            h4.h6.card__title.mb-0.text-uppercase Realizacja zamówienia
+                        .card__body W dniu realizacji nasz specjalista przywiezie cały niezbędny sprzęt i środki czyszczące, a następnie wykona usługę
+                .col
+                    .card.card-primary-outline.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#cash")
+                            h4.h6.card__title.mb-0.text-uppercase Płatność
+                        .card__body Po zakończeniu pracy dokonasz płatności w dogodny dla Ciebie sposób
+                .col
+                    .card.card-primary-outline.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#result")
+                            h4.h6.card__title.mb-0.text-uppercase Gotowe
+                        .card__body Teraz pozostaje tylko cieszyć się efektem czyszczenia!
+        .section__footer
+            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
+                .section__btn
+                    include cta-button

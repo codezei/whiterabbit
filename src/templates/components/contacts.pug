@@ -1,0 +1,24 @@
+section#contacts.contacts.block
+    .container.section__container
+        .section__header.section__header--fill
+            h2.section__title.text-uppercase.mb-0 Kontakt
+        .section__body
+            img.contacts__map(src="img/map.png" alt="")
+        .section__footer.section__footer--fill
+            .row.row-cols-md-2.row-cols-lg-4
+                .col
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Obszary które obsługujemy
+                        include cities
+                .col
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Portale społecznościowe
+                        include socials
+                .col
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Telefon
+                        a(href="tel:+48531903619 ").link +48531903619
+                .col
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Godziny pracy
+                        include schedule

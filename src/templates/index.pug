@@ -1,0 +1,42 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej — Wroclaw"
+	- const themeColor = "#ffffff"
+	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej — Wroclaw, Głuchołazy, Otmuchów. Usuwamy plamy, kurz i zapachy. Zadzwoń: +48884412928"
+	- const pageKeywords = "pranie tapicerki meblowej Wroclaw, czyszczenie tapicerki meblowej Wroclaw, pranie tapicerki Wroclaw, czyszczenie tapicerki Wroclaw, pranie kanapy Wroclaw, czyszczenie kanapy Wroclaw, pranie mebli Wroclaw, czyszczenie mebli Wroclaw, pranie materacy Wroclaw, czyszczenie materacy Wroclaw, pranie dywanów Wroclaw, czyszczenie dywanów Wroclaw, pranie wykładzin Wroclaw, czyszczenie wykładzin Wroclaw, pranie tapicerki samochodowej Wroclaw, czyszczenie tapicerki samochodowej Wroclaw, pranie narożnika Wroclaw, czyszczenie narożnika Wroclaw, czyszczenie foteli Wroclaw, pranie foteli Wroclaw"
+	- const pageUrl = "";
+	- const pageImage = "img/logo-big.webp";
+	- const twitterImage = "img/logo-big.webp";
+
+append head
+	link(rel="preload" href="fonts/cormorant-garamond-v20-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin)
+	link(rel="preload" href="fonts/cormorant-garamond-v20-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin)
+
+append content
+	script.
+		const initialCategory = 0;
+	include components/header
+	main(style="overflow-x: hidden;")
+		include components/promo
+		include components/services
+		include components/about
+		include components/process
+		include components/why
+		include components/price
+		include components/how
+		include components/works
+		include components/indicators
+		include components/reviews
+		include components/faq
+		include components/contacts
+		//- include components/popup
+		include components/icons
+		//- include components/cart
+		include components/cta
+	include components/footer
+
+append scripts
