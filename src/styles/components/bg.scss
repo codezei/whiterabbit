@@ -1,6 +1,4 @@
 .section {
-    //   background-color: var(--section-color);
-    //   color: var(--text-color);
     position: relative;
 
     &__inner {
@@ -11,7 +9,7 @@
 
     &__shape {
         height: 80px;
-        background: var(--substrate-color);
+        background-color: var(--substrate-color);
         position: relative;
         z-index: 2;
 
@@ -23,7 +21,7 @@
             top: 0;
             height: 80px;
             width: 80px;
-            background: var(--substrate-color);
+            background-color: var(--substrate-color);
             clip-path: path("M 0,0 A 40,40 0,0,1 40,40 A 40,40 0,0,0 80,80 L 80,0");
         }
 
@@ -33,12 +31,9 @@
 
         &:after {
             left: 100%;
-
         }
 
         &-top {
-
-            //   filter: drop-shadow(5px 0 0 var(--neutral-color)) drop-shadow(-5px 0 0 var(--neutral-color)) drop-shadow(0 5px 0 var(--neutral-color)) drop-shadow(0 16px 8px var(--fourth-color));
             &:before {}
 
             &:after {
@@ -47,8 +42,6 @@
         }
 
         &-bottom {
-
-            //   filter: drop-shadow(5px 0 0 var(--neutral-color)) drop-shadow(-5px 0 0 var(--neutral-color)) drop-shadow(0 -5px 0 var(--neutral-color)) drop-shadow(0 -16px 8px var(--fourth-color));
             &:before {
                 transform: scale(1, -1);
             }
@@ -57,107 +50,13 @@
                 transform: scale(-1, -1);
             }
         }
-
-
     }
 
-    // &__btn .btn {
-    //   margin-left: -20px;
-    //   margin-right: -20px;
-    //   width: calc(100% + 40px);
-    //   z-index: 2;
-    // }
-    //   &__title {
-    //     color: var(--section-color);
-    //   }
-    //   &__subtitle {
-    //     color: var(--section-color);
-    //   }
-}
-
-.section-dark {
-    border-radius: 0 10rem;
-    max-width: calc(100% - 20px);
-    margin-left: auto;
-    margin-right: auto;
-    //   box-shadow: inset 0 6px var(--neutral-color), inset 0 -6px var(--neutral-color);
-    background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%), url(../img/main-bg.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    position: relative;
-
-
-
-}
-
-.section-gradient {
-    border-radius: 0 10rem;
-    max-width: calc(100% - 20px);
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    position: relative;
-    // overflow: hidden;
-
-        // &:before {
-        //         content: "";
-        //         display: block;
-        //         width: 500px;
-        //         height: 500px;
-        //         background-image: var(--blob);
-        //         background-size: contain;
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //         position: absolute;
-        //         left: 0;
-        //         bottom: 0;
-        //         transform: translate(-40%, 40%) rotate(25deg);
-        //     }
-        // &:after {
-        //         content: "";
-        //         display: block;
-        //         width: 500px;
-        //         height: 500px;
-        //         background-image: var(--blob2);
-        //         background-size: contain;
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //         position: absolute;
-        //         top: 0;
-        //         right: 0;
-        //         transform: translate(40%, -40%) rotate(45deg);
-        //     }
-}
-
-
-
-.section {
     &__container {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
-
-    // &__title {
-    //     position: relative;
-    //     padding-bottom: 0.5rem;
-    //     margin-bottom: 1rem;
-    //     &:after {
-    //         content: "";
-    //         display: block;
-    //         width: 40px;
-    //         height: 2px;
-    //         border-radius: 2px;
-    //         background: var(--color-2-base);
-    //         position: absolute;
-    //         left: 0;
-    //         bottom: 0;
-    //     }
-    // }
 
     &__header {
         max-width: 50%;
@@ -174,21 +73,16 @@
             border-bottom: 4px solid var(--color-2-base);
             padding-bottom: 15px;
             margin-bottom: 15px;
-
         }
 
         &--fill {
             max-width: 100%;
         }
-
     }
-
-    &__body {}
 
     &__footer {
         max-width: 30%;
         margin-left: auto;
-
         &--fill {
             max-width: 100%;
             margin-left: 0;
@@ -199,4 +93,66 @@
             margin-left: 0;
         }
     }
+
+    &-accent {
+        --parallax-y: 0px;
+        border-radius: 0 10rem;
+        max-width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+        // background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%);
+        background-color: var(--color-2-tint-2);
+        background-image: url(../img/boobles.svg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+        position: relative;
+
+        &--main {
+            background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%), url(../img/main-bg.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center 50vw;
+        }
+    }
+
+
 }
+
+
+        .decor-lavender {
+            position: relative;
+
+            &:before {
+                content: "";
+                display: block;
+                height: 150px;
+                width: 150px;
+                background-image: url(../img/lavender-1.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 100%;
+                bottom: 0;
+                z-index: 2;
+            }
+        }
+
+        .decor-rabbit {
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                height: 150px;
+                width: 150px;
+                background-image: url(../img/rabbit-1.png);
+                background-position: left center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 100%;
+                bottom: 0;
+                z-index: 2;
+            }
+        }

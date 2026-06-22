@@ -1,4 +1,4 @@
-section.indicators#indicators.section.section-gradient
+section.indicators#indicators.section.section-accent
     svg(width="0" height="0" style="position: absolute;")
         defs
             lineargradient#progress-gradient(x1="0%" y1="0%" x2="100%" y2="0%")
@@ -12,50 +12,54 @@ section.indicators#indicators.section.section-gradient
         .section__body.block
             .row.row-cols-md-2.row-cols-lg-4
                 .col
-                    .result.text-md-center
-                        .result__progress
-                            .progress
-                                svg.progress__bar(viewBox="0 0 100 100" data-progress="80")
-                                    circle.progress__bar-bg(cx="50" cy="50" r="40")
-                                    circle.progress__bar-fg(cx="50" cy="50" r="40")
-                                .progress__value.text-bold
-                                    span.progress__value-number
-                                    span.progress__value-percent %
-                        .result__description.text-bold.h6.text-bigger.text-lg-normal zleceń realizujemy tygodniowo
+                    .card.card-primary-outline.card-leaf
+                        .result.text-md-center
+                            .result__progress
+                                .progress
+                                    svg.progress__bar(viewBox="0 0 100 100" data-progress="80")
+                                        circle.progress__bar-bg(cx="50" cy="50" r="40")
+                                        circle.progress__bar-fg(cx="50" cy="50" r="40")
+                                    .progress__value.text-bold
+                                        span.progress__value-number
+                                        span.progress__value-percent %
+                            .result__description.text-bold.h6 Xleceń realizujemy tygodniowo
                 .col
-                    .result.text-md-center
-                        .result__progress
-                            .progress
-                                svg.progress__bar(viewBox="0 0 100 100" data-progress="93")
-                                    circle.progress__bar-bg(cx="50" cy="50" r="40")
-                                    circle.progress__bar-fg(cx="50" cy="50" r="40")
-                                .progress__value.text-bold
-                                    span.progress__value-number
-                                    span.progress__value-percent %
-                        .result__description.text-bold.h6.text-bigger.text-lg-normal klientów wraca do nas ponownie
+                    .card.card-primary-outline.card-leaf
+                        .result.text-md-center
+                            .result__progress
+                                .progress
+                                    svg.progress__bar(viewBox="0 0 100 100" data-progress="93")
+                                        circle.progress__bar-bg(cx="50" cy="50" r="40")
+                                        circle.progress__bar-fg(cx="50" cy="50" r="40")
+                                    .progress__value.text-bold
+                                        span.progress__value-number
+                                        span.progress__value-percent %
+                            .result__description.text-bold.h6 Klientów wraca do nas ponownie
                 .col
-                    .result.text-md-center
-                        .result__progress
-                            .progress
-                                svg.progress__bar(viewBox="0 0 100 100" data-progress="95")
-                                    circle.progress__bar-bg(cx="50" cy="50" r="40")
-                                    circle.progress__bar-fg(cx="50" cy="50" r="40")
-                                .progress__value.text-bold
-                                    span.progress__value-number
-                                    span.progress__value-percent %
-                        .result__description.text-bold.h6.text-bigger.text-lg-normal klientów jest zadowolonych z efektów
+                    .card.card-primary-outline.card-leaf
+                        .result.text-md-center
+                            .result__progress
+                                .progress
+                                    svg.progress__bar(viewBox="0 0 100 100" data-progress="95")
+                                        circle.progress__bar-bg(cx="50" cy="50" r="40")
+                                        circle.progress__bar-fg(cx="50" cy="50" r="40")
+                                    .progress__value.text-bold
+                                        span.progress__value-number
+                                        span.progress__value-percent %
+                            .result__description.text-bold.h6 Klientów jest zadowolonych z efektów
                 .col
-                    .result.text-md-center
-                        .result__progress
-                            .progress
-                                svg.progress__bar(viewBox="0 0 100 100" data-progress="100")
-                                    circle.progress__bar-bg(cx="50" cy="50" r="40")
-                                    circle.progress__bar-fg(cx="50" cy="50" r="40")
-                                .progress__value.text-bold
-                                    span.progress__value-number
-                                    span.progress__value-percent %
-                        .result__description.text-bold.h6.text-bigger.text-lg-normal meble po czyszczeniu wyglądają jak nowe
-        .section__footer
+                    .card.card-primary-outline.card-leaf
+                        .result.text-md-center
+                            .result__progress
+                                .progress
+                                    svg.progress__bar(viewBox="0 0 100 100" data-progress="100")
+                                        circle.progress__bar-bg(cx="50" cy="50" r="40")
+                                        circle.progress__bar-fg(cx="50" cy="50" r="40")
+                                    .progress__value.text-bold
+                                        span.progress__value-number
+                                        span.progress__value-percent %
+                            .result__description.text-bold.h6 Meble po czyszczeniu wyglądają jak nowe
+        .section__footer.decor-rabbit
             .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
                 .section__btn
                     include cta-button

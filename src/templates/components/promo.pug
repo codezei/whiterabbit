@@ -34,11 +34,11 @@ section.promo#promo.section
                                     svg.icon.icon-right.shake(width="16" height="16")
                                         use(href="#tel")
                                     | Zadzwoń
-                        .header__button
-                            //- a.btn.btn-primary-outline.btn-small.btn-pillow(href="tel:+99999999999")
-                            //-     svg.icon.icon-right.shake(width="16" height="16")
-                            //-         use(href="#tel")
-                            //-     | Zadzwoń
+                        .header__switcher
+                            nav.switcher
+                                a.switcher__item.link.text-bold.text-accent(href="/") PL
+                                span &nbsp;/&nbsp;
+                                a.switcher__item.link(href="./index-ua.html") UA
                         .header__burger
                             button.js-burger.btn.btn-transparent(type="button" aria-expanded="false" aria-controls="main-menu")
                                 span.sr-only Otwórz menu mobilne
@@ -49,23 +49,19 @@ section.promo#promo.section
         .section__body.block
             .promo__content
                 .promo__pre-title.pre-title.text-primary ✦ Profesjonalne czyszczenie tapicerki
-                h1.promo__title Pranie tapicerki meblowej i tapicerki samochodowej, materacy, dywanów, i mycie okien
-                    br
-                    span.text-accent.text-nowrap
-                        svg.icon.icon-right.shake(width="16" height="16")
-                            use(href="#geo")
-                        | Wroclaw i okolice
+                h1.promo__title Pranie tapicerki meblowej i tapicerki samochodowej, materacy, dywanów, i mycie okien&nbsp;
+                    include cities
                 .promo__subtitle.extractor
                     .extractor__cleaner(data-aos="fade-left" data-aos-delay="100")
                     h2.h5.text-light.extractor__text.mb-0(data-aos="fade-left" data-aos-delay="200") Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
                 .promo__list
-                    ul.list-check.list-row
-                        li.card.card-secondary-outline.card-rounded Profesjonalny sprzęt
-                        li.card.card-secondary-outline.card-rounded Bezpieczna chemia
-                        li.card.card-secondary-outline.card-rounded Dojazd do klienta
+                    ul.list-row
+                        li.card.card-white.card-rounded ✦ Profesjonalny sprzęt
+                        li.card.card-white.card-rounded ✦ Bezpieczna chemia
+                        li.card.card-white.card-rounded ✦ Dojazd do klienta
                 .promo__rating
-                    span.rating(style="--star-rating: 5;")
-                    b.text-bold 5.0
+                    span.rating(style="--star-rating: 4.8;")
+                    b.text-bold 4.8
                     a.text-muted(href="#reviews") (56 reviews)
         .section__footer
             .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")

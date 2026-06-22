@@ -1,6 +1,6 @@
 section#price.price.block.section
     .container.section__container
-        .section__header.section__header--fill
+        .section__header.section__header--fill.decor-lavender
             .section__header-top
                 h2.section__title.text-uppercase.mb-0(data-aos="fade-right") Cennik
                 .section__navigation(data-aos="fade-left")
@@ -12,7 +12,7 @@ section#price.price.block.section
                             svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                                 path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
             .section__header-bottom
-                h3.section__subtitle.h6.text-light.mb-0.text-primary(data-aos="fade-in") ✦ Wybierz kategorię i sprawdź ceny usług, których potrzebujesz
+                .section__subtitle.h6.text-light.mb-0.text-primary(data-aos="fade-in") ✦ Wybierz kategorię i sprawdź ceny usług, których potrzebujesz
         .section__body(data-aos="fade-in" data-aos-delay="100")
             nav.categories-navigation
                 .categories-navigation-swiper
@@ -41,27 +41,27 @@ section#price.price.block.section
                 .swiper.categories-content-swiper(data-next-selector=".price-button-next" data-prev-selector=".price-button-prev")
                     .swiper-wrapper
                         article.swiper-slide
-                            h3.h5 Cennik prania tapicerki meblowej
+                            h3.h2 Cennik prania tapicerki meblowej&nbsp;
                                 include cities
                             p.text-primary Sprawdź ceny czyszczenia kanap, narożników i foteli. Dobierz usługę do swoich potrzeb i odśwież swoje meble.
                             include price/price-furniture
                         article.swiper-slide
-                            h3.h5 Cennik czyszczenia materacy
+                            h3.h2 Cennik czyszczenia materacy&nbsp;
                                 include cities
                             p Profesjonalne pranie materacy w różnych rozmiarach — od pojedynczych po duże materace rodzinne.
                             include price/price-mattress
                         article.swiper-slide
-                            h3.h5 Cennik prania dywanów
+                            h3.h2 Cennik prania dywanów&nbsp;
                                 include cities
                             p Cena zależy od wielkości dywanu oraz rodzaju zabrudzeń. Zadbaj o czystość i świeżość swoich wnętrz.
                             include price/price-carpet
                         article.swiper-slide
-                            h3.h5 Cennik czyszczenia tapicerki samochodowej
+                            h3.h2 Cennik czyszczenia tapicerki samochodowej&nbsp;
                                 include cities
                             p Odśwież wnętrze swojego auta — wybierz czyszczenie foteli, kanap lub kompleksowe pranie tapicerki.
                             include price/price-salon
                         article.swiper-slide
-                            h3.h5 Cennik mycia okien
+                            h3.h2 Cennik mycia okien&nbsp;
                                 include cities
                             p Przejrzyste okna bez smug. Sprawdź ceny profesjonalnego mycia szyb, ram i powierzchni szklanych.
                             include price/price-window

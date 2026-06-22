@@ -477,7 +477,10 @@ br {
     flex-wrap: wrap;
     display: flex;
     gap: 1rem;
-    font-weight: 700;
+    // font-weight: 700;
+    list-style: none;
+    padding: 0;
+
     li {
         margin: 0 !important;
     }
@@ -649,56 +652,194 @@ hr {
     }
 }
 
+.row .col:nth-child(1n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row .col:nth-child(2n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row .col:nth-child(3n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row .col:nth-child(4n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row .col:nth-child(5n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row .col:nth-child(6n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row .col:nth-child(7n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row .col:nth-child(8n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+    .row-cols-2 .col:nth-child(1n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-2 .col:nth-child(2n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-2 .col:nth-child(3n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-2 .col:nth-child(4n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-2 .col:nth-child(5n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-2 .col:nth-child(6n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-2 .col:nth-child(7n) .card-leaf {
+        border-radius: 0var(--leaf-radius);
+    }
+
+    .row-cols-2 .col:nth-child(8n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+@media screen and (min-width: 576px) {
+        .row-cols-sm-2 .col:nth-child(1n) .card-leaf {
+                border-radius:  var(--leaf-radius) 0;
+            }
+
+            .row-cols-sm-2 .col:nth-child(2n) .card-leaf {
+                border-radius: 0 var(--leaf-radius) ;
+            }
+
+            .row-cols-sm-2 .col:nth-child(3n) .card-leaf {
+                border-radius: 0 var(--leaf-radius);
+            }
+
+            .row-cols-sm-2 .col:nth-child(4n) .card-leaf {
+                border-radius: var(--leaf-radius) 0;
+            }
+
+            .row-cols-sm-2 .col:nth-child(5n) .card-leaf {
+                border-radius: var(--leaf-radius) 0;
+            }
+
+            .row-cols-sm-2 .col:nth-child(6n) .card-leaf {
+                border-radius: 0 var(--leaf-radius);
+            }
+
+            .row-cols-sm-2 .col:nth-child(7n) .card-leaf {
+                border-radius: 0var(--leaf-radius) ;
+            }
+
+            .row-cols-sm-2 .col:nth-child(8n) .card-leaf {
+                border-radius:  var(--leaf-radius) 0;
+            }
+}
+
 
 @media screen and (min-width: 768px) {
-    .row-cols-sm-2 .col:nth-child(1n) .card-leaf {
+    .row-cols-md-2 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-sm-2 .col:nth-child(2n) .card-leaf {
+    .row-cols-md-2 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-sm-2 .col:nth-child(3n) .card-leaf {
+    .row-cols-md-2 .col:nth-child(3n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-sm-2 .col:nth-child(4n) .card-leaf {
+    .row-cols-md-2 .col:nth-child(4n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
 
-    .row-cols-sm-4 .col:nth-child(1n) .card-leaf {
+
+
+
+
+
+    .row-cols-md-3 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-sm-4 .col:nth-child(2n) .card-leaf {
+    .row-cols-md-3 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-sm-4 .col:nth-child(3n) .card-leaf {
+    .row-cols-md-3 .col:nth-child(3n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-sm-4 .col:nth-child(4n) .card-leaf {
+    .row-cols-md-3 .col:nth-child(4n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-sm-4 .col:nth-child(5n) .card-leaf {
-        border-radius: var(--leaf-radius) 0;
-    }
-
-    .row-cols-sm-4 .col:nth-child(6n) .card-leaf {
+    .row-cols-md-3 .col:nth-child(5n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-sm-4 .col:nth-child(7n) .card-leaf {
+    .row-cols-md-3 .col:nth-child(6n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
-    .row-cols-sm-4 .col:nth-child(8n) .card-leaf {
-        border-radius:  0 var(--leaf-radius);
+
+    .row-cols-md-3 .col:nth-child(7n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-md-3 .col:nth-child(8n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+
+    .row-cols-md-4 .col:nth-child(1n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-md-4 .col:nth-child(2n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-md-4 .col:nth-child(3n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-md-4 .col:nth-child(4n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-md-4 .col:nth-child(5n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-md-4 .col:nth-child(6n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
+    }
+
+    .row-cols-md-4 .col:nth-child(7n) .card-leaf {
+        border-radius: var(--leaf-radius) 0;
+    }
+
+    .row-cols-md-4 .col:nth-child(8n) .card-leaf {
+        border-radius: 0 var(--leaf-radius);
     }
 }
+
 @media screen and (min-width: 992px) {
     .row-cols-lg-2 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
@@ -744,8 +885,9 @@ hr {
     .row-cols-lg-4 .col:nth-child(7n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
+
     .row-cols-lg-4 .col:nth-child(8n) .card-leaf {
-        border-radius:  0 var(--leaf-radius);
+        border-radius: 0 var(--leaf-radius);
     }
 }
 

@@ -474,11 +474,21 @@
     }
 
     function process () {
-      var furnitureSlider = new BeerSlider(document.getElementById("furniture-slider"));
-      var mattressSlider = new BeerSlider(document.getElementById("mattress-slider"));
-      var carpetSlider = new BeerSlider(document.getElementById("carpet-slider"));
-      var windowSlider = new BeerSlider(document.getElementById("window-slider"));
-      var salonSlider = new BeerSlider(document.getElementById("salon-slider"));
+      var furnitureSlider = new BeerSlider(document.getElementById("furniture-slider"), {
+        start: 50
+      });
+      var mattressSlider = new BeerSlider(document.getElementById("mattress-slider"), {
+        start: 50
+      });
+      var carpetSlider = new BeerSlider(document.getElementById("carpet-slider"), {
+        start: 50
+      });
+      var windowSlider = new BeerSlider(document.getElementById("window-slider"), {
+        start: 50
+      });
+      var salonSlider = new BeerSlider(document.getElementById("salon-slider"), {
+        start: 50
+      });
     }
 
     function accordion () {
@@ -548,6 +558,7 @@
           slideToClickedSlide: true,
           watchSlidesProgress: true,
           initialSlide: initialCategory || 0,
+          // autoHeight: true,
           navigation: {
             nextEl: buttonNextSelector,
             prevEl: buttonPrevSelector
@@ -1511,7 +1522,7 @@
 
       AOS.init({
         offset: 80,
-        duration: 200,
+        duration: 600,
         easing: 'ease-in',
         once: true
       });

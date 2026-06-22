@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	AOS.init({
 		offset: 80,
-		duration: 200,
+		duration: 600,
 		easing: 'ease-in',
 		once: true,
 	});

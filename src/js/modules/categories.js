@@ -14,6 +14,7 @@ export default function () {
             slideToClickedSlide: true,
             initialSlide: initialCategory || 0,
             roundLengths: true,
+
             on: {
                 click(swiper) {
                     const clickedIndex = swiper.clickedIndex;
@@ -36,6 +37,7 @@ export default function () {
                 slideToClickedSlide: true,
                 watchSlidesProgress: true,
                 initialSlide: initialCategory || 0,
+                // autoHeight: true,
                 navigation: {
                     nextEl: buttonNextSelector,
                     prevEl: buttonPrevSelector,

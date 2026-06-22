@@ -1,6 +1,6 @@
 section.works.block#works.section
     .container.section__container
-        .section__header.section__header--fill
+        .section__header.section__header--fill.decor-lavender
             .section__header-top
                 h2.section__title.text-uppercase.mb-0(data-aos="fade-right") Nasze realizacje
                 .section__navigation.swiper-navigation(data-aos="fade-left")
@@ -42,7 +42,7 @@ section.works.block#works.section
                 .swiper.categories-content-swiper(data-next-selector=".works-button-next" data-prev-selector=".works-button-prev")
                     .swiper-wrapper
                         article.swiper-slide
-                            h3.h5 Pranie tapicerki meblowej - zdjęcia realizacji sof, foteli i kanap
+                            h3.h2 Pranie tapicerki meblowej - zdjęcia realizacji sof, foteli i kanap&nbsp;
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-lg-4
                                 each num in [1,2,3,4]
@@ -52,42 +52,42 @@ section.works.block#works.section
                                             source(srcset=`img/furniture/furniture-img-${num}.webp`, type="image/webp")
                                             img.work__img(loading="lazy", src=`img/furniture/furniture-img-${num}.jpg`, alt="")
                         article.swiper-slide
-                            h3.h5 Pranie materacy – zdjęcia efektów czyszczenia materacy
+                            h3.h2 Pranie materacy – zdjęcia efektów czyszczenia materacy&nbsp;
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
                                     a.col(href=`img/mattress/mattress-img-${num}.webp`)
                                         span.sr-only Materace
-                                        picture.work.work-leaf
+                                        picture.work.card-leaf
                                             source(srcset=`img/mattress/mattress-img-${num}.webp`, type="image/webp")
                                             img.work__img(loading="lazy", src=`img/mattress/mattress-img-${num}.jpg`, alt="")
                         article.swiper-slide
-                            h3.h5 Pranie dywanów i wykładzin – zdjęcia po chemicznym czyszczeniu dywanów i wykładzin
+                            h3.h2 Pranie dywanów i wykładzin – zdjęcia po chemicznym czyszczeniu dywanów i wykładzin&nbsp;
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
                                     a.col(href=`img/carpet/carpet-img-${num}.webp`)
                                         span.sr-only Dywany i wykładziny
-                                        picture.work.work-leaf
+                                        picture.work.card-leaf
                                             source(srcset=`img/carpet/carpet-img-${num}.webp`, type="image/webp")
                                             img.work__img(loading="lazy", src=`img/carpet/carpet-img-${num}.jpg`, alt="")
                         article.swiper-slide
-                            h3.h5 Pranie tapicerki samochodowej – zdjęcia czyszczenia foteli, kanapy i podsufitki
+                            h3.h2 Pranie tapicerki samochodowej – zdjęcia czyszczenia foteli, kanapy i podsufitki&nbsp;
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
                                     a.col(href=`img/salon/salon-img-${num}.webp`)
                                         span.sr-only Tapicerka samochodowa
-                                        picture.work.work-leaf
+                                        picture.work.card-leaf
                                             source(srcset=`img/salon/salon-img-${num}.webp`, type="image/webp")
                                             img.work__img(loading="lazy", src=`img/salon/salon-img-${num}.jpg`, alt="")
                         article.swiper-slide
-                            h3.h5 Mycie okien z kurzu, smug, zacieków i osadów po deszczu
+                            h3.h2 Mycie okien z kurzu, smug, zacieków i osadów po deszczu&nbsp;
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
                                     a.col(href=`img/window/window-img-${num}.webp`)
                                         span.sr-only Mycie okien
-                                        picture.work.work-leaf
+                                        picture.work.card-leaf
                                             source(srcset=`img/window/window-img-${num}.webp`, type="image/webp")
                                             img.work__img(loading="lazy", src=`img/window/window-img-${num}.jpg`, alt="")
