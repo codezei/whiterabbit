@@ -13,14 +13,14 @@
     &__content {
         max-width: 800px;
     }
-    background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 70%),
-    url(../img/main-bg-2.png);
+    background: linear-gradient(to right, var(--color-1-tint-2) 40%, transparent 100%),
+    url(../img/main-bg-3.png);
     background-size: cover, auto 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: left center, 30vw 50%;
+    background-position: left center, center;
 
     @media screen and (min-width: 992px) {
-        background-position: left center, 50vw 50%;
+        background-position: left center, right center;
     }
 
 }
