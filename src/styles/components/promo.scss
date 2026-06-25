@@ -13,14 +13,34 @@
     &__content {
         max-width: 800px;
     }
-    background: linear-gradient(to right, var(--color-1-tint-2) 40%, transparent 100%),
-    url(../img/main-bg-3.png);
+    background-image: linear-gradient(to right, var(--color-1-tint-2) 40%, transparent 100%),
+    url(../img/main-bg-xs.webp);
     background-size: cover, auto 100%;
     background-repeat: no-repeat, no-repeat;
     background-position: left center, center;
 
-    @media screen and (min-width: 992px) {
+
+    @media screen and (min-width: 576px) {
         background-position: left center, right center;
+    }
+
+    @media screen and (min-width: 992px) {
+    background-image: linear-gradient(to right, var(--color-1-tint-2) 40%, transparent 100%),
+            url(../img/main-bg.webp);
+    background-position: left center, right calc((100vw - var(--container-width)) / 2 - 200px) bottom;
+
+    }
+
+    @media screen and (min-width: 1600px) {
+            background-image:
+            linear-gradient(to right, transparent 0%, #fff 60%),
+            linear-gradient(to right, var(--color-1-tint-2) 40%, transparent 70%),
+            url(../img/main-bg.webp),
+
+            ;
+            background-size: 200px, cover, auto 100%, ;
+            background-position: left calc((100vw - var(--container-width)) / 2 + var(--container-width)) center, left center, right calc((100vw - var(--container-width)) / 2 - 200px) bottom;
+            background-repeat: no-repeat, no-repeat, no-repeat;
     }
 
 }

@@ -83,9 +83,11 @@
     &__footer {
         max-width: 30%;
         margin-left: auto;
+
         &.decor-rabbit {
             margin-right: 100px;
         }
+
         &--fill {
             max-width: 100%;
             margin-left: 0;
@@ -105,57 +107,51 @@
         margin-right: auto;
         // background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%);
         background-color: #f3efff;
-        background-image: url(../img/lavender-3.png);
+        background-image: url(../img/lavender-3.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left -100px bottom -20px;
         position: relative;
-
-        &--main {
-            background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%), url(../img/main-bg.png);
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            background-position: center 50vw;
-        }
     }
 
 
 }
 
 
-        .decor-lavender {
-            position: relative;
+.decor-lavender {
+    position: relative;
 
-            &:before {
-                content: "";
-                display: block;
-                height: 150px;
-                width: 150px;
-                background-image: url(../img/lavender-1.png);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                position: absolute;
-                right: 100%;
-                bottom: 0;
-                z-index: 2;
-            }
-        }
+    &:before {
+        content: "";
+        display: block;
+        height: 150px;
+        width: 150px;
+        background-image: url(../img/lavender-1.webp);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        z-index: 2;
+    }
+}
 
-        .decor-rabbit {
-            position: relative;
-            &:after {
-                content: "";
-                display: block;
-                height: 150px;
-                width: 150px;
-                background-image: url(../img/rabbit-1.png);
-                background-position: left center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                position: absolute;
-                left: 100%;
-                bottom: 0;
-                z-index: 2;
-            }
-        }
+.decor-rabbit {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 150px;
+        width: 150px;
+        background-image: url(../img/rabbit-1.webp);
+        background-position: left center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        z-index: 2;
+    }
+}
