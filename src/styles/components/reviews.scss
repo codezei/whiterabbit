@@ -1,28 +1,9 @@
-  .reviews {
-    // overflow: hidden;
-    &-swiper {
-      overflow: visible;
-      .swiper-wrapper {
-        height: auto;
-      }
-      .swiper-slide {
-        height: auto;
-      }
-    }
-    &__google {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      &-value {
-        font-weight: 700;
-        color: #f7b603;
-      }
-    }
-  }
 
   .review {
     height: 100%;
-    &__header {}
+    &__header {
+
+    }
     &__ava {
       width: 50px;
       height: 50px;
@@ -50,7 +31,29 @@
 
     &__name {
       margin: 0;
-      margin-left: 1.5rem;
+    //   margin-left: 1.5rem;
+      position: relative;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      span {
+        filter: blur(3px);
+        display: flex;
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-1-base);
+        background-image: url(../img/rabbit-ava.png);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+
+
+      }
     }
 
     &__text {

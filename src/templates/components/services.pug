@@ -20,8 +20,8 @@ section.services#services.block.section
                             .service__header
                                 .service__img
                                     picture
-                                        source(srcset="img/service-furniture.webp" type="image/webp")
-                                        img(src="img/service-furniture.jpg" alt="Pranie tapicerki meblowej" loading="lazy" height="200")
+                                        //- source(srcset="img/service-furniture.webp" type="image/webp")
+                                        img(src="img/service-furniture.png" alt="Pranie tapicerki meblowej" loading="lazy" height="200")
                             .service__body
                                 h3.h6.service__title Pranie tapicerki meblowej
                                 .service__description Skutecznie usuwamy plamy i nieprzyjemne zapachy ze wszystkich rodzajów mebli tapicerowanych: sof, foteli, krzeseł.
@@ -41,17 +41,17 @@ section.services#services.block.section
                                     p Regularne pranie tapicerki meblowej poprawia wygląd mebli, usuwa alergeny i przedłuża ich żywotność.
                                     .row.row-cols-3
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupFurniture.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="0" href="#reviews" onclick="popupFurniture.close();")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#comment")
                                                 | Opinie
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupFurniture.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="0" href="#price" onclick="popupFurniture.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#cash")
                                                 | Cennik
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupFurniture.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="0" href="#works" onclick="popupFurniture.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#gallery")
                                                 | Zdjęcia
@@ -82,8 +82,8 @@ section.services#services.block.section
                             .service__header
                                 .service__img
                                     picture.service__img
-                                        source(srcset="img/service-mattress.webp" type="image/webp")
-                                        img(src="img/service-mattress.jpg" alt="Pranie materacy" loading="lazy" height="200")
+                                        //- source(srcset="img/service-mattress.webp" type="image/webp")
+                                        img(src="img/service-mattress.png" alt="Pranie materacy" loading="lazy" height="200")
                             .service__body
                                 h3.h6.service__title Pranie materacy
                                 .service__description Bezpiecznie i skutecznie usuwamy zabrudzenia i plamy, pot oraz nieprzyjemne zapachy z materacy jedno- i dwuosobowych.
@@ -102,17 +102,17 @@ section.services#services.block.section
                                     p Dzięki głębokiemu płukaniu włókien czyszczenie materaca usuwa zanieczyszczenia, których nie widać gołym okiem.
                                     .row.row-cols-3
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupMattress.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="1" href="#reviews" onclick="popupMattress.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#comment")
                                                 | Opinie
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupMattress.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="1" href="#price" onclick="popupMattress.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#cash")
                                                 | Cennik
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupMattress.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="1" href="#works" onclick="popupMattress.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#gallery")
                                                 | Zdjęcia
@@ -135,8 +135,8 @@ section.services#services.block.section
                             .service__header
                                 .service__img
                                     picture.service__img
-                                        source(srcset="img/service-carpet.webp" type="image/webp")
-                                        img(src="img/service-carpet.jpg" alt="Pranie dywanów" loading="lazy" height="200")
+                                        //- source(srcset="img/service-carpet.webp" type="image/webp")
+                                        img(src="img/service-carpet.png" alt="Pranie dywanów" loading="lazy" height="200")
                             .service__body
                                 h3.h6.service__title Pranie dywanów
                                 .service__description Dogłębnie usuwamy brud, plamy oraz sierść zwierząt domowych z dywanów i wykładzin.
@@ -155,17 +155,17 @@ section.services#services.block.section
                                     p Regularne pranie dywanów przywraca świeżość kolorów i poprawia higienę pomieszczeń.
                                     .row.row-cols-3
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupCarpet.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="2" href="#reviews" onclick="popupCarpet.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#comment")
                                                 | Opinie
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupCarpet.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="2" href="#price" onclick="popupCarpet.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#cash")
                                                 | Cennik
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupCarpet.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="2" href="#works" onclick="popupCarpet.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#gallery")
                                                 | Zdjęcia
@@ -190,8 +190,8 @@ section.services#services.block.section
                             .service__header
                                 .service__img
                                     picture.service__img
-                                        source(srcset="img/service-salon.webp" type="image/webp")
-                                        img(src="img/service-salon.jpg" alt="Pranie tapicerki samochodowej" loading="lazy" height="200")
+                                        //- source(srcset="img/service-salon.webp" type="image/webp")
+                                        img(src="img/service-salon.png" alt="Pranie tapicerki samochodowej" loading="lazy" height="200")
                             .service__body
                                 h3.h6.service__title Pranie tapicerki samochodowej
                                 .service__description Usuniemy zabrudzenia, plamy i nieprzyjemne zapachy z foteli, boczków drzwi, podsufitki i innych elementów wnętrza auta.
@@ -209,17 +209,17 @@ section.services#services.block.section
                                     p Oferujemy dokładne pranie tapicerki samochodowej, które usuwa plamy, kurz, pot i zapachy z wnętrza auta. Nasze czyszczenie tapicerki samochodowej poprawia komfort jazdy i higienę wnętrza pojazdu.
                                     .row.row-cols-3
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupSalon.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="3" href="#reviews" onclick="popupSalon.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#comment")
                                                 | Opinie
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupSalon.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="3" href="#price" onclick="popupSalon.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#cash")
                                                 | Cennik
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupSalon.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="3" href="#works" onclick="popupSalon.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#gallery")
                                                 | Zdjęcia
@@ -248,8 +248,8 @@ section.services#services.block.section
                             .service__header
                                 .service__img
                                     picture.service__img
-                                        source(srcset="img/service-window.webp" type="image/webp")
-                                        img(src="img/service-window.jpg" alt="Mycie okien" loading="lazy" height="200")
+                                        //- source(srcset="img/service-window.webp" type="image/webp")
+                                        img(src="img/service-window.png" alt="Mycie okien" loading="lazy" height="200")
                             .service__body
                                 h3.h6.service__title Mycie okien
                                 .service__description Profesjonalne mycie okien z kurzu, smug, zacieków i osadów po deszczu.
@@ -268,17 +268,17 @@ section.services#services.block.section
                                     p Oferujemy dokładne mycie okien, które usuwa kurz, smog, zacieki i osady po deszczu. Nasze czyszczenie okien zapewnia idealną przejrzystość szyb bez smug.
                                     .row.row-cols-3
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#comment" onclick="popupWindow.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="4" href="#reviews" onclick="popupWindow.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#comment")
                                                 | Opinie
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#cash" onclick="popupWindow.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="4" href="#price" onclick="popupWindow.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#cash")
                                                 | Cennik
                                         .col
-                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100(href="#gallery" onclick="popupWindow.close()")
+                                            a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="4" href="#works" onclick="popupWindow.close()")
                                                 svg.icon.icon-right(width="16" height="16")
                                                     use(href="#gallery")
                                                 | Zdjęcia

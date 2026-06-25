@@ -2,10 +2,6 @@ export default function () {
     let servicesSwiper = new Swiper(".services-swiper", {
         slidesPerView: 1,
         spaceBetween: 16,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
         breakpoints: {
           430: {
             slidesPerView: 1.25,

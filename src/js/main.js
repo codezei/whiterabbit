@@ -1,5 +1,5 @@
 
-import faq from './modules/faq'
+// import faq from './modules/faq'
 import works from './modules/works'
 import header from './modules/header'
 import services from './modules/services'
@@ -7,10 +7,11 @@ import reviews from './modules/reviews'
 import cta from './modules/cta'
 import process from './modules/process'
 import accordion from './modules/accordion'
-import contacts from './modules/contacts'
+// import contacts from './modules/contacts'
 import categories from './modules/categories'
-import price from './modules/price'
+// import price from './modules/price'
 import indicators from './modules/indicators'
+import helper from './modules/helper'
 import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -24,9 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	accordion()
 	categories()
 	// contacts()
-	faq()
-	price()
+	// faq()
+	// price()
 	indicators()
+    helper()
 	// bg()
 
 	AOS.init({
@@ -35,4 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		easing: 'ease-in',
 		once: true,
 	});
+
 })

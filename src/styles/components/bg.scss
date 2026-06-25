@@ -83,6 +83,9 @@
     &__footer {
         max-width: 30%;
         margin-left: auto;
+        &.decor-rabbit {
+            margin-right: 100px;
+        }
         &--fill {
             max-width: 100%;
             margin-left: 0;

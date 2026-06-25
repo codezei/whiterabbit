@@ -73,4 +73,14 @@ export default function () {
             });
         }
     );
+
+
+    let changeSlideAnchors = document.querySelectorAll('.js-change-slide')
+    for (let i = 0; i < changeSlideAnchors.length; i++) {
+        changeSlideAnchors[i].addEventListener('click', function (e) {
+            let currentSwiper = document.querySelector(e.currentTarget.dataset.swiper)
+            let currentSlide = +e.currentTarget.dataset.slide
+            currentSwiper.swiper.slideTo(currentSlide)
+        })
+    }
 }
