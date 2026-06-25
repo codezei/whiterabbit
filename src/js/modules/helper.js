@@ -24,7 +24,7 @@ export default function () {
 
             setTimeout(() => {
                 showMessage(helper);
-            }, 4000);
+            }, 8000);
         });
     }
 

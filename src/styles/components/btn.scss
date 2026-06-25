@@ -49,10 +49,13 @@
         background: var(--color-1-base);
         color: var(--color-1-tint-2);
 
-        &:hover {
-            --border-color: var(--color-1-shade-1);
-            background: var(--color-1-shade-1);
-            color: var(--color-1-tint-2);
+
+        @media screen and (min-width: 1200px) {
+            &:hover {
+                --border-color: var(--color-1-shade-1);
+                background: var(--color-1-shade-1);
+                color: var(--color-1-tint-2);
+            }
         }
 
         &:active {
@@ -60,6 +63,7 @@
             background: var(--color-1-base);
             color: var(--color-1-tint-2);
         }
+
         &.active,
         .active &,
         .swiper-slide-thumb-active & {
@@ -74,10 +78,13 @@
             background: var(--color-1-tint-2);
             color: var(--color-1-base);
 
-            &:hover {
-                --border-color: var(--color-1-base);
-                background: var(--color-1-base);
-                color: var(--color-1-tint-2);
+
+            @media screen and (min-width: 1200px) {
+                &:hover {
+                    --border-color: var(--color-1-base);
+                    background: var(--color-1-base);
+                    color: var(--color-1-tint-2);
+                }
             }
 
             &:active {
@@ -85,6 +92,7 @@
                 background: var(--color-1-base);
                 color: var(--color-1-tint-2);
             }
+
             &.active,
             .active &,
             .swiper-slide-thumb-active & {
@@ -101,11 +109,14 @@
         background: var(--color-2-base);
         color: var(--color-2-tint-2);
 
-        &:hover {
-            --border-color: var(--color-2-shade-1);
-            background: var(--color-2-shade-1);
-            color: var(--color-2-tint-2);
 
+        @media screen and (min-width: 1200px) {
+            &:hover {
+                --border-color: var(--color-2-shade-1);
+                background: var(--color-2-shade-1);
+                color: var(--color-2-tint-2);
+
+            }
         }
 
         &:active {
@@ -113,6 +124,7 @@
             background: var(--color-2-base);
             color: var(--color-2-tint-2);
         }
+
         &.active,
         .active &,
         .swiper-slide-thumb-active & {
@@ -127,10 +139,13 @@
             background: var(--color-2-tint-2);
             color: var(--color-2-base);
 
-            &:hover {
-                --border-color: var(--color-2-base);
-                background: var(--color-2-base);
-                color: var(--color-2-tint-2);
+
+            @media screen and (min-width: 1200px) {
+                &:hover {
+                    --border-color: var(--color-2-base);
+                    background: var(--color-2-base);
+                    color: var(--color-2-tint-2);
+                }
             }
 
             &:active {
@@ -138,30 +153,36 @@
                 background: var(--color-2-base);
                 color: var(--color-2-tint-2);
             }
+
             &.active,
             .active &,
             .swiper-slide-thumb-active & {
                 --border-color: var(--color-2-base);
-                    background: var(--color-2-base);
-                    color: var(--color-2-tint-2);
+                background: var(--color-2-base);
+                color: var(--color-2-tint-2);
 
-                                    --border-color: var(--color-2-base);
-                                    --border-color: var(--color-2-tint-1);
-                                        background: var(--color-2-tint-1);
-                                        color: var(--color-2-shade-1);
+                --border-color: var(--color-2-base);
+                --border-color: var(--color-2-tint-1);
+                background: var(--color-2-tint-1);
+                color: var(--color-2-shade-1);
             }
         }
     }
+
     &-third {
         --border-color: var(--color-3-base);
         background: var(--color-3-base);
         color: var(--color-3-tint-2);
 
-        &:hover {
-            --border-color: var(--color-3-shade-1);
-            background: var(--color-3-shade-1);
-            color: var(--color-3-tint-2);
 
+
+        @media screen and (min-width: 1200px) {
+            &:hover {
+                --border-color: var(--color-3-shade-1);
+                background: var(--color-3-shade-1);
+                color: var(--color-3-tint-2);
+
+            }
         }
 
         &:active {
@@ -169,6 +190,7 @@
             background: var(--color-3-base);
             color: var(--color-3-tint-2);
         }
+
         &.active,
         .active &,
         .swiper-slide-thumb-active & {
@@ -182,10 +204,13 @@
             background: var(--color-3-tint-2);
             color: var(--color-3-base);
 
-            &:hover {
-                --border-color: var(--color-3-base);
-                background: var(--color-3-base);
-                color: var(--color-3-tint-2);
+
+            @media screen and (min-width: 1200px) {
+                &:hover {
+                    --border-color: var(--color-3-base);
+                    background: var(--color-3-base);
+                    color: var(--color-3-tint-2);
+                }
             }
 
             &:active {
@@ -193,12 +218,13 @@
                 background: var(--color-3-base);
                 color: var(--color-3-tint-2);
             }
+
             &.active,
             .active &,
             .swiper-slide-thumb-active & {
                 --border-color: var(--color-3-base);
-                    background: var(--color-3-base);
-                    color: var(--color-3-tint-2);
+                background: var(--color-3-base);
+                color: var(--color-3-tint-2);
             }
         }
     }

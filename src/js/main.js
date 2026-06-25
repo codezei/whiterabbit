@@ -12,11 +12,13 @@ import categories from './modules/categories'
 // import price from './modules/price'
 import indicators from './modules/indicators'
 import helper from './modules/helper'
+import animation from './modules/animation'
 import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
 
 	header()
+    animation()
 	services()
 	reviews()
 	cta()
@@ -31,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     helper()
 	// bg()
 
-	AOS.init({
-		offset: 80,
-		duration: 600,
-		easing: 'ease-in',
-		once: true,
-	});
+	// AOS.init({
+	// 	offset: 80,
+	// 	duration: 600,
+	// 	easing: 'ease-in',
+	// 	once: true,
+	// });
 
 })

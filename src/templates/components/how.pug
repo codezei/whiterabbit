@@ -1,12 +1,12 @@
 section.how#how.section.section-accent
     .container
-        .section__header
-            .section__shape.section__shape-top.section__inner(data-aos="fade-right" data-aos-delay="200")
+        .section__header.js-observe
+            .section__shape.section__shape-top
                 h2.section__title.text-uppercase Jak działamy?
                 h3.h6.section__subtitle.text-light.mb-0.text-primary ✦ Zobacz, jak wygląda cały proces realizacji usługi
-        .section__body.block(data-aos="fade-left" data-aos-delay="200")
+        .section__body.block.js-observe
             .row.row-cols-lg-2
-                .col
+                .col.animate-fade-in(style="--i: 0;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -14,7 +14,7 @@ section.how#how.section.section-accent
                                     use(href="#contact")
                             h4.h6.card__title.mb-0.text-uppercase Skontaktuj się z nami
                         .card__body Omówimy szczegóły Twojego zamówienia, ustalając datę, godzinę i adres realizacji usługi
-                .col
+                .col.animate-fade-in(style="--i: 1;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -22,7 +22,7 @@ section.how#how.section.section-accent
                                     use(href="#process")
                             h4.h6.card__title.mb-0.text-uppercase Realizacja zamówienia
                         .card__body W dniu realizacji nasz specjalista przywiezie cały niezbędny sprzęt i środki czyszczące, a następnie wykona usługę
-                .col
+                .col.animate-fade-in(style="--i: 2;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -30,7 +30,7 @@ section.how#how.section.section-accent
                                     use(href="#cash")
                             h4.h6.card__title.mb-0.text-uppercase Płatność
                         .card__body Po zakończeniu pracy dokonasz płatności w dogodny dla Ciebie sposób
-                .col
+                .col.animate-fade-in(style="--i: 3;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -38,10 +38,12 @@ section.how#how.section.section-accent
                                     use(href="#result")
                             h4.h6.card__title.mb-0.text-uppercase Gotowe
                         .card__body Teraz pozostaje tylko cieszyć się efektem czyszczenia!
-        .section__footer.decor-rabbit
-            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
-                .helper
-                    .helper__message(data-text="Zobacz, jak pracujemy 🐰Masz pytania? Napisz!")
-                        span.js-helper-text
+        .section__footer.decor-rabbit.js-observe
+            .section__shape.section__shape-bottom
+                .section__helper.animate-fade-in(style="--i: 10;")
+                    .helper
+                        .helper__message(data-text="Zobacz, jak pracujemy 🐰Masz pytania? Napisz!")
+                            span.js-helper-text
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
                 .section__btn
                     include cta-button

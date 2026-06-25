@@ -1,24 +1,28 @@
 section#contacts.contacts.block
     .container.section__container
-        .section__header.section__header--fill
+        .section__header.section__header--fill.js-observe
             h2.section__title.text-uppercase.mb-0 Kontakt
-        .section__body
-            img.contacts__map(src="img/map.jpg" alt="")
-        .section__footer.section__footer--fill
+        .section__body.js-observe
+            picture.animate-fade-in
+                source(type="image/webp" srcset="img/map-mob.webp" media="(max-width: 430px)")
+                source(srcset="img/map-mob.png" media="(max-width: 430px)")
+                source(type="image/webp" srcset="img/map.webp")
+                img.contacts__map(src="img/map.jpg" alt="")
+        .section__footer.section__footer--fill.js-observe
             .row.row-cols-md-2.row-cols-lg-4
-                .col
+                .col.animate-fade-in(style="--i: 0;")
                     .card.card-primary-outline.card-leaf
                         h3.h6 Obszary które obsługujemy
                         include cities
-                .col
+                .col.animate-fade-in(style="--i: 1;")
                     .card.card-primary-outline.card-leaf
                         h3.h6 Portale społecznościowe
                         include socials
-                .col
+                .col.animate-fade-in(style="--i: 2;")
                     .card.card-primary-outline.card-leaf
                         h3.h6 Telefon
                         a(href="tel:+48531903619 ").link +48531903619
-                .col
+                .col.animate-fade-in(style="--i: 3;")
                     .card.card-primary-outline.card-leaf
                         h3.h6 Godziny pracy
                         include schedule

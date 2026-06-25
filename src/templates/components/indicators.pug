@@ -5,13 +5,13 @@ section.indicators#indicators.section.section-accent
                 stop(offset="0%" stop-color="#BCB0F2")
                 stop(offset="100%" stop-color="#BCB0F2")
     .container
-        .section__header
-            .section__shape.section__shape-top.section__inner(data-aos="fade-right" data-aos-delay="200")
+        .section__header.js-observe
+            .section__shape.section__shape-top
                 h2.section__title.text-uppercase Nasze wyniki
                 h3.h6.section__subtitle.mb-0.text-primary.text-light ✦ Liczby, dzięki którym klienci nam ufają
-        .section__body.block
+        .section__body.block.js-observe
             .row.row-cols-md-2.row-cols-lg-4
-                .col
+                .col.animate-fade-in(style="--i: 0;")
                     .card.card-primary-outline.card-leaf
                         .result.text-md-center
                             .result__progress
@@ -23,7 +23,7 @@ section.indicators#indicators.section.section-accent
                                         span.progress__value-number
                                         span.progress__value-percent %
                             .result__description.text-bold.h6 Xleceń realizujemy tygodniowo
-                .col
+                .col.animate-fade-in(style="--i: 1;")
                     .card.card-primary-outline.card-leaf
                         .result.text-md-center
                             .result__progress
@@ -35,7 +35,7 @@ section.indicators#indicators.section.section-accent
                                         span.progress__value-number
                                         span.progress__value-percent %
                             .result__description.text-bold.h6 Klientów wraca do nas ponownie
-                .col
+                .col.animate-fade-in(style="--i: 2;")
                     .card.card-primary-outline.card-leaf
                         .result.text-md-center
                             .result__progress
@@ -47,7 +47,7 @@ section.indicators#indicators.section.section-accent
                                         span.progress__value-number
                                         span.progress__value-percent %
                             .result__description.text-bold.h6 Klientów jest zadowolonych z efektów
-                .col
+                .col.animate-fade-in(style="--i: 3;")
                     .card.card-primary-outline.card-leaf
                         .result.text-md-center
                             .result__progress
@@ -59,10 +59,12 @@ section.indicators#indicators.section.section-accent
                                         span.progress__value-number
                                         span.progress__value-percent %
                             .result__description.text-bold.h6 Meble po czyszczeniu wyglądają jak nowe
-        .section__footer.decor-rabbit
-            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
-                .helper
-                    .helper__message(data-text="Setki czystych mebli 🐰 Twój może być następny!")
-                        span.js-helper-text
+        .section__footer.decor-rabbit.js-observe
+            .section__shape.section__shape-bottom
+                .section__helper.animate-fade-in(style="--i: 10;")
+                    .helper
+                        .helper__message(data-text="Setki czystych mebli 🐰 Twój może być następny!")
+                            span.js-helper-text
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
                 .section__btn
                     include cta-button

@@ -2,7 +2,7 @@ section.promo#promo.section
     .container
         .section__header.section__header--fill
             header.header
-                .section__shape.section__shape-top.section__inner(data-aos="slide-down" data-aos-delay="200")
+                .section__shape.section__shape-top.section__inner
                     .header__inner
                         .header__logo
                             include logo
@@ -30,7 +30,7 @@ section.promo#promo.section
                                     span.text-bold Pon. - Sob.
                                     span &nbsp;7:00 - 22:00
                             .header__menu-btn.text-center
-                                a.btn.btn-primary-outline.btn-small.btn-pillow.w-100(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                a.btn.btn-primary.btn-small.btn-pillow.w-100(href="https://wa.me/48531903619" target="_blank" rel="noopener")
                                     svg.icon.icon-right.shake(width="16" height="16")
                                         use(href="#tel")
                                     | Zadzwoń
@@ -52,9 +52,6 @@ section.promo#promo.section
                 h1.promo__title Pranie tapicerki meblowej i tapicerki samochodowej, materacy, dywanów, i mycie okien&nbsp;
                     include cities
                 h3 Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
-                //- .promo__subtitle.extractor
-                //-     .extractor__cleaner(data-aos="fade-left" data-aos-delay="100")
-                //-     h2.h5.text-light.extractor__text.mb-0(data-aos="fade-left" data-aos-delay="200") Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
                 .promo__list
                     ul.list-row
                         li.card.card-white.card-rounded ✦ Profesjonalny sprzęt
@@ -65,6 +62,6 @@ section.promo#promo.section
                     b.text-bold 4.8
                     a.text-muted(href="#reviews") (56 reviews)
         .section__footer
-            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
+            .section__shape.section__shape-bottom.section__inner
                 .section__btn
                     include cta-button

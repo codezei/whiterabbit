@@ -2,8 +2,8 @@ section.services#services.block.section
     .container.section__container
         .section__header.section__header--fill.decor-lavender
             .section__header-top
-                h2.section__title.text-uppercase.mb-0(data-aos="fade-right") Usługi
-                .section__navigation.swiper-navigation(data-aos="fade-left")
+                h2.section__title.text-uppercase.mb-0 Usługi
+                .section__navigation.swiper-navigation
                     .services-button-prev.btn.btn-primary-outline.btn-small.btn-circle
                         svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                             path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
@@ -12,11 +12,11 @@ section.services#services.block.section
                             path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
             .section__header-bottom
                 p.h6.section__subtitle.text-light.mb-0.text-primary ✦ Usuwamy plamy, zapachy i kurz z każdej powierzchni — mebli tapicerowanych, dywanów, materacy, a nawet szyb
-        .section__body
+        .section__body.js-observe
             .swiper.services-swiper
                 .swiper-wrapper
                     article.swiper-slide
-                        .service.card.card-primary-outline
+                        .service.card.card-primary-outline.animate-fade-in(style="--i: 0;")
                             .service__header
                                 .service__img
                                     picture
@@ -78,7 +78,7 @@ section.services#services.block.section
                                                 use(href="#whatsapp")
                                             | Przywróć świeżość kanapie
                     article.swiper-slide
-                        .service.card.card-primary-outline
+                        .service.card.card-primary-outline.animate-fade-in(style="--i: 1;")
                             .service__header
                                 .service__img
                                     picture.service__img
@@ -131,7 +131,7 @@ section.services#services.block.section
                                                 use(href="#whatsapp")
                                             | Przywróć świeżość materacowi
                     article.swiper-slide
-                        .service.card.card-primary-outline
+                        .service.card.card-primary-outline.animate-fade-in(style="--i: 2;")
                             .service__header
                                 .service__img
                                     picture.service__img
@@ -186,7 +186,7 @@ section.services#services.block.section
                                                 use(href="#whatsapp")
                                             | Przywróć świeżość dywanowi
                     article.swiper-slide
-                        .service.card.card-primary-outline
+                        .service.card.card-primary-outline.animate-fade-in(style="--i: 3;")
                             .service__header
                                 .service__img
                                     picture.service__img
@@ -244,7 +244,7 @@ section.services#services.block.section
                                                 use(href="#whatsapp")
                                             | Odśwież wnętrze samochodu
                     article.swiper-slide
-                        .service.card.card-primary-outline
+                        .service.card.card-primary-outline.animate-fade-in(style="--i: 4;")
                             .service__header
                                 .service__img
                                     picture.service__img

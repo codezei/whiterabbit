@@ -1,21 +1,20 @@
 section.why#why.section.section-accent
     .container
-        .section__header
-            .section__shape.section__shape-top.section__inner(data-aos="fade-right" data-aos-delay="200")
+        .section__header.js-observe
+            .section__shape.section__shape-top
                 h2.section__title.text-uppercase Dlaczego właśnie my?
                 h3.h6.section__subtitle.mb-0.text-light.text-primary ✦ Nasi klienci wracają do nas — i oto dlaczego
-        .section__body.block(data-aos="fade-right" data-aos-delay="200")
+        .section__body.block.js-observe
             .row.row-cols-lg-2
-                .col
+                .col.animate-fade-in(style="--i: 0;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
                                 svg(width="48" height="48")
                                     use(href="#effective")
                             h4.h6.card__title.mb-0.text-uppercase Skuteczne usuwanie plam i zapachów
-                        .card__separator
                         .card__body Używamy profesjonalnej chemii, która radzi sobie nawet z trudnymi zabrudzeniami
-                .col
+                .col.animate-fade-in(style="--i: 1;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -23,7 +22,7 @@ section.why#why.section.section-accent
                                     use(href="#materials")
                             h4.h6.card__title.mb-0.text-uppercase Pracujemy z różnymi rodzajami materiałów
                         .card__body Delikatnie czyścimy tkaniny, skórę, zamsz, mikrofibrę i inne powierzchnie
-                .col
+                .col.animate-fade-in(style="--i: 2;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -31,7 +30,7 @@ section.why#why.section.section-accent
                                     use(href="#intime")
                             h4.h6.card__title.mb-0.text-uppercase Przyjeżdżamy w dogodnym dla Ciebie czasie
                         .card__body To Ty wybierasz datę i godzinę — dostosowujemy się do Twojego harmonogramu
-                .col
+                .col.animate-fade-in(style="--i: 3;")
                     .card.card-white.card-leaf
                         .card__header
                             .card__icon
@@ -39,10 +38,12 @@ section.why#why.section.section-accent
                                     use(href="#safe")
                             h4.h6.card__title.mb-0.text-uppercase Bezpieczne dla dzieci i zwierząt
                         .card__body Stosujemy hipoalergiczne środki, które są bezpieczne dla zdrowia
-        .section__footer.decor-rabbit
-            .section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
-                .helper
-                    .helper__message(data-text="Dowiedz się, dlaczego wybierają nas 🐰")
-                        span.js-helper-text
+        .section__footer.decor-rabbit.js-observe
+            .section__shape.section__shape-bottom
+                .section__helper.animate-fade-in(style="--i: 10;")
+                    .helper
+                        .helper__message(data-text="Dowiedz się, dlaczego wybierają nas 🐰")
+                            span.js-helper-text
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
                 .section__btn
                     include cta-button

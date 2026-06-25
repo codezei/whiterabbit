@@ -2,8 +2,8 @@ section.works.block#works.section
     .container.section__container
         .section__header.section__header--fill.decor-lavender
             .section__header-top
-                h2.section__title.text-uppercase.mb-0(data-aos="fade-right") Nasze realizacje
-                .section__navigation.swiper-navigation(data-aos="fade-left")
+                h2.section__title.text-uppercase.mb-0 Nasze realizacje
+                .section__navigation.swiper-navigation
                     button(type="button").works-button-prev.btn.btn-primary-outline.btn-small.btn-circle
                         svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                             path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
@@ -11,8 +11,8 @@ section.works.block#works.section
                         svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                             path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
             .section__header-bottom
-                .section__subtitle.h6.text-light.mb-0.text-primary(data-aos="fade-in") ✦ Zobacz efekty naszej pracy
-        .section__body(data-aos="fade-in" data-aos-delay="100")
+                .section__subtitle.h6.text-light.mb-0.text-primary ✦ Zobacz efekty naszej pracy
+        .section__body.js-observe
             nav.categories-navigation
                 .categories-navigation-swiper
                     //- .swiper-button-next.categories-button-arrow
@@ -46,7 +46,7 @@ section.works.block#works.section
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-lg-4
                                 each num in [1,2,3,4]
-                                    a.col(href=`img/furniture/furniture-img-${num}.webp`)
+                                    a.col.animate-fade-in(href=`img/furniture/furniture-img-${num}.webp` style=`--i: ${num-1};`)
                                         span.sr-only Tapicerka meblowa
                                         picture.work.card-leaf
                                             source(srcset=`img/furniture/furniture-img-${num}.webp`, type="image/webp")
@@ -56,7 +56,7 @@ section.works.block#works.section
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
-                                    a.col(href=`img/mattress/mattress-img-${num}.webp`)
+                                    a.col.animate-fade-in(href=`img/mattress/mattress-img-${num}.webp` style=`--i: ${num-1};`)
                                         span.sr-only Materace
                                         picture.work.card-leaf
                                             source(srcset=`img/mattress/mattress-img-${num}.webp`, type="image/webp")
@@ -66,7 +66,7 @@ section.works.block#works.section
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
-                                    a.col(href=`img/carpet/carpet-img-${num}.webp`)
+                                    a.col.animate-fade-in(href=`img/carpet/carpet-img-${num}.webp` style=`--i: ${num-1};`)
                                         span.sr-only Dywany i wykładziny
                                         picture.work.card-leaf
                                             source(srcset=`img/carpet/carpet-img-${num}.webp`, type="image/webp")
@@ -76,7 +76,7 @@ section.works.block#works.section
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
-                                    a.col(href=`img/salon/salon-img-${num}.webp`)
+                                    a.col.animate-fade-in(href=`img/salon/salon-img-${num}.webp` style=`--i: ${num-1};`)
                                         span.sr-only Tapicerka samochodowa
                                         picture.work.card-leaf
                                             source(srcset=`img/salon/salon-img-${num}.webp`, type="image/webp")
@@ -86,7 +86,7 @@ section.works.block#works.section
                                 include cities
                             .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
                                 each num in [1,2,3,4]
-                                    a.col(href=`img/window/window-img-${num}.webp`)
+                                    a.col.animate-fade-in(href=`img/window/window-img-${num}.webp` style=`--i: ${num-1};`)
                                         span.sr-only Mycie okien
                                         picture.work.card-leaf
                                             source(srcset=`img/window/window-img-${num}.webp`, type="image/webp")

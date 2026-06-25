@@ -910,8 +910,8 @@ hr {
     &:before {
         content: "";
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         background-image: url(../img/logo.webp);
         background-size: contain;
         background-repeat: no-repeat;
@@ -919,27 +919,42 @@ hr {
         position: absolute;
         left: 0;
         bottom: 0;
-        opacity: 0.8;
+        // opacity: 0.8;
+    }
+
+    @media screen and (min-width: 768px) {
+        &:before {
+                    width: 100px;
+                        height: 100px;
+        }
     }
 }
 
 
 .helper {
-    position: absolute;
-    background-image: url(../img/cloud.webp);
-    padding: 2rem 2rem 0;
-    width: 200px;
-    height: 132px;
-    font-size: 14px;
-    z-index: 4;
-    right: 0;
-    bottom: calc(100% + 50px);
-    opacity: 0;
-    transform: scale(0);
-    transition: .4s ease;
-    pointer-events: none;
-    transform-origin: right bottom;
-    &.active {
+    width: 150px;
+    position: relative;
+    &__message {
+        position: absolute;
+        background-image: url(../img/cloud.webp);
+        padding: 2rem 2rem 0;
+        width: 200px;
+        height: 132px;
+        font-size: 14px;
+        z-index: 4;
+        right: 50%;
+        bottom: 75%;
+        opacity: 0;
+        transform: scale(0);
+        transition: .4s ease;
+        pointer-events: none;
+        transform-origin: right bottom;
+    }
+    &__rabbit {
+        width: 100%;
+        transform: scale(-1, 1);
+    }
+    &.active &__message {
         opacity: 1;
         transform: scale(1);
     }
