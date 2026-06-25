@@ -59,7 +59,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-image: url(../img/lavender-3.png);
+        background-image: url(../img/lavender-3.webp);
         background-size: 50%;
         background-position: center bottom;
         background-repeat: no-repeat;
@@ -91,7 +91,7 @@
     }
     &__img {
         position: relative;
-        --substrate-color: var(--section-active-color);
+
         img {
             width: 100%;
             height: 150px;
@@ -100,34 +100,7 @@
             border-radius: 4rem 0 0 0;
             padding: 0 50px;
         }
-        // &:before {
-        //     content: "";
-        //     display: block;
-        //     width: 70px;
-        //     height: 70px;
-        //     background-image: url(../img/lavender-1.png);
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     position: absolute;
-        //     left: 50%;
-        //     top: 0;
-        //     transform: translateX(-50%) translateY(-50px) rotate(45deg);
-        // }
-        // &:after {
-        //     content: "";
-        //     display: block;
-        //     width: 70px;
-        //     height: 70px;
-        //     background-image: url(../img/lavender-1.png);
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     position: absolute;
-        //     right: 0;
-        //     top: 0;
-        //     transform: scale(-1, 1);
-        // }
+
     }
     &__body {
         padding: 1rem;
