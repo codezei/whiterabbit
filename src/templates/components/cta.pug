@@ -21,20 +21,14 @@ button.cta-button.btn.btn-primary.btn-circle.btn-large.btn-pulse(onclick="ctaPop
     svg.icon.shake(width="16" height="16")
         use(href="#tel")
 dialog.popup.popup-center#popupCtaSuccess
-    button.btn.btn-circle.btn-small.popup__close(onclick="popupCtaSuccess.close()")
-        svg.d-block(width="16" height="16")
-            use(href="#close")
-    .card.card-third-outline.card-rounded.h-auto
+    .card.card-secondary-outline.card-rounded.h-auto
         .text-center
-            svg.d-block(width="48" height="48")
+            svg(width="48" height="48")
                 use(href="#check")
         .text-center Twoja wiadomość została pomyślnie wysłana. Prosimy poczekać, aż nasz menedżer skontaktuje się z Tobą w celu uzgodnienia szczegółów.
 dialog.popup.popup-center#popupCtaError
-    button.btn.btn-circle.btn-small.popup__close(onclick="popupCtaSuccess.close()")
-        svg.d-block(width="16" height="16")
-            use(href="#close")
-    .card.card-third-outline.card-rounded.h-auto
+    .card.card-danger-outline.card-rounded.h-auto
         .text-center
-            svg.d-block(width="48" height="48")
+            svg(width="48" height="48")
                 use(href="#error")
     .text-center Wystąpił błąd podczas wysyłania wiadomości.

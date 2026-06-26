@@ -1,39 +1,52 @@
 export default function () {
-    const form = document.querySelector('#cta-form')
-    const popupSuccess = document.querySelector('#popupSuccess')
-    const popupError = document.querySelector('#popupError')
-    if (!form) return
-    const popup = document.querySelector('.popup')
-    const popupMessage = document.querySelector('.popup__message')
-    form.addEventListener("submit", async function (e) {
+    const form = document.querySelector('#cta-form');
+
+    if (!form) return;
+
+    const ctaPopup = document.querySelector('#ctaPopup');
+    const popupSuccess = document.querySelector('#popupCtaSuccess');
+    const popupError = document.querySelector('#popupCtaError');
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        let formData = new FormData(e.target)
-        let work = []
-        for (let [key, value] of formData.entries()) {
-        if (key === 'service') {
-            
-            work.push(value)
-        }
-    }
-    formData.set('service', work.join('; '))
+        const formData = new FormData(form);
+
         try {
-            let response = await fetch('/telegram.php', {
+            const response = await fetch('/telegram.php', {
                 method: 'POST',
                 body: formData
-            })
-            let answer = await response.json()
-            popupMessage.innerHTML = answer.message
-            popup.classList.add('active')
+            });
+
+            if (!response.ok) {
+                throw new Error('Network error');
+            }
+
+            const answer = await response.json();
+            console.log(answer)
+
+            if (answer.success) {
+                ctaPopup.close();
+                popupSuccess.showModal();
+                form.reset();
+                setTimeout(function () {
+                    popupSuccess.close();
+                }, 5000)
+            } else {
+                ctaPopup.close();
+                popupError.showModal();
+                setTimeout(function () {
+                    popupError.close();
+                }, 5000)
+            }
+
+        } catch (error) {
+            console.error(error);
+            ctaPopup.close();
+            popupError.showModal();
             setTimeout(function () {
-                popup.classList.remove("active");
-            }, 4000)
-        } catch (e) {
-            console.log(e.message)
-            popup.classList.remove("active")
+                popupError.close();
+            }, 5000)
         }
-
-        form.reset();
     });
-
 }

@@ -158,14 +158,70 @@
             &.active,
             .active &,
             .swiper-slide-thumb-active & {
-                --border-color: var(--color-2-base);
-                background: var(--color-2-base);
-                color: var(--color-2-tint-2);
 
-                --border-color: var(--color-2-base);
                 --border-color: var(--color-2-tint-1);
                 background: var(--color-2-tint-1);
                 color: var(--color-2-shade-1);
+            }
+        }
+    }
+
+    &-danger {
+        --border-color: rgb(255, 63, 63);
+        background-color: rgb(255, 63, 63);
+        color: rgb(255, 236, 236);
+
+
+        @media screen and (min-width: 1200px) {
+            &:not([disabled]):hover {
+                --border-color: rgb(255, 0, 0);
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 236, 236);
+
+            }
+        }
+
+        &:active {
+            --border-color: rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 236, 236);
+        }
+
+        &.active,
+        .active &,
+        .swiper-slide-thumb-active & {
+            --border-color: rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 236, 236);
+        }
+
+        &-outline {
+            --border-color: rgb(255, 63, 63);
+            background-color: rgb(255, 236, 236);
+            color: rgb(255, 63, 63);
+
+
+            @media screen and (min-width: 1200px) {
+                &:not([disabled]):hover {
+                --border-color: rgb(255, 0, 0);
+                    background-color: rgb(255, 0, 0);
+                    color: rgb(255, 236, 236);
+                }
+            }
+
+            &:active {
+                --border-color: rgb(255, 0, 0);
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 236, 236);
+            }
+
+            &.active,
+            .active &,
+            .swiper-slide-thumb-active & {
+                --border-color: rgb(255, 0, 0);
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 236, 236);
+
             }
         }
     }

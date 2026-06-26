@@ -230,10 +230,6 @@
     return target;
   }
 
-  function _slicedToArray(arr, i) {
-    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-  }
-
   function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
   }
@@ -242,39 +238,8 @@
     if (Array.isArray(arr)) return _arrayLikeToArray(arr);
   }
 
-  function _arrayWithHoles(arr) {
-    if (Array.isArray(arr)) return arr;
-  }
-
   function _iterableToArray(iter) {
     if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-  }
-
-  function _iterableToArrayLimit(arr, i) {
-    if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-    var _arr = [];
-    var _n = true;
-    var _d = false;
-    var _e = undefined;
-
-    try {
-      for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-        _arr.push(_s.value);
-
-        if (i && _arr.length === i) break;
-      }
-    } catch (err) {
-      _d = true;
-      _e = err;
-    } finally {
-      try {
-        if (!_n && _i["return"] != null) _i["return"]();
-      } finally {
-        if (_d) throw _e;
-      }
-    }
-
-    return _arr;
   }
 
   function _unsupportedIterableToArray(o, minLen) {
@@ -298,139 +263,80 @@
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
-  function _nonIterableRest() {
-    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-  }
-
-  function _createForOfIteratorHelper(o, allowArrayLike) {
-    var it;
-
-    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
-      if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
-        if (it) o = it;
-        var i = 0;
-
-        var F = function () {};
-
-        return {
-          s: F,
-          n: function () {
-            if (i >= o.length) return {
-              done: true
-            };
-            return {
-              done: false,
-              value: o[i++]
-            };
-          },
-          e: function (e) {
-            throw e;
-          },
-          f: F
-        };
-      }
-
-      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    }
-
-    var normalCompletion = true,
-        didErr = false,
-        err;
-    return {
-      s: function () {
-        it = o[Symbol.iterator]();
-      },
-      n: function () {
-        var step = it.next();
-        normalCompletion = step.done;
-        return step;
-      },
-      e: function (e) {
-        didErr = true;
-        err = e;
-      },
-      f: function () {
-        try {
-          if (!normalCompletion && it.return != null) it.return();
-        } finally {
-          if (didErr) throw err;
-        }
-      }
-    };
-  }
-
   function cta () {
     var form = document.querySelector('#cta-form');
-    var popupSuccess = document.querySelector('#popupSuccess');
-    var popupError = document.querySelector('#popupError');
     if (!form) return;
-    var popup = document.querySelector('.popup');
-    var popupMessage = document.querySelector('.popup__message');
-    form.addEventListener("submit", /*#__PURE__*/function () {
+    var ctaPopup = document.querySelector('#ctaPopup');
+    var popupSuccess = document.querySelector('#popupCtaSuccess');
+    var popupError = document.querySelector('#popupCtaError');
+    form.addEventListener('submit', /*#__PURE__*/function () {
       var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(e) {
-        var formData, work, _iterator, _step, _step$value, key, value, response, answer;
-
+        var formData, response, answer;
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 e.preventDefault();
-                formData = new FormData(e.target);
-                work = [];
-                _iterator = _createForOfIteratorHelper(formData.entries());
-
-                try {
-                  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-                    _step$value = _slicedToArray(_step.value, 2), key = _step$value[0], value = _step$value[1];
-
-                    if (key === 'service') {
-                      work.push(value);
-                    }
-                  }
-                } catch (err) {
-                  _iterator.e(err);
-                } finally {
-                  _iterator.f();
-                }
-
-                formData.set('service', work.join('; '));
-                _context.prev = 6;
-                _context.next = 9;
+                formData = new FormData(form);
+                _context.prev = 2;
+                _context.next = 5;
                 return fetch('/telegram.php', {
                   method: 'POST',
                   body: formData
                 });
 
-              case 9:
+              case 5:
                 response = _context.sent;
-                _context.next = 12;
+
+                if (response.ok) {
+                  _context.next = 8;
+                  break;
+                }
+
+                throw new Error('Network error');
+
+              case 8:
+                _context.next = 10;
                 return response.json();
 
-              case 12:
+              case 10:
                 answer = _context.sent;
-                popupMessage.innerHTML = answer.message;
-                popup.classList.add('active');
-                setTimeout(function () {
-                  popup.classList.remove("active");
-                }, 4000);
-                _context.next = 22;
+                console.log(answer);
+
+                if (answer.success) {
+                  ctaPopup.close();
+                  popupSuccess.showModal();
+                  form.reset();
+                  setTimeout(function () {
+                    popupSuccess.close();
+                  }, 5000);
+                } else {
+                  ctaPopup.close();
+                  popupError.showModal();
+                  setTimeout(function () {
+                    popupError.close();
+                  }, 5000);
+                }
+
+                _context.next = 21;
                 break;
 
-              case 18:
-                _context.prev = 18;
-                _context.t0 = _context["catch"](6);
-                console.log(_context.t0.message);
-                popup.classList.remove("active");
+              case 15:
+                _context.prev = 15;
+                _context.t0 = _context["catch"](2);
+                console.error(_context.t0);
+                ctaPopup.close();
+                popupError.showModal();
+                setTimeout(function () {
+                  popupError.close();
+                }, 5000);
 
-              case 22:
-                form.reset();
-
-              case 23:
+              case 21:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[6, 18]]);
+        }, _callee, null, [[2, 15]]);
       }));
 
       return function (_x) {
@@ -524,7 +430,7 @@
         slideToClickedSlide: true,
         watchSlidesProgress: true,
         initialSlide: initialCategory || 0,
-        // autoHeight: true,
+        autoHeight: !!categoriesContentSwiper.dataset.autoHeight || false,
         navigation: {
           nextEl: buttonNextSelector,
           prevEl: buttonPrevSelector
@@ -685,7 +591,7 @@
       if (!elements.length) return;
 
       var settings = _objectSpread2({
-        threshold: 0.5,
+        threshold: 0.1,
         rootMargin: '0px',
         once: true
       }, options);

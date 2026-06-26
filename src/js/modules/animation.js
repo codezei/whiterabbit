@@ -3,7 +3,7 @@ export default function () {
         const elements = document.querySelectorAll('.js-observe');
         if (!elements.length) return;
         const settings = {
-            threshold: 0.5,
+            threshold: 0.1,
             rootMargin: '0px',
             once: true,
             ...options

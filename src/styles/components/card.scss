@@ -83,7 +83,7 @@
         }
 
         &-outline {
-            --border-color: var(--color-1-base);
+
             --border-color: #BCB0F210;
             background-color: var(--color-1-tint-2);
             color: var(--color-1-base);
@@ -115,10 +115,9 @@
         }
 
         &-outline {
-            --border-color: var(--color-2-base);
             --border-color: var(--color-2-tint-2);
             background-color: var(--color-2-tint-2);
-            color: var(--color-2-base);
+            color: #64982c;
             &.input::placeholder {
                 color: var(--color-2-base);
                 opacity: 0.8;
@@ -129,7 +128,29 @@
                 color: var(--color-2-tint-2);
             }
         }
+    }
+    &-danger {
+        --border-color: rgb(255, 63, 63);
+        background-color: rgb(255, 63, 63);
+        color: rgb(255, 236, 236);
 
+        &.active {
+        --border-color: rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+            color: rgb(255, 236, 236);
+        }
+
+        &-outline {
+            --border-color: rgb(255, 63, 63);
+            background-color: rgb(255, 236, 236);
+            color: rgb(255, 63, 63);
+
+            &.active {
+        --border-color: rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 236, 236);
+            }
+        }
     }
 
     &-white {

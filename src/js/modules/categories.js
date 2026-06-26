@@ -37,7 +37,7 @@ export default function () {
                 slideToClickedSlide: true,
                 watchSlidesProgress: true,
                 initialSlide: initialCategory || 0,
-                // autoHeight: true,
+                autoHeight: !!categoriesContentSwiper.dataset.autoHeight || false,
                 navigation: {
                     nextEl: buttonNextSelector,
                     prevEl: buttonPrevSelector,
