@@ -7,9 +7,11 @@ section.reviews#reviews.block.section
                 .section__navigation
                     .swiper-navigation
                         button(type="button" aria-label="Poprzednia kategoria").reviews-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Poprzednia kategoria
                             svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                                 path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
                         button(type="button" aria-label="Następna kategoria").reviews-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Następna kategoria
                             svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                                 path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
             .section__header-bottom
@@ -50,20 +52,16 @@ section.reviews#reviews.block.section
                         article.swiper-slide.h-auto
                             h3.h2 Opinie o czyszczeniu materacy&nbsp;
                                 include cities
-                            //- include reviews/reviews-mattress
-                            include reviews/reviews-furniture
+                            include reviews/reviews-mattress
                         article.swiper-slide.h-auto
                             h3.h2 Opinie o praniu dywanów&nbsp;
                                 include cities
-                            //- include reviews/reviews-carpet
-                            include reviews/reviews-furniture
+                            include reviews/reviews-carpet
                         article.swiper-slide.h-auto
                             h3.h2 Opinie o czyszczeniu tapicerki samochodowej&nbsp;
                                 include cities
-                            //- include reviews/reviews-salon
-                            include reviews/reviews-furniture
+                            include reviews/reviews-salon
                         article.swiper-slide.h-auto
                             h3.h2 Opinie o myciu okien&nbsp;
                                 include cities
-                            //- include reviews/reviews-window
-                            include reviews/reviews-furniture
+                            include reviews/reviews-window

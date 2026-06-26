@@ -13,6 +13,7 @@ import categories from './modules/categories'
 import indicators from './modules/indicators'
 import helper from './modules/helper'
 import animation from './modules/animation'
+import date from './modules/date'
 import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -41,3 +42,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	// });
 
 })
+date()

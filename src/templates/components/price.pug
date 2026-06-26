@@ -5,16 +5,18 @@ section#price.price.block.section
                 h2.section__title.text-uppercase.mb-0 Cennik
                 .section__navigation
                     .swiper-navigation
-                        button(type="button").price-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                        button(type="button" aria-label="Poprzednia kategoria").price-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Poprzednia kategoria
                             svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                                 path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
-                        button(type="button").price-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                        button(type="button" aria-label="Następna kategoria").price-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Następna kategoria
                             svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
                                 path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
             .section__header-bottom
                 .section__subtitle.h6.text-light.mb-0.text-primary ✦ Wybierz kategorię i sprawdź ceny usług, których potrzebujesz
         .section__body.js-observe
-            nav.categories-navigation
+            nav.categories-navigation(aria-label="Kategorie czyszczenia")
                 .categories-navigation-swiper
                     .swiper-wrapper
                         .swiper-slide

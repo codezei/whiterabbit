@@ -87,7 +87,7 @@
         max-width: 30%;
         margin-left: auto;
 
-        &.decor-rabbit {
+        &:has(.helper) {
             margin-right: 100px;
         }
 
@@ -117,10 +117,6 @@
         z-index: 2;
     }
 
-    &:has(.helper.active) &__body {
-        // opacity: 0.8;
-        filter: blur(1px);
-    }
 
     &-accent {
         --parallax-y: 0px;

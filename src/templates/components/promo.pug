@@ -7,7 +7,7 @@ section.promo#promo.section
                         .header__logo
                             include logo
                         .header__menu#main-menu
-                            nav.menu
+                            nav.menu(aria-label="Główne menu")
                                 .menu__item
                                     a.menu__link.link(href="#about") O nas
                                 .menu__item
@@ -21,21 +21,16 @@ section.promo#promo.section
                                 .menu__item
                                     a.menu__link.link(href="#contacts") Kontakt
                             .header__menu-socials.text-center
-                                //- span.text-accent.text-nowrap
-                                //-     svg.icon.icon-right.shake(width="16" height="16")
-                                //-         use(href="#geo")
-                                //-     | Wroclaw i okolice
-                                //- br
                                 .card.card-primary-outline.card-rounded
-                                    span.text-bold Pon. - Sob.
-                                    span &nbsp;7:00 - 22:00
+                                    b.text-bold Pon. - Niedz.
+                                    span 07:00 - 22:00
                             .header__menu-btn.text-center
                                 a.btn.btn-primary.btn-small.btn-pillow.w-100(href="https://wa.me/48531903619" target="_blank" rel="noopener")
                                     svg.icon.icon-right.shake(width="16" height="16")
                                         use(href="#tel")
                                     | Zadzwoń
                         .header__switcher
-                            nav.switcher
+                            nav.switcher(aria-label="Wybór języka")
                                 a.switcher__item.link.text-bold.text-accent(href="/") PL
                                 span &nbsp;/&nbsp;
                                 a.switcher__item.link(href="./index-ua.html") UA
@@ -51,7 +46,7 @@ section.promo#promo.section
                 .promo__pre-title.pre-title.text-primary ✦ Profesjonalne czyszczenie tapicerki
                 h1.promo__title Pranie tapicerki meblowej i tapicerki samochodowej, materacy, dywanów, i mycie okien&nbsp;
                     include cities
-                h3 Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
+                h2.h3 Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
                 .promo__list
                     ul.list-row
                         li.card.card-white.card-rounded ✦ Profesjonalny sprzęt

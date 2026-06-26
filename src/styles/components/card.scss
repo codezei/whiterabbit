@@ -53,6 +53,7 @@
         gap: 0.5rem;
     }
 
+
     &__icon {
         svg {
             vertical-align: middle;
@@ -114,31 +115,6 @@
                 --border-color: var(--color-2-base);
                 background-color: var(--color-2-base);
                 color: var(--color-2-tint-2);
-            }
-        }
-
-    }
-
-    &-third {
-        --border-color: var(--color-3-base);
-        background-color: var(--color-3-base);
-        color: var(--color-3-tint-2);
-
-        &.active {
-            --border-color: var(--color-3-shade-1);
-            background-color: var(--color-3-shade-1);
-            color: var(--color-3-tint-2);
-        }
-
-        &-outline {
-            --border-color: var(--color-3-base);
-            background-color: var(--color-3-tint-2);
-            color: var(--color-3-shade-1);
-
-            &.active {
-                --border-color: var(--color-3-base);
-                background-color: var(--color-3-tint-1);
-                color: var(--color-3-shade-1);
             }
         }
 

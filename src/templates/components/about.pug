@@ -5,16 +5,17 @@ section.about#about.section.section-accent
                 h2.section__title.text-uppercase O nas
                 h3.h6.section__subtitle.mb-0.text-light.text-primary ✦ Zespół, który kocha swoją pracę i ceni Twój czas
         .section__body.block.js-observe
-            .card.card-white.card-rounded.animate-fade-in(style="--i: 1;")
-                p Nasi klienci nam ufają, ponieważ do każdej pracy podchodzimy z pełnym profesjonalizmem. Specjalizujemy się w czyszczeniu tapicerki meblowej, materacy, dywanów, okien oraz w praniu tapicerki samochodowej.
-                p Każdego dnia usuwamy różnego rodzaju plamy: z jedzenia i napojów, sierść zwierząt domowych, nieprzyjemne zapachy, pleśń oraz głęboko osadzony kurz.
-                p Dzięki naszemu doświadczeniu, specjalistycznemu sprzętowi oraz skutecznym środkom czyszczącym skutecznie usuwamy wszelkie zabrudzenia, przywracając świeżość i czystość, które sprawiają, że klienci chętnie do nas wracają.
-        .section__footer.decor-rabbit.js-observe
+            .about__content
+                .card.card-white.card-rounded.animate-fade-in(style="--i: 1;")
+                    p Nasi klienci nam ufają, ponieważ do każdej pracy podchodzimy z pełnym profesjonalizmem. Specjalizujemy się w czyszczeniu tapicerki meblowej, materacy, dywanów, okien oraz w praniu tapicerki samochodowej.
+                    p Każdego dnia usuwamy różnego rodzaju plamy: z jedzenia i napojów, sierść zwierząt domowych, nieprzyjemne zapachy, pleśń oraz głęboko osadzony kurz.
+                    p Dzięki naszemu doświadczeniu, specjalistycznemu sprzętowi oraz skutecznym środkom czyszczącym skutecznie usuwamy wszelkie zabrudzenia, przywracając świeżość i czystość, które sprawiają, że klienci chętnie do nas wracają.
+        .section__footer.jpg.js-observe
             .section__shape.section__shape-bottom.section__inner
                 .section__helper.animate-fade-in(style="--i: 10;")
                     .helper
                         .helper__message(data-text="Chcesz nas poznać? 🐰Napisz do nas!")
                             span.js-helper-text
-                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="", role="presentation")
                 .section__btn
                     include cta-button

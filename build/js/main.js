@@ -714,6 +714,47 @@
     checkVisibility();
   }
 
+  function date () {
+
+    function postDate(daysName, daysMinName, monthsName, monthsMinName, seasonsName) {
+      var _counterLength = 360;
+
+      for (var counter = 0; counter < _counterLength; counter++) {
+        innerDate(counter, "date-");
+        innerDate(counter, "date");
+      }
+
+      function innerDate(counter, dateType) {
+        var newCounter;
+        dateType === "date-" ? newCounter = -counter : newCounter = counter;
+
+        var _msInDay = 86400000,
+            _localDate = new Date(Date.now() + newCounter * _msInDay),
+            _day = _localDate.getDate(),
+            _month = _localDate.getMonth() + 1,
+            _year = _localDate.getFullYear();
+
+        var dayDefault = addZero(_day),
+            monthDefault = addZero(_month),
+            defaultDate = dayDefault + "." + monthDefault + "." + _year;
+        var dateClass = dateType + counter,
+            nodeList = document.querySelectorAll("." + dateClass);
+
+        for (var i = 0; i < nodeList.length; i++) {
+          nodeList[i].innerHTML = defaultDate;
+        }
+      }
+
+      function addZero(numb) {
+        return numb < 10 ? "0" + numb : numb;
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      postDate();
+    });
+  }
+
   function createCommonjsModule(fn, module) {
   	return module = { exports: {} }, fn(module, module.exports), module.exports;
   }
@@ -1481,5 +1522,6 @@
     // 	once: true,
     // });
   });
+  date();
 
 }());

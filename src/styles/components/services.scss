@@ -87,12 +87,6 @@
         margin-top: 0;
         margin-bottom: 0.5rem;
         text-transform: uppercase;
-        width: 260px;
-        height: 48px;
-        // background: red;
-        // color: #fff;
-        // clip-path: path("M 0,0 L 212,0 A 16,16 0,0,1 228,16 A 24,24 0,0,0 260,48 L 0,48 L 0,0");
-        // clip-path: path("M 0,0 A 40,40 0,0,1 40,40 A 40,40 0,0,0 80,80 L 80,0");
     }
     &__img {
         position: relative;
@@ -100,10 +94,10 @@
         img {
             width: 100%;
             height: 150px;
-            object-fit: contain;
+            object-fit: cover;
             object-position: center;
             border-radius: 4rem 0 0 0;
-            padding: 0 50px;
+            // padding: 0 50px;
         }
 
     }
@@ -157,27 +151,5 @@
             transform: rotate(0deg);
         }
     }
-    // &__btn {
-    //     border-radius: 0 0 10px 0;
-    //     padding: 1rem;
-    //     padding-right: 2rem;
-    //     width: calc(100% - 0.5rem);
-    // }
-}
 
-.badges {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    li {
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        background: rgb(255, 255, 255);
-        border: 1px solid yellow;
-        flex-grow: 1;
-        margin: 0 !important;
-    }
 }
