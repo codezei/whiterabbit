@@ -1,0 +1,61 @@
+section.promo#promo.section
+    .container
+        .section__header.section__header--fill
+            header.header
+                .section__shape.section__shape-top.section__inner
+                    .header__inner
+                        .header__logo
+                            include logo-ua
+                        .header__menu#main-menu
+                            nav.menu(aria-label="Головне меню")
+                                .menu__item
+                                    a.menu__link.link(href="#about") Про нас
+                                .menu__item
+                                    a.menu__link.link(href="#services") Послуги
+                                .menu__item
+                                    a.menu__link.link(href="#price") Ціни
+                                .menu__item
+                                    a.menu__link.link(href="#reviews") Відгуки
+                                .menu__item
+                                    a.menu__link.link(href="#works") Наші роботи
+                                .menu__item
+                                    a.menu__link.link(href="#contacts") Контакти
+                            .header__menu-socials.text-center
+                                .card.card-primary-outline.card-rounded
+                                    include schedule-ua
+                            .header__menu-btn.text-center
+                                a.btn.btn-primary.btn-small.btn-pillow.w-100(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                    svg.icon.icon-right.shake(width="16" height="16")
+                                        use(href="#tel")
+                                    | Зателефонувати
+                        .header__switcher
+                            nav.switcher(aria-label="Вибір мови")
+                                a.switcher__item.link(href="./index.html") PL
+                                span &nbsp;/&nbsp;
+                                a.switcher__item.link.text-bold.text-accent(href="/") UA
+                        .header__burger
+                            button.js-burger.btn.btn-transparent(type="button" aria-expanded="false" aria-controls="main-menu")
+                                span.sr-only Відкрити мобільне меню
+                                span.cross
+                                    span
+                                    span
+                                    span
+        .section__body.block
+            .promo__content
+                .promo__pre-title.pre-title.text-primary ✦ Професійна хімчистка
+                h1.promo__title Хімчистка м'яких меблів, салону автомобіля, матраців, килимів та миття вікон&nbsp;
+                    include cities-ua
+                h2.h3 Ефективно видаляємо бруд, плями та неприємні запахи, використовуючи професійне обладнання та ретельно підібрані засоби для чищення.
+                .promo__list
+                    ul.list-row
+                        li.card.card-white.card-rounded ✦ Професійне обладнання
+                        li.card.card-white.card-rounded ✦ Безпечні засоби
+                        li.card.card-white.card-rounded ✦ Виїзд до клієнта
+                .promo__rating
+                    span.rating(style="--star-rating: 4.8;")
+                    b.text-bold 4.8
+                    a.text-muted(href="#reviews") (56 відгуків)
+        .section__footer
+            .section__shape.section__shape-bottom.section__inner
+                .section__btn
+                    include cta-button-ua

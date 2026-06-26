@@ -1,0 +1,108 @@
+section.process#process-cleaning.block.section
+    .container.section__container
+        .section__header.section__header--fill.decor-lavender
+            .section__header-top
+                h2.section__title.text-uppercase Процес чищення
+                .section__navigation
+                    .swiper-navigation
+                        button(type="button" aria-label="Попередня категорія").process-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Попередня категорія
+                            svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                        button(type="button" aria-label="Наступна категорія").process-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Наступна категорія
+                            svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .section__header-bottom
+                .h6.section__subtitle.text-light.mb-0.text-primary ✦ Подивіться, як проходить весь процес чищення
+        .section__body
+            nav.categories-navigation(aria-label="Категорії послуг")
+                .categories-navigation-swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text М'які меблі
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Матраци
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Килими
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Автосалон
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Вікна
+            .categories-content(style="display:flex; align-items: center; flex-grow: 1;")
+                .swiper.categories-content-swiper.process-swiper(data-disallow-touch="true" data-next-selector=".process-button-next" data-prev-selector=".process-button-prev")
+                    .swiper-wrapper
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Хімчистка м'яких меблів — до та після&nbsp;
+                                            include cities-ua
+                                        p Ми видаляємо повсякденні забруднення, пил і плями, повертаючи диванам та кріслам свіжий вигляд і комфорт у користуванні.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Безпечно для тканин
+                                            li.card.card-primary-outline.card-rounded ✦ Усунення неприємних запахів
+                                            li.card.card-primary-outline.card-rounded ✦ Екстракційне чищення
+                                    .col
+                                        include process/process-furniture-ua
+
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Хімчистка матраців — свіжість і гігієна сну&nbsp;
+                                            include cities-ua
+                                        p Ретельне чищення допомагає позбутися пилу, забруднень і неприємних запахів, покращуючи комфорт вашого щоденного відпочинку.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Видалення пилових кліщів і пилу
+                                            li.card.card-primary-outline.card-rounded ✦ Свіжість і гігієна сну
+                                            li.card.card-primary-outline.card-rounded ✦ Чищення з обох боків
+                                    .col
+                                        include process/process-mattress-ua
+
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Хімчистка килимів — помітна різниця після чищення&nbsp;
+                                            include cities-ua
+                                        p Ми видаляємо повсякденні забруднення, пил і плями, повертаючи килимам чистоту, свіжість та яскравість кольорів.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Глибоке очищення волокон
+                                            li.card.card-primary-outline.card-rounded ✦ Відновлення яскравості кольорів
+                                            li.card.card-primary-outline.card-rounded ✦ Видалення піску та бруду
+                                    .col
+                                        include process/process-carpet-ua
+
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Хімчистка салону автомобіля — оновлений інтер'єр&nbsp;
+                                            include cities-ua
+                                        p Ми видаляємо сліди щоденного використання, плями та неприємні запахи, щоб салон вашого автомобіля знову став чистим і комфортним.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Очищення важкодоступних місць
+                                            li.card.card-primary-outline.card-rounded ✦ Нейтралізація запахів
+                                            li.card.card-primary-outline.card-rounded ✦ Освіження салону
+                                    .col
+                                        include process/process-salon-ua
+
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Миття вікон — ідеальна чистота без розводів&nbsp;
+                                            include cities-ua
+                                        p Ми ретельно очищаємо скло та рами, залишаючи вікна прозорими й бездоганно чистими.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Без розводів
+                                            li.card.card-primary-outline.card-rounded ✦ Чисті рами та підвіконня
+                                            li.card.card-primary-outline.card-rounded ✦ Ретельне завершення роботи
+                                    .col
+                                        include process/process-window-ua

@@ -18,89 +18,87 @@ section.process#process-cleaning.block.section
         .section__body
             nav.categories-navigation(aria-label="Kategorie czyszczenia")
                 .categories-navigation-swiper
-                    //- .swiper-button-next.categories-button-arrow
-                    //- .swiper-button-prev.categories-button-arrow
                     .swiper-wrapper
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Tapicerka meblowa
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Materace
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Dywany
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Tapicerka samochodowa
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Okna
-                                //- span.category-btn__connect
             .categories-content(style="display:flex; align-items: center; flex-grow: 1;")
                 .swiper.categories-content-swiper.process-swiper(data-disallow-touch="true" data-next-selector=".process-button-next" data-prev-selector=".process-button-prev")
                     .swiper-wrapper
-                        article.swiper-slide.h-auto
-                            .row.row-cols-lg-2
-                                .col
-                                    h3.h2 Pranie tapicerki meblowej — efekt przed i po&nbsp;
-                                        include cities
-                                    p Usuwamy codzienne zabrudzenia, kurz oraz plamy, przywracając kanapom i fotelom świeży wygląd oraz przyjemność użytkowania.
-                                    ul.list-row
-                                        li.card.card-primary-outline.card-rounded ✦ Bezpieczne dla tkanin
-                                        li.card.card-primary-outline.card-rounded ✦ Usuwanie zapachów
-                                        li.card.card-primary-outline.card-rounded ✦ Pranie ekstrakcyjne
-                                .col
-                                    include process/process-furniture
-                        article.swiper-slide.h-auto
-                            .row.row-cols-lg-2
-                                .col
-                                    h3.h2 Czyszczenie materaca — świeżość i higiena snu&nbsp;
-                                        include cities
-                                    p Dokładne pranie pomaga pozbyć się kurzu, zabrudzeń i nieprzyjemnych zapachów, poprawiając komfort codziennego odpoczynku.
-                                    ul.list-row
-                                        li.card.card-primary-outline.card-rounded ✦ Usuwanie roztoczy i kurzu
-                                        li.card.card-primary-outline.card-rounded ✦ Świeży i higieniczny sen
-                                        li.card.card-primary-outline.card-rounded ✦ Czyszczenie obu stron
-                                .col
-                                    include process/process-mattress
-                        article.swiper-slide.h-auto
-                            .row.row-cols-lg-2
-                                .col
-                                    h3.h2 Pranie dywanu — widoczna różnica po czyszczeniu&nbsp;
-                                        include cities
-                                    p Usuwamy codzienne zabrudzenia, kurz oraz plamy, przywracając kanapom i fotelom świeży wygląd oraz przyjemność użytkowania.
-                                    ul.list-row
-                                        li.card.card-primary-outline.card-rounded ✦ Głębokie czyszczenie włókien
-                                        li.card.card-primary-outline.card-rounded ✦ Odświeżenie kolorów
-                                        li.card.card-primary-outline.card-rounded ✦ Usuwanie piasku i zabrudzeń
-                                .col
-                                    include process/process-carpet
-                        article.swiper-slide.h-auto
-                            .row.row-cols-lg-2
-                                .col
-                                    h3.h2 Czyszczenie wnętrza auta — odświeżona tapicerka&nbsp;
-                                        include cities
-                                    p Usuwamy ślady codziennego użytkowania, plamy oraz zapachy, aby wnętrze samochodu znów było czyste i komfortowe.
-                                    ul.list-row
-                                        li.card.card-primary-outline.card-rounded ✦ Czyszczenie trudno dostępnych miejsc
-                                        li.card.card-primary-outline.card-rounded ✦ Neutralizacja zapachów
-                                        li.card.card-primary-outline.card-rounded ✦ Odświeżenie wnętrza
-                                .col
-                                    include process/process-salon
-                        article.swiper-slide.h-auto
-                            .row.row-cols-lg-2
-                                .col
-                                    h3.h2 Mycie okien — czystość bez smug&nbsp;
-                                        include cities
-                                    p Dokładnie usuwamy zabrudzenia z szyb i ram, pozostawiając okna przejrzyste oraz idealnie czyste.
-                                    ul.list-row
-                                        li.card.card-primary-outline.card-rounded ✦ Bez smug
-                                        li.card.card-primary-outline.card-rounded ✦ Czyste ramy i parapety
-                                        li.card.card-primary-outline.card-rounded ✦ Dokładne wykończenie
-                                .col
-                                    include process/process-window
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Pranie tapicerki meblowej — efekt przed i po&nbsp;
+                                            include cities
+                                        p Usuwamy codzienne zabrudzenia, kurz oraz plamy, przywracając kanapom i fotelom świeży wygląd oraz przyjemność użytkowania.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Bezpieczne dla tkanin
+                                            li.card.card-primary-outline.card-rounded ✦ Usuwanie zapachów
+                                            li.card.card-primary-outline.card-rounded ✦ Pranie ekstrakcyjne
+                                    .col
+                                        include process/process-furniture
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Czyszczenie materaca — świeżość i higiena snu&nbsp;
+                                            include cities
+                                        p Dokładne pranie pomaga pozbyć się kurzu, zabrudzeń i nieprzyjemnych zapachów, poprawiając komfort codziennego odpoczynku.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Usuwanie roztoczy i kurzu
+                                            li.card.card-primary-outline.card-rounded ✦ Świeży i higieniczny sen
+                                            li.card.card-primary-outline.card-rounded ✦ Czyszczenie obu stron
+                                    .col
+                                        include process/process-mattress
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Pranie dywanu — widoczna różnica po czyszczeniu&nbsp;
+                                            include cities
+                                        p Usuwamy codzienne zabrudzenia, kurz oraz plamy, przywracając kanapom i fotelom świeży wygląd oraz przyjemność użytkowania.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Głębokie czyszczenie włókien
+                                            li.card.card-primary-outline.card-rounded ✦ Odświeżenie kolorów
+                                            li.card.card-primary-outline.card-rounded ✦ Usuwanie piasku i zabrudzeń
+                                    .col
+                                        include process/process-carpet
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Czyszczenie wnętrza auta — odświeżona tapicerka&nbsp;
+                                            include cities
+                                        p Usuwamy ślady codziennego użytkowania, plamy oraz zapachy, aby wnętrze samochodu znów było czyste i komfortowe.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Czyszczenie trudno dostępnych miejsc
+                                            li.card.card-primary-outline.card-rounded ✦ Neutralizacja zapachów
+                                            li.card.card-primary-outline.card-rounded ✦ Odświeżenie wnętrza
+                                    .col
+                                        include process/process-salon
+                        .swiper-slide.h-auto
+                            article
+                                .row.row-cols-lg-2
+                                    .col
+                                        h3.h2 Mycie okien — czystość bez smug&nbsp;
+                                            include cities
+                                        p Dokładnie usuwamy zabrudzenia z szyb i ram, pozostawiając okna przejrzyste oraz idealnie czyste.
+                                        ul.list-row
+                                            li.card.card-primary-outline.card-rounded ✦ Bez smug
+                                            li.card.card-primary-outline.card-rounded ✦ Czyste ramy i parapety
+                                            li.card.card-primary-outline.card-rounded ✦ Dokładne wykończenie
+                                    .col
+                                        include process/process-window

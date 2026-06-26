@@ -19,49 +19,47 @@ section.reviews#reviews.block.section
         .section__body.js-observe
             nav.categories-navigation(aria-label="Kategorie czyszczenia")
                 .categories-navigation-swiper
-                    //- .swiper-button-next.categories-button-arrow
-                    //- .swiper-button-prev.categories-button-arrow
                     .swiper-wrapper
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Tapicerka meblowa
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Materace
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Dywany
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Tapicerka samochodowa
-                                //- span.category-btn__connect
                         .swiper-slide
                             button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
                                 span.category-btn__text Okna
-                                //- span.category-btn__connect
             .categories-content
                 .swiper.categories-content-swiper.reviews-swiper(data-disallow-touch="true" data-next-selector=".reviews-button-next" data-prev-selector=".reviews-button-prev")
                     .swiper-wrapper
-                        article.swiper-slide.h-auto
-                            h3.h2 Opinie o praniu tapicerki meblowej&nbsp;
-                                include cities
-                            include reviews/reviews-furniture
-                        article.swiper-slide.h-auto
-                            h3.h2 Opinie o czyszczeniu materacy&nbsp;
-                                include cities
-                            include reviews/reviews-mattress
-                        article.swiper-slide.h-auto
-                            h3.h2 Opinie o praniu dywanów&nbsp;
-                                include cities
-                            include reviews/reviews-carpet
-                        article.swiper-slide.h-auto
-                            h3.h2 Opinie o czyszczeniu tapicerki samochodowej&nbsp;
-                                include cities
-                            include reviews/reviews-salon
-                        article.swiper-slide.h-auto
-                            h3.h2 Opinie o myciu okien&nbsp;
-                                include cities
-                            include reviews/reviews-window
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Opinie o praniu tapicerki meblowej&nbsp;
+                                    include cities
+                                include reviews/reviews-furniture
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Opinie o czyszczeniu materacy&nbsp;
+                                    include cities
+                                include reviews/reviews-mattress
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Opinie o praniu dywanów&nbsp;
+                                    include cities
+                                include reviews/reviews-carpet
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Opinie o czyszczeniu tapicerki samochodowej&nbsp;
+                                    include cities
+                                include reviews/reviews-salon
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Opinie o myciu okien&nbsp;
+                                    include cities
+                                include reviews/reviews-window

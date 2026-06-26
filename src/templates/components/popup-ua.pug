@@ -1,0 +1,21 @@
+dialog.popup.popup-center#popupSuccess
+	form(method="dialog")
+		button.btn.btn-circle.btn-small.popup__close
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+		.card.card-third-outline.card-rounded.h-auto
+			.text-center
+				svg.d-block(width="48" height="48")
+					use(href="#check")
+			.text-center Ваше повідомлення успішно надіслано. Будь ласка, зачекайте — наш менеджер незабаром зв'яжеться з вами, щоб узгодити всі деталі.
+
+dialog.popup.popup-center#popupError
+	form(method="dialog")
+		button.btn.btn-circle.btn-small.popup__close
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+		.card.card-third-outline.card-rounded.h-auto
+			.text-center
+				svg.d-block(width="48" height="48")
+					use(href="#error")
+		.text-center Під час надсилання повідомлення сталася помилка.

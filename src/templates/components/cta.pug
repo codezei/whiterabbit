@@ -1,22 +1,21 @@
 
 dialog.popup.popup-center#ctaPopup
-    p.text-right
-        button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="ctaPopup.close()")
-            svg.d-block(width="16" height="16")
-                use(href="#close")
-    .card.card-third-outline.card-rounded.h-auto.overflow-hidden
-        .card__body
-            form#cta-form(method="POST")
-                .row
-                    .col
-                        input.input.cta__input.card.card-secondary-outline.card-rounded(type="text" placeholder="Imię" name="name", required)
-                    .col
-                        input.input.cta__input.card.card-secondary-outline.card-rounded(type="tel" placeholder="Telefon" name="phone", required)
-                    .col
-                        textarea.input.cta__input.card.card-secondary-outline.card-rounded(placeholder="Wiadomość" name="message" rows="4")
-                    .col
-                        button.btn.btn-secondary.btn-normal.btn-pillow.cta__btn(type="submit")
-                            | Wyślij zgłoszenie
+    .card.card-white.card-rounded.h-auto.overflow-hidden
+        .popup__close
+            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="ctaPopup.close()")
+                svg.d-block(width="16" height="16")
+                    use(href="#close")
+        h4.h6.text-center.text-uppercase.popup__title Napisz do nas — oddzwonimy do Ciebie!
+        form#cta-form(method="POST")
+            .row
+                .col
+                    input.input.cta__input.card.card-primary-outline.card-rounded.card-small(type="text" placeholder="Imię" name="name", required)
+                .col
+                    input.input.cta__input.card.card-primary-outline.card-rounded.card-small(type="tel" placeholder="Telefon" name="phone", required)
+                .col
+                    textarea.input.cta__input.card.card-primary-outline.card-rounded.card-small(placeholder="Wiadomość" name="message" rows="4")
+                .col
+                    button.btn.btn-primary.btn-normal.btn-pillow.cta__btn(type="submit") Wyślij zgłoszenie
 button.cta-button.btn.btn-primary.btn-circle.btn-large.btn-pulse(onclick="ctaPopup.showModal()")
     span.sr-only Zostaw swoje dane, a skontaktujemy się z Tobą.
     svg.icon.shake(width="16" height="16")

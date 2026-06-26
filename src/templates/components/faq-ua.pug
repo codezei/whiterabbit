@@ -1,0 +1,77 @@
+section.faq#faq.section.section-accent
+    .container
+        .section__header.js-observe
+            .section__shape.section__shape-top
+                h2.section__title.text-uppercase Найпоширеніші запитання
+                h3.h6.section__subtitle.text-light.mb-0.text-primary ✦ Відповіді на найпоширеніші запитання
+        .section__body.block.js-observe
+            .accordion
+                .accordion-item.card.card-primary-outline.animate-fade-in(style="--i: 0;")
+                    .accordion-item__header
+                        h2.h6.accordion-item__title Як часто потрібно чистити м'які меблі?
+                        button.accordion-item__btn.btn.btn-small.btn.btn-primary#accordion-btn-1.btn-circle(type="button" aria-expanded="false" aria-controls="faq-item-1")
+                            span.sr-only Перемкнути відповідь
+                            svg.icon.in-active-none(width="16" height="16")
+                                use(href="#plus")
+                            svg.icon.in-inactive-none(width="16" height="16")
+                                use(href="#minus")
+                    .accordion-item__body#faq-item-1(aria-labelledby="accordion-btn-1" role="region")
+                        div Ми рекомендуємо проводити професійну хімчистку м'яких меблів кожні 6–12 місяців. Якщо вдома є діти, домашні тварини або люди, які страждають на алергію, варто робити це частіше, щоб меблі залишалися чистими та свіжими.
+
+                .accordion-item.card.card-primary-outline.animate-fade-in(style="--i: 1;")
+                    .accordion-item__header
+                        h2.h6.accordion-item__title Чи можна видалити всі плями?
+                        button.accordion-item__btn.btn.btn-small.btn.btn-primary#accordion-btn-2.btn-circle(type="button" aria-expanded="false" aria-controls="faq-item-2")
+                            span.sr-only Перемкнути відповідь
+                            svg.icon.in-active-none(width="16" height="16")
+                                use(href="#plus")
+                            svg.icon.in-inactive-none(width="16" height="16")
+                                use(href="#minus")
+                    .accordion-item__body#faq-item-2(aria-labelledby="accordion-btn-2" role="region")
+                        div Більшість плям можна успішно видалити, однак усе залежить від їхнього походження, давності та попередніх спроб очищення. У деяких випадках дуже стійкі плями можуть залишити незначні сліди.
+
+                .accordion-item.card.card-primary-outline.animate-fade-in(style="--i: 2;")
+                    .accordion-item__header
+                        h2.h6.accordion-item__title Скільки часу сохне оббивка після чищення?
+                        button.accordion-item__btn.btn.btn-small.btn.btn-primary#accordion-btn-3.btn-circle(type="button" aria-expanded="false" aria-controls="faq-item-3")
+                            span.sr-only Перемкнути відповідь
+                            svg.icon.in-active-none(width="16" height="16")
+                                use(href="#plus")
+                            svg.icon.in-inactive-none(width="16" height="16")
+                                use(href="#minus")
+                    .accordion-item__body#faq-item-3(aria-labelledby="accordion-btn-3" role="region")
+                        div Час висихання залежить від типу тканини та умов у приміщенні. Зазвичай це займає від 5 до 12 годин. У теплому приміщенні з хорошою вентиляцією оббивка висихає швидше. За додаткову оплату, відповідно до прайсу, можна скористатися послугою прискореного сушіння.
+
+                .accordion-item.card.card-primary-outline.animate-fade-in(style="--i: 3;")
+                    .accordion-item__header
+                        h2.h6.accordion-item__title Чи безпечні засоби для чищення для дітей і домашніх тварин?
+                        button.accordion-item__btn.btn.btn-small.btn.btn-primary#accordion-btn-4.btn-circle(type="button" aria-expanded="false" aria-controls="faq-item-4")
+                            span.sr-only Перемкнути відповідь
+                            svg.icon.in-active-none(width="16" height="16")
+                                use(href="#plus")
+                            svg.icon.in-inactive-none(width="16" height="16")
+                                use(href="#minus")
+                    .accordion-item__body#faq-item-4(aria-labelledby="accordion-btn-4" role="region")
+                        div Так. Ми використовуємо сертифіковані засоби, які є безпечними та не викликають алергічних реакцій. Після чищення рекомендуємо не користуватися меблями до їх повного висихання.
+
+                .accordion-item.card.card-primary-outline.animate-fade-in(style="--i: 4;")
+                    .accordion-item__header
+                        h2.h6.accordion-item__title Як підготувати меблі до чищення?
+                        button.accordion-item__btn.btn.btn-small.btn.btn-primary#accordion-btn-5.btn-circle(type="button" aria-expanded="false" aria-controls="faq-item-5")
+                            span.sr-only Перемкнути відповідь
+                            svg.icon.in-active-none(width="16" height="16")
+                                use(href="#plus")
+                            svg.icon.in-inactive-none(width="16" height="16")
+                                use(href="#minus")
+                    .accordion-item__body#faq-item-5(aria-labelledby="accordion-btn-5" role="region")
+                        div Достатньо прибрати з меблів подушки, пледи та інші речі. Переставляти або пересувати меблі не потрібно — ми все зробимо на місці.
+
+        .section__footer.jpg.js-observe
+            .section__shape.section__shape-bottom
+                .section__helper.animate-fade-in(style="--i: 10;")
+                    .helper
+                        .helper__message(data-text="Є запитання? 🐰 Ми із задоволенням допоможемо!")
+                            span.js-helper-text
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
+                .section__btn
+                    include cta-button-ua

@@ -52,7 +52,7 @@
 
 
         @media screen and (min-width: 1200px) {
-            &:hover {
+            &:not([disabled]):hover {
                 --border-color: var(--color-1-shade-1);
                 background: var(--color-1-shade-1);
                 color: var(--color-1-tint-2);
@@ -81,7 +81,7 @@
 
 
             @media screen and (min-width: 1200px) {
-                &:hover {
+                &:not([disabled]):hover {
                     --border-color: var(--color-1-base);
                     background: var(--color-1-base);
                     color: var(--color-1-tint-2);
@@ -112,7 +112,7 @@
 
 
         @media screen and (min-width: 1200px) {
-            &:hover {
+            &:not([disabled]):hover {
                 --border-color: var(--color-2-shade-1);
                 background: var(--color-2-shade-1);
                 color: var(--color-2-tint-2);
@@ -142,7 +142,7 @@
 
 
             @media screen and (min-width: 1200px) {
-                &:hover {
+                &:not([disabled]):hover {
                     --border-color: var(--color-2-base);
                     background: var(--color-2-base);
                     color: var(--color-2-tint-2);

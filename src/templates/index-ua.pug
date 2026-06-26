@@ -1,0 +1,61 @@
+extends settings/layout
+
+prepend html
+    - const lang = "uk";
+
+prepend head
+    - const pageTitle = "Хімчистка м'яких меблів, матраців, килимів, салону автомобіля — Варшава"
+    - const themeColor = "#ffffff"
+    - const pageDescription = "Професійна хімчистка м'яких меблів, матраців, килимів, хімчистка салону автомобіля та миття вікон у Варшаві. Видаляємо плями, пил і неприємні запахи. Телефонуйте: +48 531 903 619."
+    - const pageKeywords = "хімчистка меблів Варшава, хімчистка м'яких меблів Варшава, хімчистка дивана Варшава, хімчистка кутового дивана Варшава, хімчистка крісел Варшава, хімчистка стільців Варшава, хімчистка матраців Варшава, хімчистка килимів Варшава, хімчистка ковроліну Варшава, хімчистка салону автомобіля Варшава, хімчистка автосидінь Варшава, миття вікон Варшава"
+    - const pageUrl = "";
+    - const pageImage = "img/preview.webp";
+    - const twitterImage = "img/preview.webp";
+
+append head
+    include components/schema-ua
+
+append fonts
+    style.
+        /* cormorant-garamond-300 - cyrillic-ext */
+        @font-face {
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 300;
+            src: url('./fonts/cormorant-garamond-v21-cyrillic-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        }
+        /* cormorant-garamond-700 - cyrillic-ext */
+        @font-face {
+            font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 700;
+            src: url('./fonts/cormorant-garamond-v21-cyrillic-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        }
+        body {
+            font-family: 'Cormorant Garamond';
+        }
+
+append content
+    script.
+        const initialCategory = 0;
+    //- include components/header
+    main(style="overflow-x: hidden;")
+        include components/promo-ua
+        include components/services-ua
+        include components/about-ua
+        include components/process-ua
+        include components/why-ua
+        include components/price-ua
+        include components/how-ua
+        include components/works-ua
+        include components/indicators-ua
+        include components/reviews-ua
+        include components/faq-ua
+        include components/contacts-ua
+        include components/icons
+        include components/cta-ua
+    include components/footer
+
+append scripts

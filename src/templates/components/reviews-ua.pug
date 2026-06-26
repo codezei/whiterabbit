@@ -1,0 +1,64 @@
+section.reviews#reviews.block.section
+    .container.section__container
+        .section__header.section__header--fill.decor-lavender
+            .section__header-top
+                h2.section__title.text-uppercase.mb-0 Відгуки
+                .section__navigation
+                    .swiper-navigation
+                        button(type="button" aria-label="Попередня категорія").reviews-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Попередня категорія
+                            svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                        button(type="button" aria-label="Наступна категорія").reviews-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Наступна категорія
+                            svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .section__header-bottom
+                .section__subtitle.h6.text-light.mb-0.text-primary ✦ Відгуки клієнтів, які скористалися нашими послугами
+        .section__body.js-observe
+            nav.categories-navigation(aria-label="Категорії послуг")
+                .categories-navigation-swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text М'які меблі
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Матраци
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Килими
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Автосалон
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Вікна
+            .categories-content
+                .swiper.categories-content-swiper.reviews-swiper(data-disallow-touch="true" data-next-selector=".reviews-button-next" data-prev-selector=".reviews-button-prev")
+                    .swiper-wrapper
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Відгуки про хімчистку м'яких меблів&nbsp;
+                                    include cities-ua
+                                include reviews/reviews-furniture-ua
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Відгуки про хімчистку матраців&nbsp;
+                                    include cities-ua
+                                include reviews/reviews-mattress-ua
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Відгуки про хімчистку килимів&nbsp;
+                                    include cities-ua
+                                include reviews/reviews-carpet-ua
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Відгуки про хімчистку салону автомобіля&nbsp;
+                                    include cities-ua
+                                include reviews/reviews-salon-ua
+                        .swiper-slide.h-auto
+                            article
+                                h3.h2 Відгуки про миття вікон&nbsp;
+                                    include cities-ua
+                                include reviews/reviews-window-ua

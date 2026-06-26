@@ -1,41 +1,58 @@
 extends settings/layout
 
 prepend html
-	- const lang = "pl";
+    - const lang = "pl";
 
 prepend head
-	- const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej — Warszawa"
-	- const themeColor = "#ffffff"
-	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej — Warszawa. Usuwamy plamy, kurz i zapachy. Zadzwoń: 48531903619"
-	- const pageKeywords = "pranie tapicerki meblowej Warszawa, czyszczenie tapicerki meblowej Warszawa, pranie tapicerki Warszawa, czyszczenie tapicerki Warszawa, pranie kanapy Warszawa, czyszczenie kanapy Warszawa, pranie mebli Warszawa, czyszczenie mebli Warszawa, pranie materacy Warszawa, czyszczenie materacy Warszawa, pranie dywanów Warszawa, czyszczenie dywanów Warszawa, pranie wykładzin Warszawa, czyszczenie wykładzin Warszawa, pranie tapicerki samochodowej Warszawa, czyszczenie tapicerki samochodowej Warszawa, pranie narożnika Warszawa, czyszczenie narożnika Warszawa, czyszczenie foteli Warszawa, pranie foteli Warszawa"
-	- const pageUrl = "";
-	- const pageImage = "img/preview.webp";
-	- const twitterImage = "img/preview.webp";
+    - const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej — Warszawa"
+    - const themeColor = "#ffffff"
+    - const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej — Warszawa. Usuwamy plamy, kurz i zapachy. Zadzwoń: 48531903619"
+    - const pageKeywords = "pranie tapicerki meblowej Warszawa, czyszczenie tapicerki meblowej Warszawa, pranie tapicerki Warszawa, czyszczenie tapicerki Warszawa, pranie kanapy Warszawa, czyszczenie kanapy Warszawa, pranie mebli Warszawa, czyszczenie mebli Warszawa, pranie materacy Warszawa, czyszczenie materacy Warszawa, pranie dywanów Warszawa, czyszczenie dywanów Warszawa, pranie wykładzin Warszawa, czyszczenie wykładzin Warszawa, pranie tapicerki samochodowej Warszawa, czyszczenie tapicerki samochodowej Warszawa, pranie narożnika Warszawa, czyszczenie narożnika Warszawa, czyszczenie foteli Warszawa, pranie foteli Warszawa"
+    - const pageUrl = "";
+    - const pageImage = "img/preview.webp";
+    - const twitterImage = "img/preview.webp";
 
 append head
-	//- link(rel="preload" href="fonts/cormorant-garamond-v20-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin)
-	//- link(rel="preload" href="fonts/cormorant-garamond-v20-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin)
+    include components/schema
+
+append fonts
+    style.
+        @font-face {
+            font-display: swap;
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 300;
+            src: url('./fonts/cormorant-garamond-v20-latin-ext-300.woff2') format('woff2');
+        }
+        @font-face {
+            font-display: swap;
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 700;
+            src: url('./fonts/cormorant-garamond-v20-latin-ext-700.woff2') format('woff2');
+        }
+        body  {
+            font-family: 'Cormorant Garamond';
+        }
 
 append content
-	script.
-		const initialCategory = 0;
-	include components/header
-	main(style="overflow-x: hidden;")
-		include components/promo
-		include components/services
-		include components/about
-		include components/process
-		include components/why
-		include components/price
-		include components/how
-		include components/works
-		include components/indicators
-		include components/reviews
-		include components/faq
-		include components/contacts
-		//- include components/popup
-		include components/icons
-		include components/cta
-	include components/footer
+    script.
+        const initialCategory = 0;
+    main(style="overflow-x: hidden;")
+        include components/promo
+        include components/services
+        include components/about
+        include components/process
+        include components/why
+        include components/price
+        include components/how
+        include components/works
+        include components/indicators
+        include components/reviews
+        include components/faq
+        include components/contacts
+        include components/icons
+        include components/cta
+    include components/footer
 
 append scripts

@@ -1,0 +1,224 @@
+script(type="application/ld+json").
+    {
+        "@context": "https://schema.org",
+        "@type": "CleaningService",
+        "@id": "https://whiterabbit.pl/#business",
+        "name": "White Rabbit",
+        "url": "https://whiterabbit.pl/",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://whiterabbit.pl/img/preview.webp"
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://whiterabbit.pl/img/logo.png"
+        },
+        "description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, wykładzin, tapicerki samochodowej oraz mycie okien z dojazdem do klienta na terenie Warszawy i okolic.",
+        "telephone": "+48531903619",
+        "currenciesAccepted": "PLN",
+        "paymentAccepted": [
+            "Cash",
+            "BLIK",
+            "Bank Transfer"
+        ],
+        "availableLanguage": [
+            "pl",
+            "uk"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/share/18mvecontb/?mibextid=wwXIfr",
+            "https://www.instagram.com/pranie_mebli_warszawa_wr?igsh=MW11NmxydHM2NmoyOQ%3D%3D&utm_source=qr",
+            "https://wa.me/48531903619"
+        ],
+        "areaServed": {
+            "@type": "City",
+            "name": "Warszawa"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "07:00",
+            "closes": "22:00"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48531903619",
+            "contactType": "customer service",
+            "availableLanguage": [
+                "pl",
+                "uk"
+            ]
+        },
+        "knowsAbout": [
+            "Pranie tapicerki meblowej",
+            "Pranie materacy",
+            "Pranie dywanów",
+            "Pranie wykładzin",
+            "Pranie tapicerki samochodowej",
+            "Mycie okien",
+            "Usuwanie plam",
+            "Usuwanie zapachów",
+            "Czyszczenie ekstrakcyjne"
+        ]
+    }
+
+script(type="application/ld+json").
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://whiterabbit.pl/#services",
+        "url": "https://whiterabbit.pl/#services",
+        "name": "Usługi White Rabbit",
+        "numberOfItems": 5,
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Service",
+                    "name": "Pranie tapicerki meblowej",
+                    "url": "https://whiterabbit.pl/#services",
+                    "description": "Profesjonalne pranie sof, narożników, foteli, krzeseł oraz innych mebli tapicerowanych z dojazdem do klienta na terenie Warszawy i okolic.",
+                    "provider": {
+                        "@id": "https://whiterabbit.pl/#business",
+                        "name": "White Rabbit"
+                    },
+                    "areaServed": {
+                        "@type": "City",
+                        "name": "Warszawa"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Service",
+                    "name": "Pranie materacy",
+                    "url": "https://whiterabbit.pl/#services",
+                    "description": "Profesjonalne czyszczenie i pranie materacy jednoosobowych oraz dwuosobowych z usuwaniem plam, roztoczy i nieprzyjemnych zapachów.",
+                    "provider": {
+                        "@id": "https://whiterabbit.pl/#business",
+                        "name": "White Rabbit"
+                    },
+                    "areaServed": {
+                        "@type": "City",
+                        "name": "Warszawa"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Service",
+                    "name": "Pranie dywanów i wykładzin",
+                    "url": "https://whiterabbit.pl/#services",
+                    "description": "Profesjonalne pranie dywanów oraz wykładzin w domach, mieszkaniach i biurach z dojazdem do klienta.",
+                    "provider": {
+                        "@id": "https://whiterabbit.pl/#business",
+                        "name": "White Rabbit"
+                    },
+                    "areaServed": {
+                        "@type": "City",
+                        "name": "Warszawa"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Service",
+                    "name": "Pranie tapicerki samochodowej",
+                    "url": "https://whiterabbit.pl/#services",
+                    "description": "Profesjonalne czyszczenie foteli, kanap, boczków drzwi, podsufitki oraz innych elementów wnętrza samochodu.",
+                    "provider": {
+                        "@id": "https://whiterabbit.pl/#business",
+                        "name": "White Rabbit"
+                    },
+                    "areaServed": {
+                        "@type": "City",
+                        "name": "Warszawa"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "Service",
+                    "name": "Mycie okien",
+                    "url": "https://whiterabbit.pl/#services",
+                    "description": "Profesjonalne mycie okien, ram, parapetów oraz innych powierzchni szklanych.",
+                    "provider": {
+                        "@id": "https://whiterabbit.pl/#business",
+                        "name": "White Rabbit"
+                    },
+                    "areaServed": {
+                        "@type": "City",
+                        "name": "Warszawa"
+                    }
+                }
+            }
+        ]
+    }
+
+script(type="application/ld+json").
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://whiterabbit.pl/#faq",
+        "url": "https://whiterabbit.pl/#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Jak często należy czyścić meble tapicerowane?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Zalecamy profesjonalne czyszczenie tapicerki meblowej co 6–12 miesięcy. W domach, gdzie są dzieci, zwierzęta domowe lub osoby cierpiące na alergie, warto robić to częściej, aby meble pozostały czyste i świeże."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Czy można usunąć wszystkie plamy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Większość plam można skutecznie usunąć, ale wszystko zależy od rodzaju plamy, czasu jej obecności oraz wcześniejszych prób czyszczenia. Niektóre uporczywe plamy mogą pozostawić niewielkie przebarwienia."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ile czasu potrzebuje tapicerka, aby wyschła po czyszczeniu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Czas schnięcia zależy od rodzaju materiału oraz warunków w pomieszczeniu. Zazwyczaj zajmuje to od 5 do 12 godzin. Tapicerka schnie szybciej w ciepłym i dobrze wentylowanym miejscu. Za dodatkową opłatą zgodnie z cennikiem można skorzystać z usługi przyspieszonego suszenia."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Czy środki czyszczące są bezpieczne dla dzieci i zwierząt domowych?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tak. Używamy certyfikowanych środków, które są bezpieczne i nie powodują alergii. Po czyszczeniu zalecamy nie korzystać z mebli, dopóki całkowicie nie wyschną."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak przygotować meble do czyszczenia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wystarczy usunąć poduszki, koce i inne przedmioty z mebli. Nie ma potrzeby ich przestawiać ani przesuwać — wszystkim zajmiemy się na miejscu."
+                }
+            }
+        ]
+    }

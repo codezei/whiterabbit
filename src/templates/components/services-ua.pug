@@ -1,0 +1,307 @@
+section.services#services.block.section
+    .container.section__container
+        .section__header.section__header--fill.decor-lavender
+            .section__header-top
+                h2.section__title.text-uppercase.mb-0 Послуги
+                .section__navigation.swiper-navigation
+                    button(type="button").services-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                        span.sr-only Попередня послуга
+                        svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                            path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                    button(type="button").services-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                        span.sr-only Наступна послуга
+                        svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                            path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .section__header-bottom
+                p.h6.section__subtitle.text-light.mb-0.text-primary ✦ Видаляємо плями, неприємні запахи та пил із будь-яких поверхонь — м'яких меблів, килимів, матраців і навіть вікон
+        .section__body.js-observe
+            .swiper.services-swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        article
+                            .service.card.card-primary-outline.animate-fade-in(style="--i: 0;")
+                                .service__header
+                                    .service__img
+                                        picture
+                                            source(srcset="img/service-furniture.webp" type="image/webp")
+                                            img(src="img/service-furniture.jpg" alt="Хімчистка м'яких меблів" loading="lazy" height="200")
+                                .service__body
+                                    h3.h6.service__title Хімчистка м'яких меблів
+                                    .service__description Ефективно видаляємо плями та неприємні запахи з усіх видів м'яких меблів: диванів, крісел і стільців.
+                                .service__footer
+                                    a.service__more(onclick="popupFurniture.showModal()" href="#" aria-label="Детальніше про хімчистку м'яких меблів") Детальніше
+                            dialog.popup.popup-center#popupFurniture(aria-labelledby="popupFurnitureTitle" aria-modal="true")
+                                .card.card-white.card-rounded.h-auto.overflow-hidden
+                                    form(method="dialog")
+                                        .popup__close
+                                            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupFurniture.close()")
+                                                svg.d-block(width="16" height="16")
+                                                    use(href="#close")
+                                        h4.h6.text-center.text-uppercase.popup__title#popupFurnitureTitle ✦ Професійна
+                                            span.text-accent  хімчистка м'яких меблів
+                                            |  з виїздом додому
+                                        p Ми пропонуємо професійну хімчистку м'яких меблів, яка ефективно видаляє плями, неприємні запахи та глибокі забруднення з диванів, кутових диванів і крісел. Чищення виконується екстракційним методом, завдяки чому тканина ретельно промивається та швидше висихає.
+                                        p Регулярна хімчистка покращує зовнішній вигляд меблів, усуває алергени та подовжує термін їх служби.
+                                        .row.row-cols-3
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="0" href="#reviews" onclick="popupFurniture.close();")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#comment")
+                                                    | Відгуки
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="0" href="#price" onclick="popupFurniture.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#cash")
+                                                    | Ціни
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="0" href="#works" onclick="popupFurniture.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#gallery")
+                                                    | Фото
+                                        br
+                                        h4.h6.text-uppercase Ми чистимо:
+                                        .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Кутові дивани L та U
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Дивани та тахти
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Розкладні дивани
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Крісла (зокрема крісла-вуханя)
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small М'які стільці
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Меблеві подушки
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Офісні крісла
+                                        .popup__controls(onclick="popupFurniture.close()")
+                                            a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                                svg.icon.icon-right.shake(width="16" height="16")
+                                                    use(href="#whatsapp")
+                                                | Повернути свіжість меблям
+                    .swiper-slide
+                        article
+                            .service.card.card-primary-outline.animate-fade-in(style="--i: 1;")
+                                .service__header
+                                    .service__img
+                                        picture.service__img
+                                            source(srcset="img/service-mattress.webp" type="image/webp")
+                                            img(src="img/service-mattress.jpg" alt="Хімчистка матраців" loading="lazy" height="200")
+                                .service__body
+                                    h3.h6.service__title Хімчистка матраців
+                                    .service__description Безпечно й ефективно видаляємо забруднення, плями, сліди поту та неприємні запахи з односпальних і двоспальних матраців.
+                                .service__footer
+                                    a.service__more(onclick="popupMattress.showModal()" href="#" aria-label="Детальніше про хімчистку матраців") Детальніше
+                            dialog.popup.popup-center#popupMattress(aria-labelledby="popupMattressTitle" aria-modal="true")
+                                .card.card-white.card-rounded.h-auto.overflow-hidden
+                                    form(method="dialog")
+                                        .popup__close
+                                            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupMattress.close()")
+                                                svg.d-block(width="16" height="16")
+                                                    use(href="#close")
+                                        h4.h6.text-uppercase.popup__title.text-center#popupMattressTitle ✦ Професійна
+                                            span.text-accent  хімчистка матраців
+                                        p Ми пропонуємо професійну хімчистку матраців, яка ефективно видаляє сліди поту, біологічні плями, пил, пилових кліщів і неприємні запахи. Таке чищення покращує гігієну сну та особливо рекомендується людям з алергією й сім'ям із дітьми.
+                                        p Завдяки глибокому промиванню волокон ми видаляємо забруднення, яких не видно неозброєним оком.
+                                        .row.row-cols-3
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="1" href="#reviews" onclick="popupMattress.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#comment")
+                                                    | Відгуки
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="1" href="#price" onclick="popupMattress.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#cash")
+                                                    | Ціни
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="1" href="#works" onclick="popupMattress.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#gallery")
+                                                    | Фото
+                                        br
+                                        h4.h6.text-uppercase Ми чистимо:
+                                        .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Односпальні матраци
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Двоспальні матраци
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Чищення з одного або з обох боків
+                                        .popup__controls(onclick="popupMattress.close()")
+                                            a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                                svg.icon.icon-right.shake(width="16" height="16")
+                                                    use(href="#whatsapp")
+                                                | Повернути свіжість матрацу
+                    .swiper-slide
+                        article
+                            .service.card.card-primary-outline.animate-fade-in(style="--i: 2;")
+                                .service__header
+                                    .service__img
+                                        picture.service__img
+                                            source(srcset="img/service-carpet.webp" type="image/webp")
+                                            img(src="img/service-carpet.jpg" alt="Хімчистка килимів" loading="lazy" height="200")
+                                .service__body
+                                    h3.h6.service__title Хімчистка килимів
+                                    .service__description Ретельно видаляємо бруд, плями, шерсть домашніх тварин і пил із килимів та ковроліну.
+                                .service__footer
+                                    a.service__more(onclick="popupCarpet.showModal()" href="#" aria-label="Детальніше про хімчистку килимів") Детальніше
+                            dialog.popup.popup-center#popupCarpet(aria-labelledby="popupCarpetTitle" aria-modal="true")
+                                .card.card-white.card-rounded.h-auto.overflow-hidden
+                                    form(method="dialog")
+                                        .popup__close
+                                            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupCarpet.close()")
+                                                svg.d-block(width="16" height="16")
+                                                    use(href="#close")
+                                        h4.h6.text-uppercase.text-center.popup__title#popupCarpetTitle ✦ Професійна
+                                            span.text-accent  хімчистка килимів та ковроліну
+                                        p Наша хімчистка килимів ефективно видаляє плями, шерсть домашніх тварин, пил і алергени з глибини волокон. Також виконуємо професійне чищення ковроліну в будинках, квартирах, офісах і комерційних приміщеннях.
+                                        p Регулярна хімчистка повертає килимам свіжість, яскравість кольорів і покращує гігієну приміщення.
+                                        .row.row-cols-3
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="2" href="#reviews" onclick="popupCarpet.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#comment")
+                                                    | Відгуки
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="2" href="#price" onclick="popupCarpet.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#cash")
+                                                    | Ціни
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="2" href="#works" onclick="popupCarpet.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#gallery")
+                                                    | Фото
+                                        br
+                                        h4.h6.text-uppercase Ми чистимо:
+                                        .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Синтетичні та натуральні килими
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Домашній ковролін
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Офісний ковролін
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Великі площі (індивідуальний розрахунок)
+                                        .popup__controls(onclick="popupCarpet.close()")
+                                            a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                                svg.icon.icon-right.shake(width="16" height="16")
+                                                    use(href="#whatsapp")
+                                                | Повернути свіжість килиму
+                    .swiper-slide
+                        article
+                            .service.card.card-primary-outline.animate-fade-in(style="--i: 3;")
+                                .service__header
+                                    .service__img
+                                        picture.service__img
+                                            source(srcset="img/service-salon.webp" type="image/webp")
+                                            img(src="img/service-salon.jpg" alt="Хімчистка салону автомобіля" loading="lazy" height="200")
+                                .service__body
+                                    h3.h6.service__title Хімчистка салону автомобіля
+                                    .service__description Видаляємо забруднення, плями та неприємні запахи із сидінь, дверних карт, стелі та інших елементів салону автомобіля.
+                                .service__footer
+                                    a.service__more(onclick="popupSalon.showModal()" href="#" aria-label="Детальніше про хімчистку салону автомобіля") Детальніше
+                            dialog.popup.popup-center#popupSalon(aria-labelledby="popupSalonTitle" aria-modal="true")
+                                .card.card-white.card-rounded.h-auto.overflow-hidden
+                                    form(method="dialog")
+                                        .popup__close
+                                            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupSalon.close()")
+                                                svg.d-block(width="16" height="16")
+                                                    use(href="#close")
+                                        h4.h6.text-uppercase.text-center.popup__title#popupSalonTitle ✦ Професійна
+                                            span.text-accent  хімчистка салону автомобіля
+                                        p Ми пропонуємо професійну хімчистку салону автомобіля, яка ефективно видаляє плями, пил, сліди поту та неприємні запахи. Наше чищення покращує комфорт під час поїздок і забезпечує чистоту та гігієну салону.
+                                        .row.row-cols-3
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="3" href="#reviews" onclick="popupSalon.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#comment")
+                                                    | Відгуки
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="3" href="#price" onclick="popupSalon.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#cash")
+                                                    | Ціни
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="3" href="#works" onclick="popupSalon.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#gallery")
+                                                    | Фото
+                                        br
+                                        h4.h6.text-uppercase Ми чистимо:
+                                        .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Передні та задні сидіння
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Задній диван
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Стелю салону
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Дверні карти
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Підлогу та килимки
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Багажник
+                                        .popup__controls(onclick="popupSalon.close()")
+                                            a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                                svg.icon.icon-right.shake(width="16" height="16")
+                                                    use(href="#whatsapp")
+                                                | Освіжити салон автомобіля
+                    .swiper-slide
+                        article
+                            .service.card.card-primary-outline.animate-fade-in(style="--i: 4;")
+                                .service__header
+                                    .service__img
+                                        picture.service__img
+                                            source(srcset="img/service-window.webp" type="image/webp")
+                                            img(src="img/service-window.jpg" alt="Миття вікон" loading="lazy" height="200")
+                                .service__body
+                                    h3.h6.service__title Миття вікон
+                                    .service__description Професійно миємо вікна, видаляючи пил, розводи, патьоки та сліди після дощу.
+                                .service__footer
+                                    a.service__more(onclick="popupWindow.showModal()" href="#" aria-label="Детальніше про миття вікон") Детальніше
+                            dialog.popup.popup-center#popupWindow(aria-labelledby="popupWindowTitle" aria-modal="true")
+                                .card.card-white.card-rounded.h-auto.overflow-hidden
+                                    form(method="dialog")
+                                        .popup__close
+                                            button.btn.btn-primary-outline.btn-circle.btn-small(onclick="popupWindow.close()")
+                                                svg.d-block(width="16" height="16")
+                                                    use(href="#close")
+                                        h4.h6.text-uppercase.text-center.popup__title#popupWindowTitle ✦ Професійне
+                                            span.text-accent  миття вікон
+                                            |  з виїздом до клієнта
+                                        p Ми пропонуємо ретельне миття вікон, яке ефективно видаляє пил, смог, патьоки та сліди після дощу. Наше професійне очищення забезпечує ідеальну прозорість скла без розводів.
+                                        .row.row-cols-3
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".reviews-swiper" data-slide="4" href="#reviews" onclick="popupWindow.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#comment")
+                                                    | Відгуки
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".price-swiper" data-slide="4" href="#price" onclick="popupWindow.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#cash")
+                                                    | Ціни
+                                            .col
+                                                a.btn.btn-primary-outline.btn-rounded.btn-small.w-100.js-change-slide(data-swiper=".works-swiper" data-slide="4" href="#works" onclick="popupWindow.close()")
+                                                    svg.icon.icon-right(width="16" height="16")
+                                                        use(href="#gallery")
+                                                    | Фото
+                                        br
+                                        h4.h6.text-uppercase Ми миємо:
+                                        .row.row-cols-2.row-cols-md-3.row-cols-md-4
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Скло з обох боків
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Віконні рами
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Підвіконня
+                                            .col
+                                                .card.card-secondary-outline.card-rounded.card-small Видалення патьоків
+                                        .popup__controls(onclick="popupWindow.close()")
+                                            a.btn.btn-primary.btn-normal.text-center.btn-pillow.w-100.text-nowrap(href="https://wa.me/48531903619" target="_blank" rel="noopener")
+                                                svg.icon.icon-right.shake(width="16" height="16")
+                                                    use(href="#whatsapp")
+                                                | Повернути блиск вікнам

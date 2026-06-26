@@ -1,0 +1,49 @@
+section.why#why.section.section-accent
+    .container
+        .section__header.js-observe
+            .section__shape.section__shape-top
+                h2.section__title.text-uppercase Чому саме ми?
+                h3.h6.section__subtitle.mb-0.text-light.text-primary ✦ Наші клієнти повертаються до нас знову — і ось чому
+        .section__body.block.js-observe
+            .row.row-cols-lg-2
+                .col.animate-fade-in(style="--i: 0;")
+                    .card.card-white.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#effective")
+                            h4.h6.card__title.mb-0.text-uppercase ✦ Ефективне видалення плям і запахів
+                        .card__body Ми використовуємо професійні засоби, які справляються навіть із найскладнішими забрудненнями.
+                .col.animate-fade-in(style="--i: 1;")
+                    .card.card-white.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#materials")
+                            h4.h6.card__title.mb-0.text-uppercase ✦ Працюємо з різними матеріалами
+                        .card__body Дбайливо очищаємо тканину, шкіру, замшу, мікрофібру та інші види поверхонь.
+                .col.animate-fade-in(style="--i: 2;")
+                    .card.card-white.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#intime")
+                            h4.h6.card__title.mb-0.text-uppercase ✦ Приїжджаємо у зручний для вас час
+                        .card__body Ви самі обираєте дату та час — ми підлаштовуємося під ваш графік.
+                .col.animate-fade-in(style="--i: 3;")
+                    .card.card-white.card-leaf
+                        .card__header
+                            .card__icon
+                                svg(width="48" height="48")
+                                    use(href="#safe")
+                            h4.h6.card__title.mb-0.text-uppercase ✦ Безпечно для дітей і домашніх тварин
+                        .card__body Ми використовуємо гіпоалергенні засоби, безпечні для здоров'я.
+        .section__footer.jpg.js-observe
+            .section__shape.section__shape-bottom
+                .section__helper.animate-fade-in(style="--i: 10;")
+                    .helper
+                        .helper__message(data-text="Дізнайтеся, чому обирають саме нас 🐰")
+                            span.js-helper-text
+                        img.helper__rabbit(src="img/rabbit-1.webp", alt="")
+                .section__btn
+                    include cta-button-ua

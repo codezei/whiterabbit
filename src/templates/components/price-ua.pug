@@ -1,0 +1,85 @@
+section#price.price.block.section
+    .container.section__container
+        .section__header.section__header--fill.decor-lavender
+            .section__header-top
+                h2.section__title.text-uppercase Ціни
+                .section__navigation
+                    .swiper-navigation
+                        button(type="button" aria-label="Попередня категорія").price-button-prev.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Попередня категорія
+                            svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                        button(type="button" aria-label="Наступна категорія").price-button-next.btn.btn-primary-outline.btn-small.btn-circle
+                            span.sr-only Наступна категорія
+                            svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .section__header-bottom
+                .section__subtitle.h6.text-light.mb-0.text-primary ✦ Оберіть категорію та перегляньте вартість потрібних вам послуг
+        .section__body.js-observe
+            nav.categories-navigation(aria-label="Категорії послуг")
+                .categories-navigation-swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text М'які меблі
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Матраци
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Килими
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Автосалон
+                        .swiper-slide
+                            button.btn.btn-secondary-outline.btn-small.btn-pillow.category-btn(type="button")
+                                span.category-btn__text Вікна
+            .categories-content
+                .swiper.categories-content-swiper.price-swiper(data-next-selector=".price-button-next" data-prev-selector=".price-button-prev")
+                    .swiper-wrapper
+                        .swiper-slide
+                            article
+                                h3.h2 Ціни на хімчистку м'яких меблів&nbsp;
+                                    include cities-ua
+                                p.text-primary Ознайомтеся з цінами на хімчистку диванів, кутових диванів і крісел. Оберіть послугу, яка найкраще відповідає вашим потребам.
+                                include price/price-furniture-ua
+                        .swiper-slide
+                            article
+                                h3.h2 Ціни на хімчистку матраців&nbsp;
+                                    include cities-ua
+                                p Професійна хімчистка матраців різних розмірів — від односпальних до великих сімейних моделей.
+                                include price/price-mattress-ua
+                        .swiper-slide
+                            article
+                                h3.h2 Ціни на хімчистку килимів&nbsp;
+                                    include cities-ua
+                                p Вартість залежить від розміру килима та ступеня забруднення. Подбайте про чистоту й свіжість вашого дому.
+                                include price/price-carpet-ua
+                        .swiper-slide
+                            article
+                                h3.h2 Ціни на хімчистку салону автомобіля&nbsp;
+                                    include cities-ua
+                                p Освіжіть салон свого автомобіля — оберіть хімчистку сидінь, заднього дивана або комплексне чищення.
+                                include price/price-salon-ua
+                        .swiper-slide
+                            article
+                                h3.h2 Ціни на миття вікон&nbsp;
+                                    include cities-ua
+                                p Чисті вікна без розводів. Перегляньте ціни на професійне миття скла, рам і скляних поверхонь.
+                                include price/price-window-ua
+
+        p.text-center
+            small
+                svg.icon.icon-right(width="16" height="16")
+                    use(href="#info")
+                span На жаль, ми не можемо гарантувати повне видалення кожної плями або повне усунення всіх неприємних запахів.
+            br
+            small
+                svg.icon.icon-right(width="16" height="16")
+                    use(href="#info")
+                span Ціни є орієнтовними. Остаточна вартість залежить від типу матеріалу, ступеня забруднення та розміру виробу.
+            br
+            small
+                svg.icon.icon-right(width="16" height="16")
+                    use(href="#info")
+                span Також ми пропонуємо додаткову послугу прискореного сушіння меблів, килимів, матраців та автомобільних сидінь.

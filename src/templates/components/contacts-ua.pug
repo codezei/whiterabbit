@@ -1,0 +1,28 @@
+section#contacts.contacts.block
+    .container.section__container
+        .section__header.section__header--fill.js-observe
+            h2.section__title.text-uppercase.mb-0 Контакти
+        .section__body.js-observe
+            picture.animate-fade-in
+                source(type="image/webp" srcset="img/map-mob.webp" media="(max-width: 430px)")
+                source(srcset="img/map-mob.png" media="(max-width: 430px)")
+                source(type="image/webp" srcset="img/map.webp")
+                img.contacts__map(src="img/map.jpg" alt="")
+        .section__footer.section__footer--fill.js-observe
+            .row.row-cols-md-2.row-cols-lg-4
+                .col.animate-fade-in(style="--i: 0;")
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Територія обслуговування
+                        include cities-ua
+                .col.animate-fade-in(style="--i: 1;")
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Соціальні мережі
+                        include socials
+                .col.animate-fade-in(style="--i: 2;")
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Телефон
+                        a(href="tel:+48531903619" aria-label="Зателефонувати за номером +48531903619").link +48531903619
+                .col.animate-fade-in(style="--i: 3;")
+                    .card.card-primary-outline.card-leaf
+                        h3.h6 Години роботи
+                        include schedule-ua

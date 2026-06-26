@@ -3,7 +3,7 @@ const sitemap = require("gulp-sitemap");
 const robots = require("gulp-robots");
 const { paths } = require('./settings');
 
-const siteUrl = "https://toptapclean.pl";
+const siteUrl = "https://whiterabbitcleaning.pl";
 
 // Генерация sitemap.xml
 function generateSitemap() {

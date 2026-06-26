@@ -72,7 +72,10 @@
         --border-color: var(--color-1-base);
         background-color: var(--color-1-base);
         color: var(--color-1-tint-2);
-
+        &.input::placeholder {
+            color: var(--color-1-tint-2);
+            opacity: 0.8;
+        }
         &.active {
             --border-color: var(--color-1-shade-1);
             background-color: var(--color-1-shade-1);
@@ -84,7 +87,10 @@
             --border-color: #BCB0F210;
             background-color: var(--color-1-tint-2);
             color: var(--color-1-base);
-
+            &.input::placeholder {
+                color: var(--color-1-base);
+                opacity: 0.8;
+            }
             &.active {
                 --border-color: var(--color-1-base);
                 background-color: var(--color-1-base);
@@ -98,7 +104,10 @@
         --border-color: var(--color-2-base);
         background-color: var(--color-2-base);
         color: var(--color-2-tint-2);
-
+        &.input::placeholder {
+            color: var(--color-2-tint-2);
+            opacity: 0.8;
+        }
         &.active {
             --border-color: var(--color-2-shade-1);
             background-color: var(--color-2-shade-1);
@@ -110,7 +119,10 @@
             --border-color: var(--color-2-tint-2);
             background-color: var(--color-2-tint-2);
             color: var(--color-2-base);
-
+            &.input::placeholder {
+                color: var(--color-2-base);
+                opacity: 0.8;
+            }
             &.active {
                 --border-color: var(--color-2-base);
                 background-color: var(--color-2-base);
