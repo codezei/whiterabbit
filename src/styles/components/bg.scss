@@ -126,11 +126,14 @@
         margin-right: auto;
         // background: linear-gradient(to right, var(--color-1-tint-2) 0%, var(--color-2-tint-2) 50%, transparent 100%);
         background-color: #f3efff;
-        background-image: linear-gradient(to right, #f3efff80 0%, #f3efff80 100%), url(../img/lavender-3.webp);
-        background-size: cover, 500px;
+        background-image: linear-gradient(to right, #f3efff80 0%, #f3efff80 100%), url(../img/lavender-1.webp);
+        background-size: cover, 300px;
         background-repeat: no-repeat, no-repeat;
         background-position: center, left calc((100vw - var(--container-width)) / 2 - 250px) bottom;
         // position: relative;
+        @media screen and (min-width: 576px) {
+            background-image: linear-gradient(to right, #f3efff80 0%, #f3efff80 100%), url(../img/lavender-3.webp);
+        }
     }
     &-primary {
         --parallax-y: 0px;
@@ -145,24 +148,24 @@
 }
 
 
-.decor-lavender {
-    position: relative;
+// .decor-lavender {
+//     position: relative;
 
-    &:before {
-        content: "";
-        display: block;
-        height: 150px;
-        width: 150px;
-        background-image: url(../img/lavender-1.webp);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 100%;
-        bottom: 0;
-        z-index: 2;
-    }
-}
+//     &:before {
+//         content: "";
+//         display: block;
+//         height: 150px;
+//         width: 150px;
+//         background-image: url(../img/lavender-1.webp);
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         position: absolute;
+//         right: 100%;
+//         bottom: 0;
+//         z-index: 2;
+//     }
+// }
 
 // .decor-rabbit {
 //     position: relative;

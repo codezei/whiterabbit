@@ -16,6 +16,8 @@ append head
     include components/schema
 
 append fonts
+    link(rel="preload" href="./fonts/cormorant-garamond-v20-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="./fonts/cormorant-garamond-v20-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin)
     style.
         @font-face {
             font-display: swap;
@@ -37,8 +39,9 @@ append fonts
 
 append content
     script.
-        const initialCategory = 0;
-    main(style="overflow-x: hidden;")
+        const initialCategory = 0
+    include components/header
+    main
         include components/promo
         include components/services
         include components/about

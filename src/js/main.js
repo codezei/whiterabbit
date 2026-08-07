@@ -1,45 +1,58 @@
 
-// import faq from './modules/faq'
-import works from './modules/works'
 import header from './modules/header'
 import services from './modules/services'
+import works from './modules/works'
 import reviews from './modules/reviews'
-import cta from './modules/cta'
 import process from './modules/process'
+import date from './modules/date'
 import accordion from './modules/accordion'
-// import contacts from './modules/contacts'
 import categories from './modules/categories'
-// import price from './modules/price'
 import indicators from './modules/indicators'
 import helper from './modules/helper'
 import animation from './modules/animation'
-import date from './modules/date'
+import cta from './modules/cta'
 import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
-
 	header()
     animation()
-	services()
-	reviews()
 	cta()
-	works()
-	process()
 	accordion()
-	categories()
-	// contacts()
-	// faq()
-	// price()
 	indicators()
     helper()
-	// bg()
-
-	// AOS.init({
-	// 	offset: 80,
-	// 	duration: 600,
-	// 	easing: 'ease-in',
-	// 	once: true,
-	// });
-
 })
 date()
+
+
+function main () {
+
+    works()
+    process()
+    services()
+    reviews()
+    categories()
+}
+
+function lazyLoadLibs () {
+    const script = document.createElement('script');
+    script.src = 'js/libs.js?v=3.0.6';
+    document.body.appendChild(script);
+
+    script.onload = function () {
+        main()
+    }
+}
+
+if (document.documentElement.clientWidth < 480) {
+    window.addEventListener('scroll',
+        function () {
+            return setTimeout(function () {
+                lazyLoadLibs()
+            }, 1000)
+        }, {
+        once: true,
+        passive: true
+    });
+} else {
+    lazyLoadLibs()
+};

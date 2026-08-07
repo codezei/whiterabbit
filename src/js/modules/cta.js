@@ -32,6 +32,7 @@ export default function () {
                 setTimeout(function () {
                     popupSuccess.close();
                 }, 5000)
+                // gtag_report_conversion();
             } else {
                 ctaPopup.close();
                 popupError.showModal();

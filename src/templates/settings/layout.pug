@@ -9,8 +9,15 @@ block html
                 meta(http-equiv="X-UA-Compatible" content="ie=edge")
                 meta(name="theme-color" content=themeColor)
                 title= pageTitle
+                link(rel="preload" as="image" href="img/main-bg-xs.webp" fetchpriority="high")
                 block fonts
-                link(rel="stylesheet" href="css/style.min.css?v=1.0.1")
+                //- link(
+                //-     rel="preload"
+                //-     href="css/style.min.css?v=3.0.1"
+                //-     as="style"
+                //- )
+                link(rel="stylesheet" href="css/main.min.css?v=4.0.1")
+                link(rel="stylesheet" href="css/libs.min.css?v=4.0.1" media="print" onload="this.media='all'")
                 link(rel="icon" href="img/favicon.ico" type="image/x-icon")
                 link(rel="canonical", href= domain + pageUrl)
                 meta(name="description", content=pageDescription)
@@ -25,8 +32,19 @@ block html
                 meta(name="twitter:title", content=pageTitle)
                 meta(name="twitter:description", content=pageDescription)
                 meta(name="twitter:image", content= domain + twitterImage)
+                link(rel='alternate' hreflang='pl' href= domain)
+                link(rel='alternate' hreflang='uk' href= domain + 'index-ua.html')
+                link(rel='alternate' hreflang='x-default' href= domain)
+                //- script(async='' src='https://www.googletagmanager.com/gtag/js?id=AW-18299357182')
+                //- script.
+                //-     window.dataLayer = window.dataLayer || [];
+                //-     function gtag(){dataLayer.push(arguments);}
+                //-     gtag('js', new Date());
+                //-     gtag('config', 'AW-18299357182');
+                //- script.
+                //-     function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-18299357182/IA0gCPuw-M8cEP6P6JVE', 'event_callback': callback }); return false; }
         body
             block content
             block scripts
-                script(src="js/libs.js?v=1.0.1")
-                script(src="js/main.js?v=1.0.1")
+                //- script(src="js/libs.js?v=3.0.3" defer)
+                script(src="js/main.js?v=3.0.6" defer)

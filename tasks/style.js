@@ -14,7 +14,7 @@ const postcss = require('gulp-postcss');
 const replace = require( 'gulp-replace');
 
 const renameSettings = {
-  basename: 'style',
+//   basename: 'style',
   suffix: '.min'
 };
 const processors = [
@@ -31,7 +31,10 @@ const processors = [
   })
 ];
 function style() {
-  return src(`${paths.src.styles}/main.scss`)
+    return src([
+        `${paths.src.styles}/main.scss`,
+        `${paths.src.styles}/libs.scss`
+    ])
     .pipe(plumber())
     .pipe(condition(dev(), sourcemaps.init()))
     .pipe(sass({ includePaths: ["node_modules/"] }).on('error', sass.logError))

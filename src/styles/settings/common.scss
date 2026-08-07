@@ -126,13 +126,15 @@ li:not(:last-child):not(.bullet) {
 }
 
 html {
-    // overflow-x: hidden;
+    overflow-x: hidden;
     font-size: 16px;
 }
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    // max-width: 100%;
 }
 
 svg {
@@ -934,6 +936,7 @@ hr {
 .helper {
     width: 150px;
     position: relative;
+    pointer-events: none;
     &__message {
         position: absolute;
         background-image: url(../img/cloud.webp);
