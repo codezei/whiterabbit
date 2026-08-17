@@ -7,6 +7,7 @@ const script = require('./tasks/script');
 const image = require('./tasks/image');
 const svg = require('./tasks/svg');
 const font = require('./tasks/font');
+const htmlMin = require('./tasks/htmlmin');
 const localization = require('./tasks/localization');
 const clean = require('./tasks/clean');
 const archive = require('./tasks/archive');
@@ -15,7 +16,7 @@ const create = require('./tasks/create');
 const { generateSitemap, generateRobots } = require('./tasks/seo');
 const { generateTelegram } = require('./tasks/telegram');
 
-const build = series(clean, prod, parallel(markup, style, script, image, font, localization), parallel(generateSitemap, generateRobots, generateTelegram));
+const build = series(clean, prod, parallel(markup, style, script, image, font, localization), htmlMin, parallel(generateSitemap, generateRobots, generateTelegram));
 const deploy = series(clean, prod, parallel(markup, style, script, image, font, localization), parallel(generateSitemap, generateRobots, generateTelegram), archive);
 const development = series(clean, dev, parallel(markup, style, script, image, font, localization), serve);
 

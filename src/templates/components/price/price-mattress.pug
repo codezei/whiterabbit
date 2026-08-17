@@ -1,16 +1,12 @@
 .row.row-cols-sm-2.row-cols-md-3.row-cols-lg-4
-    .col.animate-fade-in(style="--i: 0;")
-        .card.card-primary-outline.card-leaf
-            .price-item
-                h4.h6.price-item__title Materac jednoosobowy
-                .price-item__value z jednej strony 180zł
-                .price-item__value z obu strony od 330zł
-    .col.animate-fade-in(style="--i: 1;")
-        .card.card-primary-outline.card-leaf
-            .price-item
-                h4.h6.price-item__title Materac dwuosobowy
-                .price-item__value z jednej strony 250zł
-                .price-item__value z obu stron od 450zł
+    .col.animate-fade-in.card.card-primary-outline.card-leaf.price-item(style="--i: 0;")
+        .h6.price-item__title.text-bold Materac jednoosobowy
+        .price-item__value z jednej strony 180 zł
+        .price-item__value z obu strony od 330 zł
+    .col.animate-fade-in.card.card-primary-outline.card-leaf.price-item(style="--i: 1;")
+        .h6.price-item__title.text-bold Materac dwuosobowy
+        .price-item__value z jednej strony 250 zł
+        .price-item__value z obu stron od 450 zł
 p
     i
         small * Minimalny koszt wyjazdu 130zł.

@@ -1,6 +1,10 @@
 .section {
     position: relative;
 
+    &__subtitle {
+        margin-top: 0;
+    }
+
     &__inner {}
 
     &__shape {
@@ -223,5 +227,31 @@
 .is-visible:not(:has(.categories-content-swiper)) {
     .animate-fade-in {
         animation: fadeIn 600ms calc(var(--i, 0) * 100ms) ease-in-out forwards;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    .is-visible {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}
+@media print {
+    .animate-fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    .is-visible {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
     }
 }

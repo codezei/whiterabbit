@@ -14,42 +14,36 @@
 	      document.documentElement.classList.remove('open-menu');
 	      burger.setAttribute('aria-expanded', !(burger.getAttribute('aria-expanded') === 'true' ? true : false));
 	    }
-	  });
-	  var linkNav = document.querySelectorAll('[href^="#"]');
-	  var headerHeight = 0;
-	  var V = 0.2;
-
-	  for (var i = 0; i < linkNav.length; i++) {
-	    linkNav[i].addEventListener('click', function (e) {
-	      e.preventDefault();
-	      var w = window.pageYOffset;
-	      var hash = this.href.replace(/[^#]*(.*)/, '$1');
-	      var tar = document.querySelector(hash);
-	      var t = tar.getBoundingClientRect().top - headerHeight;
-	      var start = null;
-	      requestAnimationFrame(step);
-
-	      function step(time) {
-	        if (start === null) {
-	          start = time;
-	        }
-
-	        var progress = time - start,
-	            r = t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t);
-	        window.scrollTo(0, r);
-
-	        if (r != w + t) {
-	          requestAnimationFrame(step);
-	        } else {
-	          location.hash = hash;
-	        }
-	      }
-
-	      if (t > 1 || t < -1) {
-	        requestAnimationFrame(step);
-	      }
-	    });
-	  }
+	  }); // let linkNav = document.querySelectorAll('[href^="#"]')
+	  // let headerHeight = 0
+	  // let V = 0.2;
+	  // for (let i = 0; i < linkNav.length; i++) {
+	  // 	linkNav[i].addEventListener('click', function (e) {
+	  // 		e.preventDefault();
+	  // 		let w = window.pageYOffset
+	  // 		let hash = this.href.replace(/[^#]*(.*)/, '$1');
+	  // 		let tar = document.querySelector(hash)
+	  // 		let t = tar.getBoundingClientRect().top - headerHeight
+	  // 		let start = null;
+	  // 		requestAnimationFrame(step);
+	  // 		function step(time) {
+	  // 			if (start === null) {
+	  // 				start = time;
+	  // 			}
+	  // 			var progress = time - start,
+	  // 				r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+	  // 			window.scrollTo(0, r);
+	  // 			if (r != w + t) {
+	  // 				requestAnimationFrame(step)
+	  // 			} else {
+	  // 				location.hash = hash
+	  // 			}
+	  // 		}
+	  // 		if (t > 1 || t < -1) {
+	  // 			requestAnimationFrame(step)
+	  // 		}
+	  // 	});
+	  // }
 	}
 
 	function services () {

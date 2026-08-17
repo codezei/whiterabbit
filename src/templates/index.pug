@@ -4,15 +4,17 @@ prepend html
     - const lang = "pl";
 
 prepend head
-    - const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej — Warszawa"
+    - const pageTitle = "Pranie tapicerki, dywanów i materacy — Warszawa i okolice"
     - const themeColor = "#ffffff"
-    - const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej — Warszawa. Usuwamy plamy, kurz i zapachy. Zadzwoń: 48531903619"
+    - const pageDescription = "Profesjonalne pranie tapicerki, materacy i dywanów oraz czyszczenie tapicerki samochodowej. Usuwamy plamy i zapachy."
     - const pageKeywords = "pranie tapicerki meblowej Warszawa, czyszczenie tapicerki meblowej Warszawa, pranie tapicerki Warszawa, czyszczenie tapicerki Warszawa, pranie kanapy Warszawa, czyszczenie kanapy Warszawa, pranie mebli Warszawa, czyszczenie mebli Warszawa, pranie materacy Warszawa, czyszczenie materacy Warszawa, pranie dywanów Warszawa, czyszczenie dywanów Warszawa, pranie wykładzin Warszawa, czyszczenie wykładzin Warszawa, pranie tapicerki samochodowej Warszawa, czyszczenie tapicerki samochodowej Warszawa, pranie narożnika Warszawa, czyszczenie narożnika Warszawa, czyszczenie foteli Warszawa, pranie foteli Warszawa"
     - const pageUrl = "";
     - const pageImage = "img/preview.webp";
     - const twitterImage = "img/preview.webp";
 
 append head
+    meta(name="robots" content="index, follow")
+    link(rel="llms" type="text/plain" href="/llms.txt")
     include components/schema
 
 append fonts

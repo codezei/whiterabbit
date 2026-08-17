@@ -9,20 +9,19 @@ block html
                 meta(http-equiv="X-UA-Compatible" content="ie=edge")
                 meta(name="theme-color" content=themeColor)
                 title= pageTitle
-                link(rel="preload" as="image" href="img/main-bg-xs.webp" fetchpriority="high")
+                link(rel="preload" as="image" href="img/main-bg-xs.webp" fetchpriority="high" media="(max-width: 575px)")
                 block fonts
                 //- link(
                 //-     rel="preload"
                 //-     href="css/style.min.css?v=3.0.1"
                 //-     as="style"
                 //- )
-                link(rel="stylesheet" href="css/main.min.css?v=4.0.1")
-                link(rel="stylesheet" href="css/libs.min.css?v=4.0.1" media="print" onload="this.media='all'")
+                link(rel="stylesheet" href="css/main.min.css?v=4.0.5")
+                link(rel="stylesheet" href="css/libs.min.css?v=4.0.5" media="print" onload="this.media='all'")
                 link(rel="icon" href="img/favicon.ico" type="image/x-icon")
                 link(rel="canonical", href= domain + pageUrl)
                 meta(name="description", content=pageDescription)
                 meta(name="keywords", content=pageKeywords)
-                meta(name="robots" content="index, follow")
                 meta(property="og:title", content=pageTitle)
                 meta(property="og:description", content=pageDescription)
                 meta(property="og:type" content="website")
@@ -47,4 +46,4 @@ block html
             block content
             block scripts
                 //- script(src="js/libs.js?v=3.0.3" defer)
-                script(src="js/main.js?v=3.0.6" defer)
+                script(src="js/main.js?v=4.0.5" defer)

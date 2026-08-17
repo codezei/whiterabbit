@@ -1,9 +1,3 @@
-// $grid-gutter-width: 1.5rem;
-// $grid-gutter-height: 1.5rem;
-// $gutter: $grid-gutter-width;
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss';
-
-
 
 a {
     color: inherit;
@@ -17,9 +11,6 @@ a {
     box-sizing: border-box;
 }
 
-// .row {
-//   --bs-gutter-y: 1.5rem;
-// }
 
 :root {
     --h1: 1.625rem;
@@ -39,7 +30,7 @@ a {
 
 
     @media screen and (min-width: 1200px) {
-        // --h1: 2.25rem;
+        --h1: 2.5rem;
         // --h2: 2rem;
         // --h3: 1.75rem;
         --h4: 1.5rem;
@@ -95,7 +86,6 @@ body {
     font-size: 16px;
     line-height: var(--line-height);
     font-weight: 300;
-    overflow-x: hidden;
     color: var(--color-1-shade-1);
     background: var(--section-color);
 
@@ -107,7 +97,9 @@ body {
     }
 }
 
-
+html, body {
+    overflow-x: clip;
+}
 
 h1,
 h2,
@@ -115,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-    // font-family: 'Raleway';
+
     margin-bottom: 1em;
     margin-top: 0;
     font-weight: 700;
@@ -126,15 +118,15 @@ li:not(:last-child):not(.bullet) {
 }
 
 html {
-    overflow-x: hidden;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 img {
     display: block;
     width: 100%;
     height: auto;
-    // max-width: 100%;
+
 }
 
 svg {
@@ -331,26 +323,6 @@ br {
 }
 
 
-// .card__icon svg {
-//     background-clip: text;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     background-image: linear-gradient(90deg, var(--fourth-color) 0, var(--third-color) 100%);
-// }
-
-// .text-gradient-dark {
-//     background-clip: text;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     background-image: linear-gradient(90deg, var(--fourth-color) 0%, var(--third-color) 10%, var(--third-color) 90%, var(--fourth-color) 100%);
-// }
-
-// .text-gradient-light {
-//       background-clip: text;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     background-image: linear-gradient(90deg, var(--first-color) 0, var(--second-color) 100%);
-// }
 
 .w-100 {
     width: 100%;
@@ -416,37 +388,6 @@ br {
 }
 
 
-// .logo {
-//     &-icon {
-//         vertical-align: middle;
-
-//         &__sofa {
-//             transform: scale(0.45);
-//             transform-origin: center 35%;
-//             animation: fade-in-sofa 1s ease-out forwards;
-//         }
-
-//         &__circle {
-//             &-inner {
-//                 transform-origin: center;
-//                 transform: rotate(158deg);
-//                 animation: draw-circle-inner 1s ease-out forwards;
-//             }
-
-//             &-outer {
-//                 transform-origin: center;
-//                 transform: rotate(158deg);
-//                 animation: draw-circle-outer 1s ease-out forwards;
-//             }
-//         }
-
-//         &__text {
-//             font-weight: 700;
-//         }
-//     }
-
-// }
-
 .text-red {
     color: red;
 }
@@ -488,9 +429,6 @@ br {
     }
 }
 
-// section:has(.swiper) {
-//   overflow: hidden;
-// }
 
 hr {
     width: 100%;
@@ -511,10 +449,6 @@ hr {
     display: flex;
     margin-right: -2.5rem;
 
-    // .btn {
-    //   width: 100%;
-    //   white-space: nowrap;
-    // }
     &__item {
         &:nth-child(1) {
             width: calc(50% + 2.5rem);
@@ -552,220 +486,150 @@ hr {
         text-align: right;
     }
 
-    @media (min-width: 420px) {
-        &-xs {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (min-width: 576px) {
-
-        &-sm {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (min-width: 768px) {
-
-        &-md {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (min-width: 992px) {
-
-        &-lg {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (min-width: 1220px) {
-
-        &-xl {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (min-width: 1440px) {
-
-        &-xxl {
-            &-left {
-                text-align: left;
-            }
-
-            &-right {
-                text-align: right;
-            }
-
-            &-center {
-                text-align: center;
-            }
-        }
-    }
 }
 
+.row .col:nth-child(1n).card-leaf,
 .row .col:nth-child(1n) .card-leaf {
     border-radius: 0 var(--leaf-radius);
 }
 
+.row .col:nth-child(2n).card-leaf,
 .row .col:nth-child(2n) .card-leaf {
     border-radius: var(--leaf-radius) 0;
 }
 
+.row .col:nth-child(3n).card-leaf,
 .row .col:nth-child(3n) .card-leaf {
     border-radius: 0 var(--leaf-radius);
 }
 
+.row .col:nth-child(4n).card-leaf,
 .row .col:nth-child(4n) .card-leaf {
     border-radius: var(--leaf-radius) 0;
 }
 
+.row .col:nth-child(5n).card-leaf,
 .row .col:nth-child(5n) .card-leaf {
     border-radius: 0 var(--leaf-radius);
 }
 
+.row .col:nth-child(6n).card-leaf,
 .row .col:nth-child(6n) .card-leaf {
     border-radius: var(--leaf-radius) 0;
 }
 
+.row .col:nth-child(7n).card-leaf,
 .row .col:nth-child(7n) .card-leaf {
     border-radius: 0 var(--leaf-radius);
 }
 
+.row .col:nth-child(8n).card-leaf,
 .row .col:nth-child(8n) .card-leaf {
     border-radius: var(--leaf-radius) 0;
 }
 
-    .row-cols-2 .col:nth-child(1n) .card-leaf {
+.row-cols-2 .col:nth-child(1n).card-leaf,
+.row-cols-2 .col:nth-child(1n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row-cols-2 .col:nth-child(2n).card-leaf,
+.row-cols-2 .col:nth-child(2n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row-cols-2 .col:nth-child(3n).card-leaf,
+.row-cols-2 .col:nth-child(3n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row-cols-2 .col:nth-child(4n).card-leaf,
+.row-cols-2 .col:nth-child(4n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row-cols-2 .col:nth-child(5n).card-leaf,
+.row-cols-2 .col:nth-child(5n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+.row-cols-2 .col:nth-child(6n).card-leaf,
+.row-cols-2 .col:nth-child(6n) .card-leaf {
+    border-radius: 0 var(--leaf-radius);
+}
+
+.row-cols-2 .col:nth-child(7n).card-leaf,
+.row-cols-2 .col:nth-child(7n) .card-leaf {
+    border-radius: 0var(--leaf-radius);
+}
+
+.row-cols-2 .col:nth-child(8n).card-leaf,
+.row-cols-2 .col:nth-child(8n) .card-leaf {
+    border-radius: var(--leaf-radius) 0;
+}
+
+@media screen and (min-width: 576px) {
+
+    .row-cols-sm-2 .col:nth-child(1n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(1n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-2 .col:nth-child(2n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(2n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(2n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-2 .col:nth-child(3n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(3n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(3n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-2 .col:nth-child(4n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(4n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(4n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-2 .col:nth-child(5n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(5n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(5n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
-    .row-cols-2 .col:nth-child(6n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(6n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(6n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
-    .row-cols-2 .col:nth-child(7n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(7n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(7n) .card-leaf {
         border-radius: 0var(--leaf-radius);
     }
 
-    .row-cols-2 .col:nth-child(8n) .card-leaf {
+    .row-cols-sm-2 .col:nth-child(8n).card-leaf,
+    .row-cols-sm-2 .col:nth-child(8n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
-
-@media screen and (min-width: 576px) {
-        .row-cols-sm-2 .col:nth-child(1n) .card-leaf {
-                border-radius:  var(--leaf-radius) 0;
-            }
-
-            .row-cols-sm-2 .col:nth-child(2n) .card-leaf {
-                border-radius: 0 var(--leaf-radius) ;
-            }
-
-            .row-cols-sm-2 .col:nth-child(3n) .card-leaf {
-                border-radius: 0 var(--leaf-radius);
-            }
-
-            .row-cols-sm-2 .col:nth-child(4n) .card-leaf {
-                border-radius: var(--leaf-radius) 0;
-            }
-
-            .row-cols-sm-2 .col:nth-child(5n) .card-leaf {
-                border-radius: var(--leaf-radius) 0;
-            }
-
-            .row-cols-sm-2 .col:nth-child(6n) .card-leaf {
-                border-radius: 0 var(--leaf-radius);
-            }
-
-            .row-cols-sm-2 .col:nth-child(7n) .card-leaf {
-                border-radius: 0var(--leaf-radius) ;
-            }
-
-            .row-cols-sm-2 .col:nth-child(8n) .card-leaf {
-                border-radius:  var(--leaf-radius) 0;
-            }
 }
 
 
 @media screen and (min-width: 768px) {
+
+    .row-cols-md-2 .col:nth-child(1n).card-leaf,
     .row-cols-md-2 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-2 .col:nth-child(2n).card-leaf,
     .row-cols-md-2 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-2 .col:nth-child(3n).card-leaf,
     .row-cols-md-2 .col:nth-child(3n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-2 .col:nth-child(4n).card-leaf,
     .row-cols-md-2 .col:nth-child(4n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
@@ -776,118 +640,147 @@ hr {
 
 
 
+    .row-cols-md-3 .col:nth-child(1n).card-leaf,
     .row-cols-md-3 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-3 .col:nth-child(2n).card-leaf,
     .row-cols-md-3 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-3 .col:nth-child(3n).card-leaf,
     .row-cols-md-3 .col:nth-child(3n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-3 .col:nth-child(4n).card-leaf,
     .row-cols-md-3 .col:nth-child(4n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-3 .col:nth-child(5n).card-leaf,
     .row-cols-md-3 .col:nth-child(5n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-3 .col:nth-child(6n).card-leaf,
     .row-cols-md-3 .col:nth-child(6n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-3 .col:nth-child(7n).card-leaf,
     .row-cols-md-3 .col:nth-child(7n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-3 .col:nth-child(8n).card-leaf,
     .row-cols-md-3 .col:nth-child(8n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
 
+    .row-cols-md-4 .col:nth-child(1n).card-leaf,
     .row-cols-md-4 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-4 .col:nth-child(2n).card-leaf,
     .row-cols-md-4 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-4 .col:nth-child(3n).card-leaf,
     .row-cols-md-4 .col:nth-child(3n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-4 .col:nth-child(4n).card-leaf,
     .row-cols-md-4 .col:nth-child(4n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-4 .col:nth-child(5n).card-leaf,
     .row-cols-md-4 .col:nth-child(5n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-4 .col:nth-child(6n).card-leaf,
     .row-cols-md-4 .col:nth-child(6n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-md-4 .col:nth-child(7n).card-leaf,
     .row-cols-md-4 .col:nth-child(7n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-md-4 .col:nth-child(8n).card-leaf,
     .row-cols-md-4 .col:nth-child(8n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 }
 
 @media screen and (min-width: 992px) {
+
+    .row-cols-lg-2 .col:nth-child(1n).card-leaf,
     .row-cols-lg-2 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-lg-2 .col:nth-child(2n).card-leaf,
     .row-cols-lg-2 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-2 .col:nth-child(3n).card-leaf,
     .row-cols-lg-2 .col:nth-child(3n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-2 .col:nth-child(4n).card-leaf,
     .row-cols-lg-2 .col:nth-child(4n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
 
+    .row-cols-lg-4 .col:nth-child(1n).card-leaf,
     .row-cols-lg-4 .col:nth-child(1n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-lg-4 .col:nth-child(2n).card-leaf,
     .row-cols-lg-4 .col:nth-child(2n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-4 .col:nth-child(3n).card-leaf,
     .row-cols-lg-4 .col:nth-child(3n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-lg-4 .col:nth-child(4n).card-leaf,
     .row-cols-lg-4 .col:nth-child(4n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-4 .col:nth-child(5n).card-leaf,
     .row-cols-lg-4 .col:nth-child(5n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-4 .col:nth-child(6n).card-leaf,
     .row-cols-lg-4 .col:nth-child(6n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
 
+    .row-cols-lg-4 .col:nth-child(7n).card-leaf,
     .row-cols-lg-4 .col:nth-child(7n) .card-leaf {
         border-radius: var(--leaf-radius) 0;
     }
 
+    .row-cols-lg-4 .col:nth-child(8n).card-leaf,
     .row-cols-lg-4 .col:nth-child(8n) .card-leaf {
         border-radius: 0 var(--leaf-radius);
     }
@@ -909,6 +802,7 @@ hr {
 .water-mark {
     display: block;
     position: relative;
+
     &:before {
         content: "";
         display: block;
@@ -926,8 +820,8 @@ hr {
 
     @media screen and (min-width: 768px) {
         &:before {
-                    width: 100px;
-                        height: 100px;
+            width: 100px;
+            height: 100px;
         }
     }
 }
@@ -937,6 +831,7 @@ hr {
     width: 150px;
     position: relative;
     pointer-events: none;
+
     &__message {
         position: absolute;
         background-image: url(../img/cloud.webp);
@@ -953,12 +848,21 @@ hr {
         pointer-events: none;
         transform-origin: right bottom;
     }
+
     &__rabbit {
         width: 100%;
         transform: scale(-1, 1);
     }
+
     &.active &__message {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.page-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }

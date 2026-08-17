@@ -1,0 +1,50 @@
+extends settings/layout
+
+prepend html
+    - const lang = "pl";
+
+prepend head
+    - const pageTitle = "404 - Strona nie została znaleziona | White Rabbit"
+    - const themeColor = "#ffffff"
+    - const pageDescription = "Ta strona nie istnieje lub została przeniesiona. Wróć na stronę główną i znajdź interesującą Cię usługę."
+    - const pageKeywords = ""
+    - const pageUrl = "";
+    - const pageImage = "img/preview.webp";
+    - const twitterImage = "img/preview.webp";
+
+append head
+    meta(name="robots" content="noindex, follow")
+    include components/schema
+
+append fonts
+    link(rel="preload" href="./fonts/cormorant-garamond-v20-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="./fonts/cormorant-garamond-v20-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin)
+    style.
+        @font-face {
+            font-display: swap;
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 300;
+            src: url('./fonts/cormorant-garamond-v20-latin-ext-300.woff2') format('woff2');
+        }
+        @font-face {
+            font-display: swap;
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 700;
+            src: url('./fonts/cormorant-garamond-v20-latin-ext-700.woff2') format('woff2');
+        }
+        body  {
+            font-family: 'Cormorant Garamond';
+        }
+
+append content
+    script.
+        const initialCategory = 0
+    //- include components/header
+    main
+        include components/page-not-found
+        include components/icons
+    include components/footer
+
+append scripts

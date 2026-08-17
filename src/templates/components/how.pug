@@ -2,48 +2,44 @@ section.how#how.section.section-accent
     .container
         .section__header.js-observe
             .section__shape.section__shape-top
-                h2.section__title.text-uppercase Jak działamy?
-                h3.h6.section__subtitle.text-light.mb-0.text-primary ✦ Zobacz, jak wygląda cały proces realizacji usługi
+                h3.section__title.text-uppercase Jak działamy?
+                p.h6.section__subtitle.text-light.mb-0.text-primary ✦ Zobacz, jak wygląda cały proces realizacji usługi
         .section__body.block.js-observe
             .row.row-cols-lg-2
-                .col.animate-fade-in(style="--i: 0;")
-                    .card.card-white.card-leaf
-                        .card__header
-                            .card__icon
-                                svg(width="48" height="48")
-                                    use(href="#contact")
-                            h4.h6.card__title.mb-0.text-uppercase ✦ Skontaktuj się z nami
-                        .card__body Omówimy szczegóły Twojego zamówienia, ustalając datę, godzinę i adres realizacji usługi
-                .col.animate-fade-in(style="--i: 1;")
-                    .card.card-white.card-leaf
-                        .card__header
-                            .card__icon
-                                svg(width="48" height="48")
-                                    use(href="#process")
-                            h4.h6.card__title.mb-0.text-uppercase ✦ Realizacja zamówienia
-                        .card__body W dniu realizacji nasz specjalista przywiezie cały niezbędny sprzęt i środki czyszczące, a następnie wykona usługę
-                .col.animate-fade-in(style="--i: 2;")
-                    .card.card-white.card-leaf
-                        .card__header
-                            .card__icon
-                                svg(width="48" height="48")
-                                    use(href="#cash")
-                            h4.h6.card__title.mb-0.text-uppercase ✦ Płatność
-                        .card__body Po zakończeniu pracy dokonasz płatności w dogodny dla Ciebie sposób
-                .col.animate-fade-in(style="--i: 3;")
-                    .card.card-white.card-leaf
-                        .card__header
-                            .card__icon
-                                svg(width="48" height="48")
-                                    use(href="#result")
-                            h4.h6.card__title.mb-0.text-uppercase ✦ Gotowe
-                        .card__body Teraz pozostaje tylko cieszyć się efektem czyszczenia!
+                .col.animate-fade-in.card.card-white.card-leaf(style="--i: 0;")
+                    .card__header
+                        .card__icon
+                            svg(width="48" height="48")
+                                use(href="#contact")
+                        h4.h6.card__title.mb-0.text-uppercase ✦ Skontaktuj się z nami
+                    .card__body Omówimy szczegóły Twojego zamówienia, ustalając datę, godzinę i adres realizacji usługi
+                .col.animate-fade-in.card.card-white.card-leaf(style="--i: 1;")
+                    .card__header
+                        .card__icon
+                            svg(width="48" height="48")
+                                use(href="#process")
+                        h4.h6.card__title.mb-0.text-uppercase ✦ Realizacja zamówienia
+                    .card__body W dniu realizacji nasz specjalista przywiezie cały niezbędny sprzęt i środki czyszczące, a następnie wykona usługę
+                .col.animate-fade-in.card.card-white.card-leaf(style="--i: 2;")
+                    .card__header
+                        .card__icon
+                            svg(width="48" height="48")
+                                use(href="#cash")
+                        h4.h6.card__title.mb-0.text-uppercase ✦ Płatność
+                    .card__body Po zakończeniu pracy dokonasz płatności w dogodny dla Ciebie sposób
+                .col.animate-fade-in.card.card-white.card-leaf(style="--i: 3;")
+                    .card__header
+                        .card__icon
+                            svg(width="48" height="48")
+                                use(href="#result")
+                        h4.h6.card__title.mb-0.text-uppercase ✦ Gotowe
+                    .card__body Teraz pozostaje tylko cieszyć się efektem czyszczenia!
         .section__footer.jpg.js-observe
             .section__shape.section__shape-bottom
                 .section__helper.animate-fade-in(style="--i: 10;")
                     .helper
                         .helper__message(data-text="Zobacz, jak pracujemy 🐰Masz pytania? Napisz!")
                             span.js-helper-text
-                        img.helper__rabbit(src="img/rabbit-1.webp", alt="",  width="150" height="188")
+                        img.helper__rabbit(src="img/rabbit-1.webp" alt="Twój osobisty asystent" width="150" height="188")
                 .section__btn
                     include cta-button
